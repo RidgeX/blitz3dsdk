@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbWritePixel</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbWritePixel x,y,color,[buffer]</h1>
+<table class="doc" id="bbwritepixel" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>color</td><td class=argvalue>binary packed color value</td></tr>
+<tr><td class=argname>buffer</td><td class=argvalue>valid graphics buffer</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbwritepixel.html>bbWritePixel</a> command sets the color of a pixel at the
+specified location of the specified graphics buffer to the
+value <b>color.</b>
+</p><p>
+The <b>color</b> value is an integer with the red, green and blue
+values packed into the low 24 binary bits and if required
+the transparency value in the high 8 bits.
+</p><p>
+If the x,y coordinate falls outside the bounds of the buffer
+the <a href=bbwritepixel.html>bbWritePixel</a> command does nothing.
+</p><p>
+If no graphics buffer is specified <a href=bbwritepixel.html>bbWritePixel</a> uses the current
+graphics buffer, see <a href=bbsetbuffer.html>bbSetBuffer</a> for more details.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbWritePixel( int x,int y,int argb,BBCanvas buff );</pre>
+<pre class=cs>public static int bb.WritePixel(int x,int y,int color,int buffer)
+public static int bb.WritePixel(int x,int y,int color)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbreadpixel.html>bbReadPixel</a> <a href=bbcopypixel.html>bbCopyPixel</a> <a href=bbwritepixelfast.html>bbWritePixelFast</a> <a href=bblockbuffer.html>bbLockBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>C# Programming </title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>C# Programming </h1>
+<p>
+The simplest introduction to C# programming with the Blitz3DSDK
+is to load and modify the examples provided in the VisualCSharp
+folder.
+</p><p>
+To create a new project either copy and rename the example project
+included or use the following steps.
+</p><p>
+Begin by creating a new empty project.
+</p><p>
+As the Blitz3DSDK is only distributed as a 32 bit DLL the configuration
+manager must be used to make your new project an X86 Configuaration
+so it knows to load the 32 bit dll even when running on 64 bit editions of 
+Windows.
+</p><p>
+Run the Configuration Manager in the Visual Studio Build menu and 
+select New Platform. Then for your new project select an X86 platform 
+based on the default Any CPU configuration settings. Your application 
+will now be compatible with the Blitz3DSDK environment on both 32 
+and 64 bit Windows systems. 
+</p><p>
+Add New Item of type Code File. This creates a new C# source file
+</p><p>
+The following is a simple C# application featuring a rotating cube using the
+Blitz3DSDK class defined in the blitz3dsdk.cs source file. You can copy 
+it into your newly created code file or use it as reference.
+</p><pre>using System;
+
+using bb=Blitz3DSDK;
+
+static class RotateCube{
+	[STAThread]
+	static void Main(){
+		bb.BeginBlitz3D();
+		bb.Graphics3D(960, 540, 0, 2);
+		int cube = bb.CreateCube(0);
+		int light = bb.CreateLight(1, 0);
+		int camera = bb.CreateCamera(0);
+		
+		bb.PositionEntity(camera, 0, 0, -4, 1);
+		
+		while (bb.KeyHit(1)==0){
+			bb.UpdateWorld(1);
+			bb.RenderWorld(0);
+			bb.TurnEntity(cube, .1f, .2f, .3f, 1);
+			bb.Text(20, bb.GraphicsHeight() - 20, &quot;Blitz3DSDK C# Example&quot;, 0, 0);
+			bb.Flip(1);
+		}
+		bb.EndBlitz3D();
+	}
+}
+</pre><p>
+Select Add Existing Item and navigate to the "include/blitz3dsdk.cs" file in the main Blitz3D SDK
+folder. VisualStudio will then copy the file to the source folder of your new project. 
+</p><p>
+If the new project fails to build or run check that it's Application Properties are configured 
+as Windows Application not Console Application and double check that you have 
+followed all of the steps above.
+</p><DL>
+</DL>
+</body></html>

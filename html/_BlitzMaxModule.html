@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>BlitzMax Module</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>BlitzMax Module</h1>
+<p>
+The following is a simple BlitzMax application featuring a rotating cube using the
+Blitz3DSDK module.
+</p><pre>Import blitz3d.blitz3dsdk
+
+Strict
+
+bbBeginBlitz3D
+
+bbGraphics3D 800,600,0,2
+
+Local cube=bbCreateCube()
+Local light=bbCreateLight()
+Local camera=bbCreateCamera()
+
+bbPositionEntity camera,0,0,-4
+
+While Not bbKeyHit(1)
+	bbTurnEntity cube,1,2,3
+	bbRenderWorld
+	bbFlip 1
+Wend
+</pre><DL>
+</DL>
+</body></html>

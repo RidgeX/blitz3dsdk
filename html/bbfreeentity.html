@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbFreeEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFreeEntity EntityHandle</h1>
+<table class="doc" id="bbfreeentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>EntityHandle</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+FreeEntity will free up the internal resources associated
+with a particular entity and remove it from the scene.
+</p><p>
+Handle must be valid entity hanlde such as returned by 
+function such as CreateCube(), CreateLight(), LoadMesh() etc.
+</p><p>
+This command will also free all children entities parented 
+to the entity.
+</p><p>
+See the <a href=bbclearworld.html>bbClearWorld</a> command for freeing all entities with
+a single call.
+</p><p class="hint">
+Any references to the entity or its children become
+invalid after a call to <a href=bbfreeentity.html>bbFreeEntity</a> so care should be
+taken as any subsquent use of a handle to a freed 
+entity will cause a runtime error.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFreeEntity( BBEntity e );</pre>
+<pre class=cs>public static int bb.FreeEntity(int EntityHandle)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbfreetexture.html>bbFreeTexture</a> <a href=bbfreebrush.html>bbFreeBrush</a> <a href=bbclearworld.html>bbClearWorld</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbCameraZoom</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraZoom camera,zoom#</h1>
+<table class="doc" id="bbcamerazoom" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>zoom#</td><td class=argvalue>zoom factor of camera</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets zoom factor for a camera. Defaults to 1.0.
+</p><p>
+Values between 0.01 and 1.0 causes objects to look 
+smaller. Zoom values larger than 1.0 cause objects 
+to appear larger.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraZoom( BBCamera c,float zoom );</pre>
+<pre class=cs>public static int bb.CameraZoom(int camera,float zoom)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcameraprojmode.html>bbCameraProjMode</a>
+</p>
+</td></tr>
+</table>
+</body></html>

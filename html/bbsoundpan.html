@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbSoundPan</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSoundPan sound,pan#</h1>
+<table class="doc" id="bbsoundpan" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sound</td><td class=argvalue>valid sound handle</td></tr>
+<tr><td class=argname>pan#</td><td class=argvalue>stereo position</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Modifies the default balance of an existing sound object by
+changing its pan setting.
+</p><p>
+The <b>pan</b> value can be any float between -1.0 and 1.0 and
+modifies the stereo position used the next time the sound 
+is played using the <a href=bbplaysound.html>bbPlaySound</a> command.
+</p><table class="data">
+<tr><th class=data>Pan Value</th><th class=data>Effect</th></tr>
+<tr><td class=data>-1</td><td class=data>sound played through left speaker</td></tr>
+<tr><td class=data>0</td><td class=data>sound played through both speakers</td></tr>
+<tr><td class=data>1</td><td class=data>sound played through right speaker</td></tr>
+</table><p>
+Use the <a href=bbchannelpan.html>bbChannelPan</a> command to pan the sound during playback.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSoundPan( BBSound sound,float pan );</pre>
+<pre class=cs>public static int bb.SoundPan(int sound,float pan)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbplaysound.html>bbPlaySound</a> <a href=bbchannelpan.html>bbChannelPan</a>
+</p>
+</td></tr>
+</table>
+</body></html>

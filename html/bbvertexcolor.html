@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbVertexColor</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVertexColor surface,index,red#,green#,blue#[,alpha#=1]</h1>
+<table class="doc" id="bbvertexcolor" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of vertex</td></tr>
+<tr><td class=argname>red#</td><td class=argvalue>red value of vertex</td></tr>
+<tr><td class=argname>green#</td><td class=argvalue>green value of vertex</td></tr>
+<tr><td class=argname>blue#</td><td class=argvalue>blue value of vertex</td></tr>
+<tr><td class=argname>alpha#</td><td class=argvalue>optional alpha transparency of vertex (0.0 to 1.0 - default: 1.0)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the color of an existing vertex.
+</p><p>
+Red, green and blue paramaters should all be in the range 0..255.
+See the <a href=bbcolor.html>bbColor</a> command for more information on combining
+red, green and blue values to define specific colors.
+</p><p>
+The index value should be in the range 0..CountVertices()-1.
+</p><p class="hint">
+If you want to set the alpha individually for vertices using the 
+<b>alpha</b> parameter then you need to use EntityFX flags: 32 (to force 
+alpha-blending) and 2 (to switch to vertex colors).
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbVertexColor( BBSurface s,int n,float r,float g,float b,float a );</pre>
+<pre class=cs>public static int bb.VertexColor(int surface,int index,float red,float green,float blue,float alpha)
+public static int bb.VertexColor(int surface,int index,float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityfx.html>bbEntityFX</a> <a href=bbvertexalpha.html>bbVertexAlpha</a> <a href=bbvertexred.html>bbVertexRed</a> <a href=bbvertexgreen.html>bbVertexGreen</a> <a href=bbvertexblue.html>bbVertexBlue</a>
+</p>
+</td></tr>
+</table>
+</body></html>

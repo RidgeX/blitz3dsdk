@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>bbSetCubeFace</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetCubeFace texture,face</h1>
+<table class="doc" id="bbsetcubeface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture</td><td class=argvalue>a cubemap type texture</td></tr>
+<tr><td class=argname>face</td><td class=argvalue>face of cube to select 0..5</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Selects a cube face for direct rendering to a texture.
+</p><table class="data">
+<tr><th class=data>Face</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>CUBEFACE_LEFT</td><td class=data>0</td><td class=data>left (negative X) face</td></tr>
+<tr><td class=data>CUBEFACE_FRONT</td><td class=data>1</td><td class=data>forward (positive Z) face - this is the default.</td></tr>
+<tr><td class=data>CUBEFACE_RIGHT</td><td class=data>2</td><td class=data>right (positive X) face</td></tr>
+<tr><td class=data>CUBEFACE_BACK</td><td class=data>3</td><td class=data>backward (negative Z) face</td></tr>
+<tr><td class=data>CUBEFACE_TOP</td><td class=data>4</td><td class=data>up (positive Y) face</td></tr>
+<tr><td class=data>CUBEFACE_BOTTOM</td><td class=data>5</td><td class=data>down (negative Y) face</td></tr>
+</table><p>
+This command should only be used when you wish to draw directly to a
+cubemap texture in real-time.
+</p><p>
+Otherwise, just loading a pre-rendered cubemap with a flag of 128 will suffice.
+</p><p>
+To understand how this command works exactly it is important to recognise
+that Blitz treats cubemap textures slightly differently to how it treats
+other textures. Here's how it works:
+</p><p>
+A cubemap texture in Blitz actually consists of six images, each of which 
+must be square 'power' of two size - e.g. 32, 64, 128 etc. Each corresponds
+to a particular cube face. These images are stored internally by Blitz, and
+the texture handle that is returned by LoadTexture/CreateTexture when 
+specifying the cubemap flag, only provides access to one of these six 
+images at once (by default the first one, or '1' face).
+</p><p>
+This is why, when loading a cubemap texture into Blitz using
+LoadTexture, all the six cubemap images must be laid out in a specific order
+(0-5, as described above), in a horizontal strip. Then Blitz takes this
+texture and internally converts it into six separate images.
+</p><p>
+So seeing as the texture handle returned by <a href=bbcreatetexture.html>bbCreateTexture</a> / <a href=bbloadtexture.html>bbLoadTexture</a> 
+only provides access to one of these images at once (no. 1 by default), 
+how do we get access to the other five images? This is where <a href=bbsetcubeface.html>bbSetCubeFace</a> 
+comes in. 
+</p><p>
+It will tell Blitz that whenever you next draw to a cubemap texture, to draw
+to the particular image representing the face you have specified with the
+<b>face</b> parameter.
+</p><p>
+Now you have the ability to draw to a cubemap in real-time.
+</p><p>
+To give you some idea of how this works in code, see the example included
+in the online help. It works by rendering six different views
+and copying them to the cubemap texture buffer, using <a href=bbsetcubeface.html>bbSetCubeFace</a> to specify
+which particular cubemap image should be drawn to.
+</p><p>
+All rendering to a texture buffer affects the currently
+selected face. Do not change the selected cube face while a buffer is locked.
+</p><p>
+Finally, you may wish to combine the vram 256 flag with the cubic mapping
+flag when drawing to cubemap textures for faster access.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetCubeFace( BBTexture t,int face );</pre>
+<pre class=cs>public static int bb.SetCubeFace(int texture,int face)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatetexture.html>bbCreateTexture</a> <a href=bbloadtexture.html>bbLoadTexture</a> <a href=bbsetcubemode.html>bbSetCubeMode</a>
+</p>
+</td></tr>
+</table>
+</body></html>

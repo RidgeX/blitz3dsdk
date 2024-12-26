@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbAddTriangle</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAddTriangle ( surface,v0,v1,v2 )</h1>
+<table class="doc" id="bbaddtriangle" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>v0</td><td class=argvalue>index number of first vertex of triangle</td></tr>
+<tr><td class=argname>v1</td><td class=argvalue>index number of second vertex of triangle</td></tr>
+<tr><td class=argname>v2</td><td class=argvalue>index number of third vertex of triangle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the index of a new triangle added to the specified surface.
+</p><p>
+The three vertex indexes define the points in clockwise order of 
+a single sided triangle that is added to the surface specified.
+</p><p>
+The <b>v0</b>, <b>v1</b> and <b>v2</b> parameters are the index numbers of vertices added
+to the same surface using the AddVertex function. 
+</p><p class="hint">
+A special DoubleSided effect can be enabled for a surface that
+will treat each triangle in a surface as having two sides, see
+<a href=bbentityfx.html>bbEntityFX</a> and <a href=bbbrushfx.html>bbBrushFX</a> for more information.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbAddTriangle( BBSurface s,int v0,int v1,int v2 );</pre>
+<pre class=cs>public static int bb.AddTriangle(int surface,int v0,int v1,int v2)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbaddvertex.html>bbAddVertex</a> <a href=bbentityfx.html>bbEntityFX</a>
+</p>
+</td></tr>
+</table>
+</body></html>

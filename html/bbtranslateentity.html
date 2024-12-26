@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>bbTranslateEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTranslateEntity entity,x#,y#,z#[,globalspace]</h1>
+<table class="doc" id="bbtranslateentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>name of entity to be translated</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x amount that entity will be translated by</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y amount that entity will be translated by</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z amount that entity will be translated by</td></tr>
+<tr><td class=argname>global</td><td class=argvalue>False
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Translates an entity relative to its current position 
+in the direction specified in either parent or global
+space. The direction vector by default is interpreted
+as being in parent space.
+</p><p>
+<a href=bbtranslateentity.html>bbTranslateEntity</a> is an alternative to <a href=bbmoveentity.html>bbMoveEntity</a>
+when an entity must be moved in a global direction
+such as straight down for gravity.
+</p><p>
+Unlike <a href=bbmoveentity.html>bbMoveEntity</a> an entities orientation is ignored
+in the resulting calculation.
+</p><p>
+To move an entity with coordinates that represent
+a vector relative to its own orientation use the
+<a href=bbmoveentity.html>bbMoveEntity</a> command.
+</p><p>
+See the <a href=bbupdateworld.html>bbUpdateWorld</a> command for details regarding
+the effect of any collisions that may occur due to
+the requested repositioning.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTranslateEntity( BBEntity e,float x,float y,float z,int global=1 );</pre>
+<pre class=cs>public static int bb.TranslateEntity(int entity,float x,float y,float z,int globalspace)
+public static int bb.TranslateEntity(int entity,float x,float y,float z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbmoveentity.html>bbMoveEntity</a> <a href=bbpositionentity.html>bbPositionEntity</a> <a href=bbpositionmesh.html>bbPositionMesh</a> <a href=bbupdateworld.html>bbUpdateWorld</a>
+</p>
+</td></tr>
+</table>
+</body></html>

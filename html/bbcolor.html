@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbColor</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbColor red,green,blue</h1>
+<table class="doc" id="bbcolor" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>red</td><td class=argvalue>amount of red (0..255)</td></tr>
+<tr><td class=argname>green</td><td class=argvalue>amount of green (0..255)</td></tr>
+<tr><td class=argname>blue</td><td class=argvalue>amount of blue (0..255)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+This command sets the current drawing color allowing Lines,
+Rectangles, Ovals, Pixels and Text to be drawn in any color of the
+rainbow.
+</p><p>
+The actual color is specified by 3 numbers representing
+the amount of red, green and blue mixed together.
+</p><p>
+The following table demonstrates values of red, green and blue
+required to specify the named colors:
+</p><table class="data">
+<tr><th class=data>Color</th><th class=data>Red</th><th class=data>Green</th><th class=data>Blue</th></tr>
+<tr><td class=data>Black</td><td class=data>0</td><td class=data>0</td><td class=data>0</td></tr>
+<tr><td class=data>Red</td><td class=data>255</td><td class=data>0</td><td class=data>0</td></tr>
+<tr><td class=data>Green</td><td class=data>0</td><td class=data>255</td><td class=data>0</td></tr>
+<tr><td class=data>Blue</td><td class=data>0</td><td class=data>0</td><td class=data>255</td></tr>
+<tr><td class=data>Yellow</td><td class=data>255</td><td class=data>255</td><td class=data>0</td></tr>
+<tr><td class=data>Turquoise</td><td class=data>0</td><td class=data>255</td><td class=data>255</td></tr>
+<tr><td class=data>Purple</td><td class=data>255</td><td class=data>0</td><td class=data>255</td></tr>
+<tr><td class=data>White</td><td class=data>255</td><td class=data>255</td><td class=data>255</td></tr>
+</table>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbColor( int r,int g,int b );</pre>
+<pre class=cs>public static int bb.Color(int red,int green,int blue)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

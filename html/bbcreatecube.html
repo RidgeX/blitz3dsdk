@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbCreateCube</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateCube ( [parent] )</h1>
+<table class="doc" id="bbcreatecube" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>parent</td><td class=argvalue>optional <b>parent</b> entity of a new cube</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a geometric cube, a mesh the shape of a 
+square box.
+</p><p>
+The new cube extends from  -1,-1,-1 to +1,+1,+1.
+</p><p>
+Creation of cubes, cylinders and cones are great 
+for placeholders during initial program development
+when a game's art resources may only be in their
+planning stages.
+</p><p>
+The optional <b>parent</b> parameter attaches the new cube
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p><p class="hint">
+Parenting a semitransparent cube to an object to
+visually represent its <a href=bbentitybox.html>bbEntityBox</a> collision settings
+is often useful when fine tuning object collisions.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbCreateCube( BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateCube(int parent)
+public static int bb.CreateCube()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbscalemesh.html>bbScaleMesh</a> <a href=bbcreatesphere.html>bbCreateSphere</a> <a href=bbcreatecylinder.html>bbCreateCylinder</a> <a href=bbcreatecone.html>bbCreateCone</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbClearCollisions</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbClearCollisions </h1>
+<table class="doc" id="bbclearcollisions" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Clears the internal collision behavior table.
+</p><p>
+Whenever a <a href=bbcollisions.html>bbCollisions</a> command is used to enable collisions 
+between two different entity types, an entry is added to
+an internal collision behavior table used by the <a href=bbupdateworld.html>bbUpdateWorld</a>
+command.
+</p><p>
+<a href=bbclearcollisions.html>bbClearCollisions</a> clears the internal collision behavior
+table and has no affect on current entity collision state.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbClearCollisions();</pre>
+<pre class=cs>public static int bb.ClearCollisions()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcollisions.html>bbCollisions</a> <a href=bbupdateworld.html>bbUpdateWorld</a> <a href=bbresetentity.html>bbResetEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

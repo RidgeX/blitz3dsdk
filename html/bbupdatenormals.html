@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbUpdateNormals</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbUpdateNormals mesh</h1>
+<table class="doc" id="bbupdatenormals" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Recalculates all normals in a mesh.
+</p><p>
+This is necessary for correct lighting if you are building
+or modifying meshes and have not set surface normals 
+manually using the <a href=bbvertexnormal.html>bbVertexNormal</a> commands
+or a mesh has been loaded from a model file with
+bad or missing vertex normal data.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbUpdateNormals( BBModel m );</pre>
+<pre class=cs>public static int bb.UpdateNormals(int mesh)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbvertexnormal.html>bbVertexNormal</a>
+</p>
+</td></tr>
+</table>
+</body></html>

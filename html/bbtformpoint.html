@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>bbTFormPoint</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTFormPoint x#,y#,z#,source_entity,dest_entity</h1>
+<table class="doc" id="bbtformpoint" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x#</td><td class=argvalue>x coordinate of a point in 3d space</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y coordinate of a point in 3d space</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z coordinate of a point in 3d space</td></tr>
+<tr><td class=argname>source_entity</td><td class=argvalue>handle of source entity, or 0 for 3d world</td></tr>
+<tr><td class=argname>dest_entity</td><td class=argvalue>handle of destination entity, or 0 for 3d world</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Transforms a point between coordinate systems. 
+</p><p>
+After using <a href=bbtformpoint.html>bbTFormPoint</a> the new coordinates can be 
+read with <a href=bbtformedx.html>bbTFormedX</a>(), <a href=bbtformedy.html>bbTFormedY</a>() and <a href=bbtformedz.html>bbTFormedZ</a>(). 
+</p><p>
+See <a href=bbentityx.html>bbEntityX</a>() for details about local coordinates. 
+</p><p>
+Consider a sphere built with <a href=bbcreatesphere.html>bbCreateSphere</a>().
+</p><p>
+The 'north pole' is at (0,1,0).
+</p><p>
+At first, local and global coordinates
+are the same. However, as the sphere is moved, 
+turned and scaled the global coordinates
+of the north pole change but it's always at 
+(0,1,0) in the sphere's local space.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTFormPoint( float x,float y,float z,BBEntity src,BBEntity dest );</pre>
+<pre class=cs>public static int bb.TFormPoint(float x,float y,float z,int source_entity,int dest_entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbtformedx.html>bbTFormedX</a> <a href=bbtformedy.html>bbTFormedY</a> <a href=bbtformedz.html>bbTFormedZ</a> <a href=bbtformvector.html>bbTFormVector</a> <a href=bbtformnormal.html>bbTFormNormal</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbGrabImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGrabImage image,x,y,[frame=0]</h1>
+<table class="doc" id="bbgrabimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>left most horizontal pixel position to grab from</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>top most vertical pixel position to grab from</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame in which to store grabbed pixels</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Copies pixels at the specified offset in the current 
+graphics buffer to the image specified.
+</p><p>
+<a href=bbgrabimage.html>bbGrabImage</a> is a useful way of capturing the result of 
+a sequence of drawing commands in an image's pixel
+buffer.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbGrabImage( BBImage i,int x,int y,int n );</pre>
+<pre class=cs>public static int bb.GrabImage(int image,int x,int y,int frame)
+public static int bb.GrabImage(int image,int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreateimage.html>bbCreateImage</a> <a href=bbdrawimage.html>bbDrawImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbRotateImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbRotateImage ( image,angle# )</h1>
+<table class="doc" id="bbrotateimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>angle#</td><td class=argvalue>angle in degree to rotate the image clockwise</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The RotateImage function creates a new image by copying
+the specified image and rotating it <b>angle</b> degrees around
+its current handle.
+</p><p class="hint">
+This command is not particularly fast and hence like loading
+it is recomended images are prerotated before a game level 
+commences.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbRotateImage( BBImage i,float angle );</pre>
+<pre class=cs>public static int bb.RotateImage(int image,float angle)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbhandleimage.html>bbHandleImage</a> <a href=bbscaleimage.html>bbScaleImage</a> <a href=bbtformimage.html>bbTFormImage</a> <a href=bbtformfilter.html>bbTFormFilter</a>
+</p>
+</td></tr>
+</table>
+</body></html>

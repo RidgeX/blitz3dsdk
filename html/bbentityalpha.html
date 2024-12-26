@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbEntityAlpha</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityAlpha entity,alpha#</h1>
+<table class="doc" id="bbentityalpha" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>alpha#</td><td class=argvalue>alpha level of entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the alpha or translucent level of an entity.
+</p><p>
+The <b>alpha</b> value should be between 0.0 and 1.0 which
+correspond to the range from transparent 
+(effectively invisible) to totally opaque:
+</p><table class="data">
+<tr><th class=data>Alpha Value</th><th class=data>Effect</th></tr>
+<tr><td class=data>0.0</td><td class=data>invisible</td></tr>
+<tr><td class=data>0.25</td><td class=data>very transparent</td></tr>
+<tr><td class=data>0.50</td><td class=data>semi transparent</td></tr>
+<tr><td class=data>0.75</td><td class=data>slightly transparent</td></tr>
+<tr><td class=data>1.00</td><td class=data>completely opaque</td></tr>
+</table><p>
+Unlike <a href=bbhideentity.html>bbHideEntity</a> an entity made invisible with
+an <b>alpha</b> of 0.0 still participates in any collisions.
+</p><p>
+The default <b>alpha</b> level of an entity is 1.0.
+</p><p>
+Use the <a href=bbbrushalpha.html>bbBrushAlpha</a> and <a href=bbpaintsurface.html>bbPaintSurface</a> commands for
+affecting transparency on a surface by surface basis.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityAlpha( BBModel m,float alpha );</pre>
+<pre class=cs>public static int bb.EntityAlpha(int entity,float alpha)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityautofade.html>bbEntityAutoFade</a> <a href=bbbrushalpha.html>bbBrushAlpha</a> <a href=bbpaintentity.html>bbPaintEntity</a> <a href=bbpaintsurface.html>bbPaintSurface</a> <a href=bb.html>bb</a>
+</p>
+</td></tr>
+</table>
+</body></html>

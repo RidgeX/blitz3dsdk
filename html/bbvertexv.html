@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbVertexV#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVertexV# ( surface,index[,coord_set] )</h1>
+<table class="doc" id="bbvertexv" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of vertex</td></tr>
+<tr><td class=argname>coord_set</td><td class=argvalue>optional UV mapping coordinate set. Should be set to 0 or 1.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the texture v coordinate of a vertex.
+</p><p>
+The coord_set defaults to 0 but may optionally be 1
+to specify the value returned refer to the vertex's 
+secondary texture coordinate set.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbVertexV( BBSurface s,int n,int t );</pre>
+<pre class=cs>public static float bb.VertexV(int surface,int index,int coord_set)
+public static float bb.VertexV(int surface,int index)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbvertexu.html>bbVertexU</a> <a href=bbvertextexcoords.html>bbVertexTexCoords</a>
+</p>
+</td></tr>
+</table>
+</body></html>

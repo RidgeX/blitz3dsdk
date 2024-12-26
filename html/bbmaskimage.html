@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbMaskImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMaskImage image,red,green,blue</h1>
+<table class="doc" id="bbmaskimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>red</td><td class=argvalue>amount of red (0..255)</td></tr>
+<tr><td class=argname>green</td><td class=argvalue>amount of green (0..255)</td></tr>
+<tr><td class=argname>blue</td><td class=argvalue>amount of blue (0..255)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The color specified by mixing the <b>red</b>, <b>green</b> and <b>blue</b>
+amounts is assigned as the mask color of the specified
+image.
+</p><p>
+When an image is drawn with <a href=bbdrawimage.html>bbDrawImage</a>, <a href=bbtileimage.html>bbTileImage</a> 
+or <a href=bbdrawimagerect.html>bbDrawImageRect</a>, any pixels in the image that are the
+same color as the mask color are not drawn.
+</p><p>
+<a href=bbdrawblock.html>bbDrawBlock</a> and other block based commands can be used to 
+draw an image and ignore the image's mask color.
+</p><p>
+By default an image has a mask color of black.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbMaskImage( BBImage i,int r,int g,int b );</pre>
+<pre class=cs>public static int bb.MaskImage(int image,int red,int green,int blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawimage.html>bbDrawImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

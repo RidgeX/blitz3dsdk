@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>bbEntityYaw#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityYaw# ( entity[,globalspace] )</h1>
+<table class="doc" id="bbentityyaw" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>name of entity that will have yaw angle returned</td></tr>
+<tr><td class=argname>global</td><td class=argvalue>true if the yaw angle returned should be relative to 0 rather than a parent entities yaw angle. False by default.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the yaw angle of an entity.
+</p><p>
+The yaw angle is also the y angle of an entity.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbEntityYaw( BBEntity e,int global=1 );</pre>
+<pre class=cs>public static float bb.EntityYaw(int entity,int globalspace)
+public static float bb.EntityYaw(int entity)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

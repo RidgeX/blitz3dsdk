@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbTurnEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTurnEntity entity,pitch#,yaw#,roll#[,globalspace]</h1>
+<table class="doc" id="bbturnentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>name of entity to be rotated</td></tr>
+<tr><td class=argname>pitch#</td><td class=argvalue>angle in degrees that entity will be pitched</td></tr>
+<tr><td class=argname>yaw#</td><td class=argvalue>angle in degrees that entity will be yawed</td></tr>
+<tr><td class=argname>roll#</td><td class=argvalue>angle in degrees that entity will be rolled</td></tr>
+<tr><td class=argname>global</td><td class=argvalue>True
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Turns an entity relative to its current rotatation.
+</p><table class="data">
+<tr><th class=data>Name</th><th class=data>Rotation Axis</th><th class=data>Description</th></tr>
+<tr><td class=data>Pitch</td><td class=data>Around x axis</td><td class=data>Equivalent to tilting forward/backwards</td></tr>
+<tr><td class=data>Yaw</td><td class=data>Around y axis</td><td class=data> Equivalent to turning left/right</td></tr>
+<tr><td class=data>Roll</td><td class=data>Around z axis</td><td class=data> Equivalent to tilting left/right</td></tr>
+</table><p>
+Unlike <a href=bbrotateentity.html>bbRotateEntity</a> the <b>pitch</b>, <b>yaw</b> and <b>roll</b> rotations are applied
+to the object starting from its current rotation.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTurnEntity( BBEntity e,float p,float y,float r,int global=1 );</pre>
+<pre class=cs>public static int bb.TurnEntity(int entity,float pitch,float yaw,float roll,int globalspace)
+public static int bb.TurnEntity(int entity,float pitch,float yaw,float roll)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbrotateentity.html>bbRotateEntity</a> <a href=bbpointentity.html>bbPointEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbPlayMusic</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPlayMusic ( filename$ )</h1>
+<table class="doc" id="bbplaymusic" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>filename$</td><td class=argvalue>name of music file</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a valid channel handle or 0 if unsuccessful.
+</p><p>
+<a href=bbplaymusic.html>bbPlayMusic</a> opens the music file specified and begins
+playback.
+</p><p>
+Unlike a combination of <a href=bbloadsound.html>bbLoadSound</a> and <a href=bbplaysound.html>bbPlaySound</a>, <a href=bbplaymusic.html>bbPlayMusic</a>
+allocates only a small buffer of resources and the music
+file is streamed directly from the file.
+</p><table class="data">
+<tr><th class=data>Format</th><th class=data>FileSize</th><th class=data>Features</th></tr>
+<tr><td class=data>raw;wav</td><td class=data>large</td><td class=data>industry standard uncompressed</td></tr>
+<tr><td class=data>mod;s3m;xm;it</td><td class=data>medium</td><td class=data>8 channel module files</td></tr>
+<tr><td class=data>mid</td><td class=data>small</td><td class=data>midi files depend on the system's music synthesizer</td></tr>
+<tr><td class=data>mp3</td><td class=data>medium</td><td class=data>requires additional license</td></tr>
+<tr><td class=data>ogg;wma;asf</td><td class=data>medium</td><td class=data>compressed and freely distributable</td></tr>
+</table><p>
+The channel handle returned can be used to change various
+playback settings including volume, pitch as well as 
+pause and resume playback itself.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBChannel bbPlayMusic( const char *src,int mode=1 );</pre>
+<pre class=cs>public static int bb.PlayMusic(String filename)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbstopchannel.html>bbStopChannel</a> <a href=bbpausechannel.html>bbPauseChannel</a> <a href=bbresumechannel.html>bbResumeChannel</a> <a href=bbplaysound.html>bbPlaySound</a>
+</p>
+</td></tr>
+</table>
+</body></html>

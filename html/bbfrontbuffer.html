@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbFrontBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFrontBuffer (  )</h1>
+<table class="doc" id="bbfrontbuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbfrontbuffer.html>bbFrontBuffer</a> function returns a buffer that corresponds
+to that viewable on the display.
+</p><p>
+Drawing to the FrontBuffer() can be used to display an image
+that is progressively rendered. That is each main loop the
+program does not include a <a href=bbcls.html>bbCls</a> or <a href=bbflip.html>bbFlip</a> but continually draws
+to the FrontBuffer allowing the user to view the image as it
+is created over the period of minutes or hours.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBCanvas bbFrontBuffer();</pre>
+<pre class=cs>public static int bb.FrontBuffer()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbbackbuffer.html>bbBackBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

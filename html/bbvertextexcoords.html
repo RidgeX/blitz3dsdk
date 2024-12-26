@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>bbVertexTexCoords</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVertexTexCoords surface,index,u#,v#[,w#=1][,coord_set]</h1>
+<table class="doc" id="bbvertextexcoords" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of vertex</td></tr>
+<tr><td class=argname>u#</td><td class=argvalue>u# coordinate of vertex</td></tr>
+<tr><td class=argname>v#</td><td class=argvalue>v# coordinate of vertex</td></tr>
+<tr><td class=argname>w#</td><td class=argvalue>w# coordinate of vertex</td></tr>
+<tr><td class=argname>coord_set</td><td class=argvalue>co_oord set. Should be set to 0 or 1.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the texture coordinates of an existing vertex.
+</p><p>
+The index value should be in the range 0..CountVertices()-1.
+</p><p>
+Texture coordinates determine how any active texturing for a
+surface will be positioned on triangles by changing the
+texture location used at each vertex corner.
+</p><p>
+This works on the following basis: 
+</p><p>
+The top left of an image has the uv coordinates 0,0. 
+</p><p>
+The top right has coordinates 1,0.
+</p><p>
+The bottom right is 1,1.
+</p><p>
+The bottom left 0,1. 
+</p><p>
+Thus, uv coordinates for a vertex correspond to a point in the 
+image. For example, coordinates 0.9,0.1 would be near the upper 
+right corner of the image. The w parameter is currently ignored.
+</p><p>
+The coord_set specifies which of two vertex texture coordinates 
+are to be modified. Secondary texture coordinates are sometimes
+useful when multitexturing with the <a href=bbtexturecoords.html>bbTextureCoords</a> controlling
+which texture coordinate set is used by each texture applied to
+the vertices' surface.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbVertexTexCoords( BBSurface s,int n,float u,float v,float w,int set );</pre>
+<pre class=cs>public static int bb.VertexTexCoords(int surface,int index,float u,float v,float w,int coord_set)
+public static int bb.VertexTexCoords(int surface,int index,float u,float v,float w)
+public static int bb.VertexTexCoords(int surface,int index,float u,float v)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbaddvertex.html>bbAddVertex</a> <a href=bbtexturecoords.html>bbTextureCoords</a> <a href=bbvertexu.html>bbVertexU</a> <a href=bbvertexv.html>bbVertexV</a> <a href=bbvertexw.html>bbVertexW</a>
+</p>
+</td></tr>
+</table>
+</body></html>

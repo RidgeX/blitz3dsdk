@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>bbModifyTerrain</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbModifyTerrain terrain,grid_x,grid_z,height#[,realtime]</h1>
+<table class="doc" id="bbmodifyterrain" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>terrain</td><td class=argvalue>terrain handle</td></tr>
+<tr><td class=argname>grid_x</td><td class=argvalue>grid x coordinate of terrain</td></tr>
+<tr><td class=argname>grid_z</td><td class=argvalue>grid z coordinate of terrain</td></tr>
+<tr><td class=argname>height#</td><td class=argvalue>height of point on terrain. Should be in the range 0-1.</td></tr>
+<tr><td class=argname>realtime</td><td class=argvalue>True to modify terrain immediately. False to modify terrain when RenderWorld in next called. Defaults to False.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the height of a point on a terrain.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbModifyTerrain( BBTerrain t,int x,int z,float h,int realtime );</pre>
+<pre class=cs>public static int bb.ModifyTerrain(int terrain,int grid_x,int grid_z,float height,int realtime)
+public static int bb.ModifyTerrain(int terrain,int grid_x,int grid_z,float height)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

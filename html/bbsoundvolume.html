@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbSoundVolume</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSoundVolume sound,volume#</h1>
+<table class="doc" id="bbsoundvolume" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sound</td><td class=argvalue>valid sound handle</td></tr>
+<tr><td class=argname>volume#</td><td class=argvalue>amplitude setting</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Modifies the default volume of an existing sound object by changing
+its amplitude setting.
+</p><p>
+The default volume of a sound returned by <a href=bbloadsound.html>bbLoadSound</a> is 1.0.
+</p><p>
+Use values between 0.0 and 1.0 to cause <a href=bbplaysound.html>bbPlaySound</a> to begin
+playback of the specified sound at a quieter volume and values
+greater than 1.0 for their volume to be amplified.
+</p><p>
+Use the <a href=bbchannelvolume.html>bbChannelVolume</a> command to modify volumes during sound 
+playback.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSoundVolume( BBSound sound,float volume );</pre>
+<pre class=cs>public static int bb.SoundVolume(int sound,float volume)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

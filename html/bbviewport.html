@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbViewport</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbViewport x,y,width,height</h1>
+<table class="doc" id="bbviewport" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel position</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel position</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width in pixels</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height in pixels</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbviewport.html>bbViewport</a> command allows the cropping of subsequent drawing commands
+to a rectangular region of the current graphics buffer.
+</p><p>
+This is useful for partitioning the screen into separate errors such as the split screen mode common in two player video games.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbViewport( int x,int y,int w,int h );</pre>
+<pre class=cs>public static int bb.Viewport(int x,int y,int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bborigin.html>bbOrigin</a>
+</p>
+</td></tr>
+</table>
+</body></html>

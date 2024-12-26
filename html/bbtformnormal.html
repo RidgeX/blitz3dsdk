@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbTFormNormal</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTFormNormal x#,y#,z#,source_entity,dest_entity</h1>
+<table class="doc" id="bbtformnormal" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x#</td><td class=argvalue>x component of a vector in 3d space</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y component of a vector in 3d space</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z component of a vector in 3d space</td></tr>
+<tr><td class=argname>source_entity</td><td class=argvalue>handle of source entity, or 0 for 3d world</td></tr>
+<tr><td class=argname>dest_entity</td><td class=argvalue>handle of destination entity, or 0 for 3d world</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Transforms a normal between coordinate systems. After 
+using <a href=bbtformnormal.html>bbTFormNormal</a> the components of the result can be 
+read with <a href=bbtformedx.html>bbTFormedX</a>(), <a href=bbtformedy.html>bbTFormedY</a>()  and <a href=bbtformedz.html>bbTFormedZ</a>().
+</p><p>
+After the transformation the new vector is
+'normalized', meaning it is scaled to have length 1.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTFormNormal( float x,float y,float z,BBEntity src,BBEntity dest );</pre>
+<pre class=cs>public static int bb.TFormNormal(float x,float y,float z,int source_entity,int dest_entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbtformedx.html>bbTFormedX</a> <a href=bbtformedy.html>bbTFormedY</a> <a href=bbtformedz.html>bbTFormedZ</a> <a href=bbtformpoint.html>bbTFormPoint</a> <a href=bbtformvector.html>bbTFormVector</a>
+</p>
+</td></tr>
+</table>
+</body></html>

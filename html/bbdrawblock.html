@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbDrawBlock</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDrawBlock image,x,y[,frame=0]</h1>
+<table class="doc" id="bbdrawblock" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame number</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bbdrawblock.html>bbDrawBlock</a> is similar to <a href=bbdrawimage.html>bbDrawImage</a> except all masking
+and image transparency is ignored.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbDrawBlock( BBImage i,int x,int y,int frame );</pre>
+<pre class=cs>public static int bb.DrawBlock(int image,int x,int y,int frame)
+public static int bb.DrawBlock(int image,int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawblockrect.html>bbDrawBlockRect</a> <a href=bbtileblock.html>bbTileBlock</a> <a href=bbdrawimage.html>bbDrawImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

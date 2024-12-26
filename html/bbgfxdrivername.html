@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbGfxDriverName$</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGfxDriverName$ ( index )</h1>
+<table class="doc" id="bbgfxdrivername" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>index</td><td class=argvalue>index number of display device</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbgfxdrivername.html>bbGfxDriverName</a> function returns the name of the graphics driver
+at the specified index.
+</p><p>
+The index parameter should be in the range of 1 up to and
+including the value returned by <a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API const char *bbGfxDriverName( int n );</pre>
+<pre class=cs>public static String bb.GfxDriverName(int index)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a> <a href=bbsetgfxdriver.html>bbSetGfxDriver</a>
+</p>
+</td></tr>
+</table>
+</body></html>

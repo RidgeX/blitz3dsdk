@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbFreeImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFreeImage image</h1>
+<table class="doc" id="bbfreeimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbfreeimage.html>bbFreeImage</a> command releases all memory used by
+the image specified.
+</p><p>
+Following a call to <a href=bbfreeimage.html>bbFreeImage</a> the specified image handle
+is no longer valid and must not be used.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFreeImage( BBImage i );</pre>
+<pre class=cs>public static int bb.FreeImage(int image)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadimage.html>bbLoadImage</a> <a href=bbcreateimage.html>bbCreateImage</a> <a href=bbcopyimage.html>bbCopyImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

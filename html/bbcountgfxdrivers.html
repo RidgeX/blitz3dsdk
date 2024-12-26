@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbCountGfxDrivers</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCountGfxDrivers (  )</h1>
+<table class="doc" id="bbcountgfxdrivers" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a> returns the number of graphcis drivers 
+connected to the system.
+</p><p>
+The <a href=bbsetgfxdriver.html>bbSetGfxDriver</a> command is used to change the current graphics driver.
+</p><p>
+A return value of larger than 1 means a secondary monitor is present
+and your program may wish to give the user an option for it to be used
+for the purposes of playing your game.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbCountGfxDrivers();</pre>
+<pre class=cs>public static int bb.CountGfxDrivers()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgfxdrivername.html>bbGfxDriverName</a> <a href=bbsetgfxdriver.html>bbSetGfxDriver</a>
+</p>
+</td></tr>
+</table>
+</body></html>

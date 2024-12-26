@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbCountCollisions</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCountCollisions ( entity )</h1>
+<table class="doc" id="bbcountcollisions" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns how many collisions an entity was involved in during
+the last UpdateWorld.
+</p><p>
+The <a href=bbcountcollisions.html>bbCountCollisions</a> function returns the maximum index value
+that should be used when fetching collision specific data 
+such as returned by the <a href=bbcollisionx.html>bbCollisionX</a>, <a href=bbcollisiony.html>bbCollisionY</a>, <a href=bbcollisionz.html>bbCollisionZ</a>,
+<a href=bbcollisionnx.html>bbCollisionNX</a>, <a href=bbcollisionny.html>bbCollisionNY</a>, <a href=bbcollisionnz.html>bbCollisionNZ</a>, <a href=bbcountcollisions.html>bbCountCollisions</a>,
+<a href=bbentitycollided.html>bbEntityCollided</a>, <a href=bbcollisiontime.html>bbCollisionTime</a>, <a href=bbcollisionentity.html>bbCollisionEntity</a>, <a href=bbcollisionsurface.html>bbCollisionSurface</a>
+and <a href=bbcollisiontriangle.html>bbCollisionTriangle</a> functions.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbCountCollisions( BBObject o );</pre>
+<pre class=cs>public static int bb.CountCollisions(int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbupdateworld.html>bbUpdateWorld</a> <a href=bbcollisionx.html>bbCollisionX</a> <a href=bbcollisionnx.html>bbCollisionNX</a> <a href=bbcountcollisions.html>bbCountCollisions</a> <a href=bbentitycollided.html>bbEntityCollided</a> <a href=bbcollisiontime.html>bbCollisionTime</a> <a href=bbcollisionentity.html>bbCollisionEntity</a> <a href=bbcollisionsurface.html>bbCollisionSurface</a> <a href=bbcollisiontriangle.html>bbCollisionTriangle</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbSetBlitz3DDebugCallback</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetBlitz3DDebugCallback ( callback )</h1>
+<table class="doc" id="bbsetblitz3ddebugcallback" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Installs an error handler for use by the Blitz3DSDK.
+</p><p>
+The prototype for the callback is 
+</p><pre>void (*errorhandler)(const char *errormessage));
+</pre><p>
+The Blitz3D runtime is closed before the error handler is invoked by the Blitz3DSDK.
+</p><p>
+The BlitzMax Blitz3DSDK module installs a default error handler which throws a
+BlitzMax RuntimError containing the error message.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetBlitz3DDebugCallback(void (*callback)(const char *));</pre>
+<pre class=cs>public static int bb.SetBlitz3DDebugCallback(int callback)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

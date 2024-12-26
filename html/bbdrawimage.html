@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbDrawImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDrawImage image,x,y[,frame=0]</h1>
+<table class="doc" id="bbdrawimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame number</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbdrawimage.html>bbDrawImage</a> command draws an image to the current 
+graphics buffer at the specified pixel location.
+</p><p>
+The <b>image</b> parameter must be a valid image loaded
+with <a href=bbloadimage.html>bbLoadImage</a> or <a href=bbloadanimimage.html>bbLoadAnimImage</a> or alternatively 
+created with <a href=bbcreateimage.html>bbCreateImage</a>.
+</p><p>
+If specified, a particular frame of animation from the
+image may be drawn. The image in this situation must 
+be the result of a call to <a href=bbloadanimimage.html>bbLoadAnimImage</a> and contain
+the <b>frame</b> specified.
+</p><p>
+A faster version of <a href=bbdrawimage.html>bbDrawImage</a> is available for images
+that do not contain a mask or alpha channel called 
+<a href=bbdrawblock.html>bbDrawBlock</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbDrawImage( BBImage i,int x,int y,int frame );</pre>
+<pre class=cs>public static int bb.DrawImage(int image,int x,int y,int frame)
+public static int bb.DrawImage(int image,int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbmaskimage.html>bbMaskImage</a> <a href=bbdrawimagerect.html>bbDrawImageRect</a> <a href=bbtileimage.html>bbTileImage</a> <a href=bbloadimage.html>bbLoadImage</a> <a href=bbdrawblock.html>bbDrawBlock</a>
+</p>
+</td></tr>
+</table>
+</body></html>

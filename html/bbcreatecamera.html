@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>bbCreateCamera</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateCamera ( [parent] )</h1>
+<table class="doc" id="bbcreatecamera" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of camera</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the handle of a newly created camera entity.
+</p><p>
+<a href=bbrenderworld.html>bbRenderWorld</a> uses the camera entities in the world
+to render to the display. At least one camera is
+required for <a href=bbrenderworld.html>bbRenderWorld</a> to draw anything to the 
+display.
+</p><p>
+<a href=bbcameraviewport.html>bbCameraViewport</a> may be used to modify the region of
+the display onto which the camera renders. The default
+viewport of a new camera is a region that covers
+the entire display.
+</p><p>
+Multiple cameras may be used for split screen,
+overlay and picture in picture style effects.
+</p><p>
+The <a href=bbentityorder.html>bbEntityOrder</a> command can be used to control 
+the order in which multiple cameras are rendered,
+see also CameraClsMode and CameraViewport which
+are 2 other commands useful when setting up a 
+multi-camera enviroment.
+</p><p>
+The optional <b>parent</b> parameter attaches the new camera
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBCamera bbCreateCamera( BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateCamera(int parent)
+public static int bb.CreateCamera()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbrenderworld.html>bbRenderWorld</a> <a href=bbcameraviewport.html>bbCameraViewPort</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbCameraFogRange</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraFogRange camera,near#,far#</h1>
+<table class="doc" id="bbcamerafogrange" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>near#</td><td class=argvalue>distance in front of camera that fog starts</td></tr>
+<tr><td class=argname>far#</td><td class=argvalue>distance in front of camera that fog ends</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets camera fog range.
+</p><p>
+The <b>near</b> parameter specifies at what distance in front of the 
+camera specified that the fogging effect will start.
+</p><p>
+The <b>far</b> parameter specifies at what distance in front of the 
+camera that the fogging effect will end. All pixels rendered
+beyond this point will be completely faded to the fog color.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraFogRange( BBCamera c,float nr,float fr );</pre>
+<pre class=cs>public static int bb.CameraFogRange(int camera,float near,float far)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcamerafogcolor.html>bbCameraFogColor</a>
+</p>
+</td></tr>
+</table>
+</body></html>

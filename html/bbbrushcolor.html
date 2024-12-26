@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbBrushColor</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBrushColor brush,red#,green#,blue#</h1>
+<table class="doc" id="bbbrushcolor" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+<tr><td class=argname>red</td><td class=argvalue>red value of brush</td></tr>
+<tr><td class=argname>green</td><td class=argvalue>green value of brush</td></tr>
+<tr><td class=argname>blue</td><td class=argvalue>blue value of brush</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Modifies the color of a brush.
+</p><p>
+See the <a href=bbcolor.html>bbColor</a> command for more information on combining
+red, green and blue values to define colors.
+</p><p>
+Please note that if <a href=bbentityfx.html>bbEntityFX</a> or <a href=bbbrushfx.html>bbBrushFX</a> flag 2 is being used,
+brush color will have no effect and vertex colors will be used
+instead.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBrushColor( BBBrush br,float r,float g,float b );</pre>
+<pre class=cs>public static int bb.BrushColor(int brush,float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitycolor.html>bbEntityColor</a>
+</p>
+</td></tr>
+</table>
+</body></html>

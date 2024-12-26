@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbTFormVector</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTFormVector x#,y#,z#,source_entity,dest_entity</h1>
+<table class="doc" id="bbtformvector" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x#</td><td class=argvalue>x component of a vector in 3d space</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y component of a vector in 3d space</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z component of a vector in 3d space</td></tr>
+<tr><td class=argname>source_entity</td><td class=argvalue>handle of source entity, or 0 for 3d world</td></tr>
+<tr><td class=argname>dest_entity</td><td class=argvalue>handle of destination entity, or 0 for 3d world</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Transforms a vector between coordinate systems.
+</p><p>
+After using <a href=bbtformvector.html>bbTFormVector</a> the components of the resulting
+vector can be read with <a href=bbtformedx.html>bbTFormedX</a>(), <a href=bbtformedy.html>bbTFormedY</a>() and 
+<a href=bbtformedz.html>bbTFormedZ</a>().
+</p><p>
+Similar to <a href=bbtformpoint.html>bbTFormPoint</a>, but operates on a vector. A vector 
+can be thought of as the 'displacement relative to current
+location'.
+</p><p>
+For example, the vector (1,2,3) means one step to the right, 
+two steps up and three steps forward. 
+</p><p>
+This is analogous to PositionEntity and MoveEntity.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTFormVector( float x,float y,float z,BBEntity src,BBEntity dest );</pre>
+<pre class=cs>public static int bb.TFormVector(float x,float y,float z,int source_entity,int dest_entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbtformedx.html>bbTFormedX</a> <a href=bbtformedy.html>bbTFormedY</a> <a href=bbtformedz.html>bbTFormedZ</a> <a href=bbtformpoint.html>bbTFormPoint</a> <a href=bbtformnormal.html>bbTFormNormal</a>
+</p>
+</td></tr>
+</table>
+</body></html>

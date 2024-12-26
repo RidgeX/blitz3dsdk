@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbMoveMouse</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMoveMouse x,y</h1>
+<table class="doc" id="bbmovemouse" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontal screen position</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical screen position</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <b>x</b>, <b>y</b> parameters define a location on the graphics display
+that the mouse pointer is moved to.
+</p><p>
+By recentering the mouse to the middle of the display every
+frame the <a href=bbmousexspeed.html>bbMouseXSpeed</a> and <a href=bbmouseyspeed.html>bbMouseYSpeed</a> functions can be used
+to provide &quot;mouse look&quot; type control common in first person
+shooters.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbMoveMouse( int x,int y );</pre>
+<pre class=cs>public static int bb.MoveMouse(int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbmousexspeed.html>bbMouseXSpeed</a> <a href=bbmouseyspeed.html>bbMouseYSpeed</a>
+</p>
+</td></tr>
+</table>
+</body></html>

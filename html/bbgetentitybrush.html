@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbGetEntityBrush</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetEntityBrush ( entity )</h1>
+<table class="doc" id="bbgetentitybrush" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a new brush with the same properties as is currently
+applied to the specified entity.
+</p><p>
+See the <a href=bbgetsurfacebrush.html>bbGetSurfaceBrush</a> function for capturing the properties
+of a particualar entities surface which are combined with the
+entity properties returned with GetEntityBrush() when Blitz3D
+actually renders the surface.
+</p><p>
+Use the <a href=bbfreebrush.html>bbFreeBrush</a> command when the newly created brush is no
+longer needed.
+</p><p>
+See the <a href=bbgetbrushtexture.html>bbGetBrushTexture</a> and <a href=bbtexturename.html>bbTextureName</a> functions for
+retrieving details of the brushes texture properties.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBBrush bbGetEntityBrush( BBModel m );</pre>
+<pre class=cs>public static int bb.GetEntityBrush(int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgetsurfacebrush.html>bbGetSurfaceBrush</a> <a href=bbfreebrush.html>bbFreeBrush</a> <a href=bbgetbrushtexture.html>bbGetBrushTexture</a> <a href=bbtexturename.html>bbTextureName</a>
+</p>
+</td></tr>
+</table>
+</body></html>

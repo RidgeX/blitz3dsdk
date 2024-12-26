@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>bbCameraViewport</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraViewport camera,x,y,width,height</h1>
+<table class="doc" id="bbcameraviewport" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>x coordinate of top left hand corner of viewport</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>y coordinate of top left hand corner of viewport</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width of viewport</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of viewport</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the camera viewport position and size.
+</p><p>
+The camera viewport is the  area of the 2D screen that the
+3D graphics as viewed by the camera are displayed in. 
+</p><p>
+Setting the camera viewport allows you to achieve 
+split-screen, overlays and rear-view mirror effects.
+</p><p>
+The world is rendered in a viewport such that the
+camera's horizontal scale is preserved and the vertical 
+preserves the aspect ratio.
+</p><p>
+In situations in which one camera is overlaid ontop
+another such as a game's scanner or user interface, the
+<a href=bbentityorder.html>bbEntityOrder</a> command can be used to modify the
+order in which viewports are rendered.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraViewport( BBCamera c,int x,int y,int w,int h );</pre>
+<pre class=cs>public static int bb.CameraViewport(int camera,int x,int y,int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatecamera.html>bbCreateCamera</a> <a href=bbentityorder.html>bbEntityOrder</a> <a href=bbscaleentity.html>bbScaleEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

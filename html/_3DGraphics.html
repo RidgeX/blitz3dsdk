@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>3D Graphics</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>3D Graphics</h1>
+<p>
+The Blitz3D command set is a wealth of functions for the
+control and rendering of 3D scenes. 
+</p><p>
+For inspiration to what is possible check out the gallery at 
+<a target=_blank href="http://blitzbasic.com/gallery/gallery.php">http://blitzbasic.com/gallery/gallery.php</a> where programmers 
+since 2001 have been sharing images of the worlds being
+created with the Blitz3D command set.
+</p><p>
+The <a href=bbgraphics3d.html>bbGraphics3D</a> command creates a 3D display at the
+resolution specified resetting the Blitz3D scene graph
+and texture buffers and hence should be the first command
+called before using any commands found in the 3D sections
+of this documentation.
+</p><p>
+Once the world is initialized various commands are available
+to create 3D objects known as entitys.
+</p><table class="data">
+<tr><th class=data>Entity</th><th class=data>Constructor Functions</th><th class=data>Description</th></tr>
+<tr><td class=data>Camera</td><td class=data><a href=bbcreatecamera.html>bbCreateCamera</a></td><td class=data>A viewport required for 3D rendering</td></tr>
+<tr><td class=data>Listener</td><td class=data><a href=bbcreatelistener.html>bbCreateListener</a></td><td class=data>A microphone required for 3D audio</td></tr>
+<tr><td class=data>Light</td><td class=data><a href=bbcreatelight.html>bbCreateLight</a></td><td class=data>A source of lights for illuminating a 3D world</td></tr>
+<tr><td class=data>Pivot</td><td class=data><a href=bbcreatepivot.html>bbCreatePivot</a></td><td class=data>Invisible entity for grouping children</td></tr>
+<tr><td class=data>Cube</td><td class=data><a href=bbcreatecube.html>bbCreateCube</a></td><td class=data>Six sided cuboid or box</td></tr>
+<tr><td class=data>Sphere</td><td class=data><a href=bbcreatesphere.html>bbCreateSphere</a></td><td class=data>An n sided spheroid or ball</td></tr>
+<tr><td class=data>Cylinder</td><td class=data><a href=bbcreatecylinder.html>bbCreateCylinder</a></td><td class=data>An n sided tube with or without ends</td></tr>
+<tr><td class=data>Cone</td><td class=data><a href=bbcreatecone.html>bbCreateCone</a></td><td class=data>An n sided Cone with or without a base</td></tr>
+<tr><td class=data>Plane</td><td class=data><a href=bbcreateplane.html>bbCreatePlane</a></td><td class=data>An infinitely large flat surface</td></tr>
+<tr><td class=data>Mirror</td><td class=data><a href=bbcreatemirror.html>bbCreateMirror</a></td><td class=data>A plane with a reflective surface </td></tr>
+<tr><td class=data>Terrain</td><td class=data><a href=bbloadterrain.html>bbLoadTerrain</a> <a href=bbcreateterrain.html>bbCreateTerrain</a></td><td class=data> A plane with a repeating height map</td></tr>
+<tr><td class=data>Sprite</td><td class=data><a href=bbloadsprite.html>bbLoadSprite</a> <a href=bbcreatesprite.html>bbCreateSprite</a></td><td class=data> A flat rectangle with automatic camera facing abilities</td></tr>
+<tr><td class=data>Mesh</td><td class=data><a href=bbcreatemesh.html>bbCreateMesh</a> <a href=bbloadmesh.html>bbLoadMesh</a> <a href=bbloadanimmesh.html>bbLoadAnimMesh</a></td><td class=data>A collection of surfaces containing vertices and triangles</td></tr>
+<tr><td class=data>MD2</td><td class=data><a href=bbloadmd2.html>bbLoadMD2</a></td><td class=data>Specialized model format featuring highspeed vertex animation</td></tr>
+<tr><td class=data>BSP</td><td class=data><a href=bbloadbsp.html>bbLoadBSP</a></td><td class=data>Specialized model format featuring efficient view culling</td></tr>
+<tr><td class=data>Surface</td><td class=data><a href=bbcreatesurface.html>bbCreateSurface</a></td><td class=data>A collection of verticies and triangles</td></tr>
+<tr><td class=data>Brush</td><td class=data><a href=bbloadbrush.html>bbLoadBrush</a> <a href=bbcreatebrush.html>bbCreateBrush</a></td><td class=data>A collection of surface properties </td></tr>
+<tr><td class=data>Texture</td><td class=data><a href=bbloadtexture.html>bbLoadTexture</a> <a href=bbloadanimtexture.html>bbLoadAnimTexture</a> <a href=bbcreatetexture.html>bbCreateTexture</a></td><td class=data>A bitmap for adding detail to surfaces</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>bbPositionEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPositionEntity entity,x#,y#,z#[,globalspace]</h1>
+<table class="doc" id="bbpositionentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>name of entity to be positioned</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x co-ordinate that entity will be positioned at</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y co-ordinate that entity will be positioned at</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z co-ordinate that entity will be positioned at</td></tr>
+<tr><td class=argname>global</td><td class=argvalue>False
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Position an entity at the position defined by the 3D
+coordinate (x,y,z) either relative to its parent 
+position and orientation or optionally in world
+coordinates.
+</p><p>
+In Blitz3D an entity typically faces towards the +z axis,
+the y axis is the height of the entity and its left / 
+right position is the x axis.
+</p><p>
+In particular all entities including cameras are created
+so the x axis points right, the y axis up and the
+z axis forwards.
+</p><p>
+A child entity (one that is created with another as
+its parent) will by default position itself in it's
+parent's space unless the optional global of
+<a href=bbpositionentity.html>bbPositionEntity</a> is set to True in which case the
+entity is positioned relative to the global axis
+not its parent.
+</p><p>
+To move an entity a relative amount in respect to
+its current position see the <a href=bbmoveentity.html>bbMoveEntity</a>
+and <a href=bbtranslateentity.html>bbTranslateEntity</a> commands.
+</p><p>
+See the <a href=bbupdateworld.html>bbUpdateWorld</a> command for details regarding
+the effect of any collisions that may occur due to
+the requested repositioning.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPositionEntity( BBEntity e,float x,float y,float z,int global=1 );</pre>
+<pre class=cs>public static int bb.PositionEntity(int entity,float x,float y,float z,int globalspace)
+public static int bb.PositionEntity(int entity,float x,float y,float z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityx.html>bbEntityX</a> <a href=bbmoveentity.html>bbMoveEntity</a> <a href=bbtranslateentity.html>bbTranslateEntity</a> <a href=bbupdateworld.html>bbUpdateWorld</a>
+</p>
+</td></tr>
+</table>
+</body></html>

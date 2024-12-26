@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbImageRectCollide</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbImageRectCollide ( image,x,y,frame,rectx,recty,rectw,recth )</h1>
+<table class="doc" id="bbimagerectcollide" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location of image</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location of image</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>image's frame</td></tr>
+<tr><td class=argname>rectx</td><td class=argvalue>horizontal pixel location of rect</td></tr>
+<tr><td class=argname>recty</td><td class=argvalue>vertical pixel location of rect</td></tr>
+<tr><td class=argname>rectw</td><td class=argvalue>width of the rect</td></tr>
+<tr><td class=argname>recth</td><td class=argvalue>height of the rect</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbimagerectcollide.html>bbImageRectCollide</a> function returns True if the image specified
+drawn at the location specified will result in any non transparent
+pixels being drawn inside the rectangle described.
+</p><p>
+Because <a href=bbimagerectcollide.html>bbImageRectCollide</a> respects the transparent pixels in an
+image's mask it is slower but more accurate than using the 
+<a href=bbimagerectoverlap.html>bbImageRectOverlap</a> command.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbImageRectCollide( BBImage i,int x,int y,int f,int r_x,int r_y,int r_w,int r_h );</pre>
+<pre class=cs>public static int bb.ImageRectCollide(int image,int x,int y,int frame,int rectx,int recty,int rectw,int recth)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbimagerectoverlap.html>bbImageRectOverlap</a>
+</p>
+</td></tr>
+</table>
+</body></html>

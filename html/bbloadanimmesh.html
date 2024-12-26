@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbLoadAnimMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadAnimMesh ( filename$,[parent] )</h1>
+<table class="doc" id="bbloadanimmesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>filename$</td><td class=argvalue>name of the file containing the model to load.</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>optional entity to act as parent to the loaded mesh.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the root of an entity hierachy loaded from the specified file.
+</p><p>
+Unlike <a href=bbloadmesh.html>bbLoadMesh</a>, <a href=bbloadanimmesh.html>bbLoadAnimMesh</a> may result in the creation of many
+mesh and pivot entities depending on what it finds in the specified
+file.
+</p><p>
+The optional <b>parent</b> parameter attaches the new entity hierachy 
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for more 
+details on the effects of entity parenting. 
+</p><p>
+See the <a href=bbanimate.html>bbAnimate</a> command for activating any animation that may
+be included in the file.
+</p><p>
+Locate child entities within an entity hierarchy by using the 
+<a href=bbfindchild.html>bbFindChild</a>() and <a href=bbgetchild.html>bbGetChild</a> functions.
+</p><p>
+See the <a href=bbblitz3d file format.html>bbBlitz3D File Format</a> for more information on Blitz3D's
+native file format and its support for multitexturing, weighted 
+bone skinning and hierachial animation.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbLoadAnimMesh( const char *f,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.LoadAnimMesh(String filename,int parent)
+public static int bb.LoadAnimMesh(String filename)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadmesh.html>bbLoadMesh</a> <a href=bbloadermatrix.html>bbLoaderMatrix</a> <a href=bbanimate.html>bbAnimate</a> <a href=bbfindchild.html>bbFindChild</a> <a href=bbgetchild.html>bbGetChild</a> <a href=bbblitz3d file format.html>bbBlitz3D File Format</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbEntityClass$</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityClass$ ( entity )</h1>
+<table class="doc" id="bbentityclass" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>a valid entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a string containing the class of the specified entity.
+</p><p>
+Possible return values are &quot;Pivot&quot;, &quot;Light&quot;,&quot;Camera&quot;, &quot;Mirror&quot;, &quot;Listener&quot;,
+&quot;Sprite&quot;, &quot;Terrain&quot;, &quot;Plane&quot;, &quot;Mesh&quot;, &quot;MD2&quot; and &quot;BSP&quot;.
+</p><p>
+Note that <a href=bbentityclass.html>bbEntityClass</a> function will fail if a valid entity handle is not 
+supplied and will not just return an empty string.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API const char *bbEntityClass( BBEntity e );</pre>
+<pre class=cs>public static String bb.EntityClass(int entity)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

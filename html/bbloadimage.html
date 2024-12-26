@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>bbLoadImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadImage ( filename$ )</h1>
+<table class="doc" id="bbloadimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>filename$</td><td class=argvalue>the name of the image file to be loaded</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Reads an image file from disk.
+</p><p>
+Blitz3D supports BMP, JPG and PNG image formats.
+</p><table class="data">
+<tr><th class=data>Extension</th><th class=data>Compression</th><th class=data>Features</th></tr>
+<tr><td class=data>bmp</td><td class=data> none</td><td class=data> can be created with <a href=bbsaveimage.html>bbSaveImage</a> command</td></tr>
+<tr><td class=data>png</td><td class=data> good</td><td class=data> loss-less compression</td></tr>
+<tr><td class=data>jpg</td><td class=data> excellent</td><td class=data> small loss in image quality</td></tr>
+</table><p>
+The PNG image format is recomended for general use.
+</p><p>
+The <a href=bbloadimage.html>bbLoadImage</a> function returns an image handle that
+can then be used with <a href=bbdrawimage.html>bbDrawImage</a> to draw the image
+on the current graphics buffer.
+</p><p>
+If the image file contains multiple frames of animation
+use the <a href=bbloadanimimage.html>bbLoadAnimImage</a> function instead.
+</p><p>
+If the image file cannot be located or there is a
+problem loading, <a href=bbloadimage.html>bbLoadImage</a> will fail and return 0.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBImage bbLoadImage( const char *s );</pre>
+<pre class=cs>public static int bb.LoadImage(String filename)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawimage.html>bbDrawImage</a> <a href=bbloadanimimage.html>bbLoadAnimImage</a> <a href=bbcreateimage.html>bbCreateImage</a> <a href=bbfreeimage.html>bbFreeImage</a> <a href=bbsaveimage.html>bbSaveImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

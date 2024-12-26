@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbAmbientLight</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAmbientLight red#,green#,blue#</h1>
+<table class="doc" id="bbambientlight" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>red#</td><td class=argvalue>red ambient light value</td></tr>
+<tr><td class=argname>green#</td><td class=argvalue>green ambient light value</td></tr>
+<tr><td class=argname>blue#</td><td class=argvalue>blue ambient light value</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the ambient light color.
+</p><p>
+Ambient light is added to all surfaces during a <a href=bbrenderworld.html>bbRenderWorld</a>.
+</p><p>
+Ambient light has no position or direction and hence does not
+contribute to the shading of surfaces just their overall brightness.
+</p><p>
+See <a href=bbcreatelight.html>bbCreateLight</a> for how to add lights that provide 3D shading.
+</p><p>
+The red, green and blue values should be in the range 0..255.
+</p><p>
+See the <a href=bbcolor.html>bbColor</a> command for more information about combining
+red, green and blue values to describe specific colors.
+</p><p>
+The default ambient light color is 127,127,127.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbAmbientLight( float r,float g,float b );</pre>
+<pre class=cs>public static int bb.AmbientLight(float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatelight.html>bbCreateLight</a>
+</p>
+</td></tr>
+</table>
+</body></html>

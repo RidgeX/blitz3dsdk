@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbFindSurface</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFindSurface ( mesh,brush )</h1>
+<table class="doc" id="bbfindsurface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Attempts to find a surface attached to the specified mesh and created with
+properties similar to those in the specified brush.
+</p><p>
+Returns the surface handle if found or 0 if not.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBSurface bbFindSurface( BBModel m,BBBrush b );</pre>
+<pre class=cs>public static int bb.FindSurface(int mesh,int brush)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcountsurfaces.html>bbCountSurfaces</a> <a href=bbgetsurface.html>bbGetSurface</a>
+</p>
+</td></tr>
+</table>
+</body></html>

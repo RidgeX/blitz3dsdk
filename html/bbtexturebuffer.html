@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbTextureBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTextureBuffer ( texture[,frame] )</h1>
+<table class="doc" id="bbtexturebuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture</td><td class=argvalue>texture handle</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional texture frame</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the handle of a texture's drawing buffer.
+</p><p>
+This can be used with <a href=bbsetbuffer.html>bbSetBuffer</a> to perform 2D drawing operations to
+the texture, although it's usually faster to draw to an image, and 
+then copy the  image buffer across to the texture buffer using <a href=bbcopyrect.html>bbCopyRect</a>.
+</p><p>
+You cannot render 3D to a texture buffer as <a href=bbrenderworld.html>bbRenderWorld</a> only works with
+a graphic display's back buffer. To display 3D graphics on a texture, use
+<a href=bbcopyrect.html>bbCopyRect</a> to copy the contents of the back buffer to a texture buffer
+after the call to <a href=bbrenderworld.html>bbRenderWorld</a>
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBCanvas bbTextureBuffer( BBTexture t,int frame=0 );</pre>
+<pre class=cs>public static int bb.TextureBuffer(int texture,int frame)
+public static int bb.TextureBuffer(int texture)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

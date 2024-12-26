@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>2D Graphics</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>2D Graphics</h1>
+<p>
+The Blitz3DSDK includes support for 2D graphics development
+including the ability to draw text, shapes and display images 
+in a variety of file formats in either a windowed or fullscreen
+display.
+</p><table class="data">
+<tr><th class=data>Extension</th><th class=data>Compression</th><th class=data>Features</th></tr>
+<tr><td class=data>bmp image</td><td class=data> none</td><td class=data> can be created with <a href=bbsaveimage.html>bbSaveImage</a> command</td></tr>
+<tr><td class=data>png image</td><td class=data> good</td><td class=data> 32 bit loss-less compression</td></tr>
+<tr><td class=data>jpg image</td><td class=data> excellent</td><td class=data> small loss in image quality</td></tr>
+<tr><td class=data>tga image</td><td class=data> none</td><td class=data>  32 bit</td></tr>
+</table><p>
+The 2D commands in the following section can be used with 
+a plain <a href=bbgraphics.html>bbGraphics</a> based display or a 3D display initialized 
+with the <a href=bbgraphics3d.html>bbGraphics3D</a> command.
+</p><p>
+The advantages of using a plain <a href=bbgraphics.html>bbGraphics</a> display when 3D
+graphics are not required includes being compatible with older 
+generation computers that do not feature 3D accelerated 
+graphics cards.
+</p><p>
+Other commands provided feature the ability to read and
+write the pixel buffers of both display, image and texture
+buffers.
+</p><p>
+Collision testing functions are provided that make testing for
+overlapping images and rectangles easy.
+</p>
+</body></html>

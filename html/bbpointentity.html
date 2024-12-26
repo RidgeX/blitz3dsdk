@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbPointEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPointEntity entity,target[,roll#]</h1>
+<table class="doc" id="bbpointentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>target</td><td class=argvalue>target entity handle</td></tr>
+<tr><td class=argname>roll#</td><td class=argvalue>roll angle of entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Points one entity at another by adjusting its pitch
+and yaw rotations.
+</p><p>
+The optional <b>roll</b> parameter allows you to specify a 
+rotation around the z axis to complete the rotation.
+</p><p>
+Use the <a href=bbaligntovector.html>bbAlignToVector</a> command for aiming an entity
+(typically its z axis) using a specified alignment 
+vector and smoothing rate.
+</p><p class="hint">
+Invisible pivot entities make useful targets for pointing
+an entity towards any arbitrary direction.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPointEntity( BBEntity e,BBEntity t,float roll=0 );</pre>
+<pre class=cs>public static int bb.PointEntity(int entity,int target,float roll)
+public static int bb.PointEntity(int entity,int target)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbaligntovector.html>bbAlignToVector</a>
+</p>
+</td></tr>
+</table>
+</body></html>

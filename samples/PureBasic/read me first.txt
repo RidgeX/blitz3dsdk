@@ -1,0 +1,38 @@
+
+********** Blitz3D SDK include file for PureBasic 4 **********
+
+This is a very quick conversion of blitz3dsdk.h to blitz3dsdk.pbi!
+
+IMPORTANT! Copy B3D.dll from the Blitz3D SDK's 'redist' folder into
+this folder before trying to run the examples. (Alternatively, place it
+in your system path, or use the SDK's installer program. You need to
+distribute this DLL with any programs you create using the Blitz3D SDK.)
+
+IMPORTANT! Note that Blitz3D's debug mode is enabled by default. For
+full speed, and for release versions of your programs, make sure you
+disable the debugger, by calling this line after bbBeginBlitz3D ():
+
+	bbSetBlitz3DDebugMode (0)
+
+Note that the Blitz3D library's debug mode is separate to PureBasic's
+own debug mode!
+
+BASIC
+
+· To use the include file you need to place blitz3dsdk.pbi in the same
+folder as your PB project, and add this line at the start:
+
+	IncludeFile "blitz3dsdk.pbi"
+
+· Call bbBeginBlitz3D () before any other Blitz3D functions;
+· Call bbEndBlitz3D () before exiting your PB program.
+
+· Just use integer variables for Blitz objects, eg.
+
+	cam = bbCreateCamera ()
+	bbMoveEntity (cam, 0, 0, -5)
+
+PUREBASIC-specific
+
+· The BBGraphics type is called _BBGraphics in the PureBasic version
+as the function name causes a conflict with the type name in PB.

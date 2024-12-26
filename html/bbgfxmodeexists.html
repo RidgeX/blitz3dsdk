@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbGfxModeExists</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGfxModeExists ( width,height,depth )</h1>
+<table class="doc" id="bbgfxmodeexists" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>width</td><td class=argvalue>width in pixels</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height in pixels</td></tr>
+<tr><td class=argname>depth</td><td class=argvalue>color depth in bits</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns True if the resolution specified is supported by the
+current graphics driver. Calling <a href=bbgraphics.html>bbGraphics</a> with settings that
+cause this function to return False
+to halt.
+</p><p>
+For more information see <a href=bbgraphics.html>bbGraphics</a>.
+</p><p>
+For an alternative method for verifying legal resolutions
+see the <a href=bbcountgfxmodes.html>bbCountGfxModes</a> function.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGfxModeExists( int w,int h,int d );</pre>
+<pre class=cs>public static int bb.GfxModeExists(int width,int height,int depth)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgraphics.html>bbGraphics</a> <a href=bbcountgfxmodes.html>bbCountGfxModes</a>
+</p>
+</td></tr>
+</table>
+</body></html>

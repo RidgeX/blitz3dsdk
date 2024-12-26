@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbGfxMode3DExists</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGfxMode3DExists ( width,height,depth )</h1>
+<table class="doc" id="bbgfxmode3dexists" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>width</td><td class=argvalue>width of screen resolution</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of screen resolution</td></tr>
+<tr><td class=argname>depth</td><td class=argvalue>color depth of screen. 0 = any color depth is OK</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns True
+the specified resolution.
+</p><p>
+Use the <a href=bbgfxmode3dexists.html>bbGfxMode3DExists</a> command to avoid a possible &quot;Unable
+to set Graphics mode&quot; runtime error when calling <a href=bbgraphics3d.html>bbGraphics3D</a>
+which occurs if the user's computer is unable to support 3D
+graphics displays at the specified resolution.
+</p><p>
+See <a href=bbcountgfxmodes3d.html>bbCountGfxModes3D</a> for an alternative method of ensuring
+the 3D driver supports certain resolution requirements.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGfxMode3DExists( int w,int h,int d );</pre>
+<pre class=cs>public static int bb.GfxMode3DExists(int width,int height,int depth)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgraphics3d.html>bbGraphics3D</a> <a href=bbwindowed3d.html>bbWindowed3D</a> <a href=bbgfxdriver3d.html>bbGfxDriver3D</a>
+</p>
+</td></tr>
+</table>
+</body></html>

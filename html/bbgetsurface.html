@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbGetSurface</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetSurface ( mesh,index )</h1>
+<table class="doc" id="bbgetsurface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of surface</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the handle of the surface attached to the specified mesh
+and with  the specified index number.
+</p><p>
+Index should be in the range 1...CountSurfaces( mesh ), inclusive. 
+</p><p>
+You need to 'get a surface', i.e. get its handle, in order to be able to 
+then use that particular surface with other commands.
+</p><p class="hint">
+Often mesh surfaces in loaded models are not equivalent to how they
+were built in a modelling program due to optimzations and possible extra 
+edge vertices added by the Blitz3D loader. See the <a href=bbfindsurface.html>bbFindSurface</a>
+command for an alternative method of locating a particular surface
+based on the brush properties used to create it.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBSurface bbGetSurface( BBModel m,int index );</pre>
+<pre class=cs>public static int bb.GetSurface(int mesh,int index)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcountsurfaces.html>bbCountSurfaces</a> <a href=bbfindsurface.html>bbFindSurface</a>
+</p>
+</td></tr>
+</table>
+</body></html>

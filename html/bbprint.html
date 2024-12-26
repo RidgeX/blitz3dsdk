@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbPrint</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPrint [value$=&quot;&quot;]</h1>
+<table class="doc" id="bbprint" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>value</td><td class=argvalue>the text to be output (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbprint.html>bbPrint</a> command writes a string version of <b>value</b> if specified to the 
+current graphics buffer at the current cursor position and moves the 
+cursor position to the next line.
+</p><p>
+If the optional value parameter is omitted the <a href=bbprint.html>bbPrint</a> command simply
+moves the cursor position down a line.
+</p><p>
+As Blitz automatically converts any numeric or custom type to a string
+the value parameter can in fact be any value.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPrint( const char *str );</pre>
+<pre class=cs>public static int bb.Print(String value)
+public static int bb.Print()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbwrite.html>bbWrite</a> <a href=bbinput.html>bbInput</a> <a href=bblocate.html>bbLocate</a>
+</p>
+</td></tr>
+</table>
+</body></html>

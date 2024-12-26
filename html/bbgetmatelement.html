@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbGetMatElement#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetMatElement# ( entity,row,column )</h1>
+<table class="doc" id="bbgetmatelement" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>row</td><td class=argvalue>matrix row index</td></tr>
+<tr><td class=argname>column</td><td class=argvalue>matrix column index</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the value of an element from within an entities transformation
+matrix.
+</p><p>
+The transformation matrix is what is used by Blitz internally
+to position, scale and rotate entities.
+</p><p>
+GetMatElement is intended for
+use by advanced users only.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbGetMatElement( BBEntity e,int row,int col );</pre>
+<pre class=cs>public static float bb.GetMatElement(int entity,int row,int column)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

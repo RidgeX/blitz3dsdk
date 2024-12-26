@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbPaintEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPaintEntity entity,brush</h1>
+<table class="doc" id="bbpaintentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Paints an entity with a brush.
+</p><p>
+<a href=bbpaintentity.html>bbPaintEntity</a> applies all the surface rendering properties 
+including color, alpha, texture, fx and blending modes
+to the entity specified.
+</p><p>
+See the <a href=bbcreatebrush.html>bbCreateBrush</a> function for details about creating 
+a brush.
+</p><p>
+Use the <a href=bbpaintmesh.html>bbPaintMesh</a> command to set all the surface properties
+of a mesh entity and <a href=bbpaintsurface.html>bbPaintSurface</a> for modifying rendering
+attributes on a particular surface.
+</p><p>
+See the <a href=bbentitycolor.html>bbEntityColor</a> command for information about how
+entity and surface properties are combined by the Blitz3D
+rendering pipeline.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPaintEntity( BBEntity e,BBBrush b );</pre>
+<pre class=cs>public static int bb.PaintEntity(int entity,int brush)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitycolor.html>bbEntityColor</a> <a href=bbcreatebrush.html>bbCreateBrush</a> <a href=bbloadbrush.html>bbLoadBrush</a> <a href=bbpaintmesh.html>bbPaintMesh</a> <a href=bbpaintsurface.html>bbPaintSurface</a>
+</p>
+</td></tr>
+</table>
+</body></html>

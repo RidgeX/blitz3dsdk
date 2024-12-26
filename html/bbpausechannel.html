@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbPauseChannel</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPauseChannel channel</h1>
+<table class="doc" id="bbpausechannel" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>channel</td><td class=argvalue>valid playback channel</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Pauses playback in the specified audio channel.
+</p><p>
+Any sound playing from the result of a <a href=bbplaysound.html>bbPlaySound</a>, <a href=bbplaymusic.html>bbPlayMusic</a> 
+or <a href=bbplaycdtrack.html>bbPlayCDTrack</a> may be paused with the <a href=bbpausechannel.html>bbPauseChannel</a> command.
+</p><p>
+Use the <a href=bbresumechannel.html>bbResumeChannel</a> command to continue playback after
+pausing an audio channel with <a href=bbpausechannel.html>bbPauseChannel</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPauseChannel( BBChannel channel );</pre>
+<pre class=cs>public static int bb.PauseChannel(int channel)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbresumechannel.html>bbResumeChannel</a> <a href=bbstopchannel.html>bbStopChannel</a> <a href=bbplaysound.html>bbPlaySound</a>
+</p>
+</td></tr>
+</table>
+</body></html>

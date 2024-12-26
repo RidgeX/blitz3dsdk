@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbTextureCoords</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTextureCoords texture,coords</h1>
+<table class="doc" id="bbtexturecoords" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture</td><td class=argvalue>texture handle</td></tr>
+<tr><td class=argname>coords</td><td class=argvalue>coordinate set (0 or 1)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the texture coordinate mode for a texture.
+</p><p>
+This determines where the UV values used to look up a texture come from.
+</p><table class="data">
+<tr><th class=data>Coords</th><th class=data>Description</th></tr>
+<tr><td class=data>0</td><td class=data>UV coordinates are from first UV set in vertices (default)</td></tr>
+<tr><td class=data>1</td><td class=data>UV coordinates are from second UV set in vertices</td></tr>
+</table>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTextureCoords( BBTexture t,int flags );</pre>
+<pre class=cs>public static int bb.TextureCoords(int texture,int coords)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbMeshCullBox</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMeshCullBox mesh,x#,y#,z#,w#,h#,d#</h1>
+<table class="doc" id="bbmeshcullbox" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>x position of far bottom left corner of bounding box</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>y position of far bottom left corner of bounding box</td></tr>
+<tr><td class=argname>z</td><td class=argvalue>z position of far bottom left corner of bounding box</td></tr>
+<tr><td class=argname>w</td><td class=argvalue>width of bounding box</td></tr>
+<tr><td class=argname>h</td><td class=argvalue>height of bounding box</td></tr>
+<tr><td class=argname>d</td><td class=argvalue>depth of bounding box</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+This command allows the adjustment of the culling box
+used by the Blitz3D renderer when deciding if the
+mesh is outside the view of a camera.
+</p><p>
+The culling box of a mesh is automatically calculated, 
+however in some instances an animated mesh may 
+stretch beyond this region resulting in it visually 
+popping out of view incorrectly. The <a href=bbmeshcullbox.html>bbMeshCullBox</a>
+command allows a meshed culling box to be manually
+adjusted to correct this problem.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbMeshCullBox( BBModel m,float x,float y,float z,float w,float h,float d );</pre>
+<pre class=cs>public static int bb.MeshCullBox(int mesh,float x,float y,float z,float w,float h,float d)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadanimmesh.html>bbLoadAnimMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

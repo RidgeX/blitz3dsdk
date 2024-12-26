@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbTFormImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTFormImage ( image,m11#,m12#,m21#,m22# )</h1>
+<table class="doc" id="bbtformimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>m11#</td><td class=argvalue>first element of 2x2 matrix</td></tr>
+<tr><td class=argname>m12#</td><td class=argvalue>second element of 2x2 matrix</td></tr>
+<tr><td class=argname>m21#</td><td class=argvalue>third element of 2x2 matrix</td></tr>
+<tr><td class=argname>m22#</td><td class=argvalue>fourth element of 2x2 matrix</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbtformimage.html>bbTFormImage</a> function is similar in function to the
+<a href=bbscaleimage.html>bbScaleImage</a> and <a href=bbrotateimage.html>bbRotateImage</a> functions where the image
+returned is a transformed copy of the original image 
+</p><p>
+Instead of using a scale factor or angle of rotation,
+<a href=bbtformimage.html>bbTFormImage</a> accepts 4 values that define a 2x2 matrix
+that allows the resultant copy to be the product of
+a transform that is a combination of both scale and
+rotation.
+</p><p>
+<a href=bbtformimage.html>bbTFormImage</a> is also useful for shearing an Image.
+</p><p class="hint">
+This command is not particularly fast and hence like loading
+it is recomended images are transformed before a game level 
+commences.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTFormImage( BBImage i,float a,float b,float c,float d );</pre>
+<pre class=cs>public static int bb.TFormImage(int image,float m11,float m12,float m21,float m22)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbhandleimage.html>bbHandleImage</a> <a href=bbscaleimage.html>bbScaleImage</a> <a href=bbrotateimage.html>bbRotateImage</a> <a href=bbtformfilter.html>bbTFormFilter</a>
+</p>
+</td></tr>
+</table>
+</body></html>

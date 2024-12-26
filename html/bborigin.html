@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbOrigin</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbOrigin x,y</h1>
+<table class="doc" id="bborigin" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel position</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel position</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bborigin.html>bbOrigin</a> command sets a point of origin for all subsequent 
+drawing commands.
+</p><p>
+The default <a href=bborigin.html>bbOrigin</a> of a drawing buffer is the top left pixel.
+</p><p>
+After calling <a href=bborigin.html>bbOrigin</a>, all drawing commands will treat the pixel
+at location <b>x</b>,<b>y</b> as coordinate 0,0
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbOrigin( int x,int y );</pre>
+<pre class=cs>public static int bb.Origin(int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbplot.html>bbPlot</a> <a href=bbline.html>bbLine</a> <a href=bbrect.html>bbRect</a> <a href=bboval.html>bbOval</a>
+</p>
+</td></tr>
+</table>
+</body></html>

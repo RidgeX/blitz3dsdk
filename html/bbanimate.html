@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>bbAnimate</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAnimate entity[,mode=1][,speed#=1.0][,sequence][,transition#]</h1>
+<table class="doc" id="bbanimate" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>mode of animation. Defaults to 1.</td></tr>
+<tr><td class=argname>speed#</td><td class=argvalue>speed of animation. Defaults to 1.</td></tr>
+<tr><td class=argname>sequence</td><td class=argvalue>specifies which sequence of animation frames to play.  Defaults to 0.</td></tr>
+<tr><td class=argname>transition#</td><td class=argvalue>used to tween between an entity's current position rotation and the first frame of animation. Defaults to 0.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Animates an entity.
+</p><p>
+The mode specified can be one of the following values:
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Descriptiopn</th></tr>
+<tr><td class=data>ANIM_STOP</td><td class=data>0</td><td class=data>Stop animation</td></tr>
+<tr><td class=data>ANIM_LOOP</td><td class=data>1</td><td class=data>Loop animation (default)</td></tr>
+<tr><td class=data>ANIM_PINGPONG</td><td class=data>2</td><td class=data>Ping-pong animation</td></tr>
+<tr><td class=data>ANIM_ONCE</td><td class=data>3</td><td class=data>One-shot animation</td></tr>
+</table><p>
+A <b>speed</b> of greater than 1.0 will cause the animation to replay
+quicker, less than 1.0 slower. A negative speed will play the 
+animation backwards.
+</p><p>
+Animation sequences are numbered 0,1,2...etc. Initially, an entity 
+loaded with <a href=bbloadanimmesh.html>bbLoadAnimMesh</a> will have a single animation sequence.
+</p><p>
+More sequences can be added using either <a href=bbextractanimseq.html>bbExtractAnimSeq</a>, 
+<a href=bbloadanimseq.html>bbLoadAnimSeq</a> or <a href=bbaddanimseq.html>bbAddAnimSeq</a>.
+</p><p>
+The optional <b>transition</b> parameter can be set to 0 to cause an instant 
+'leap' to the first frame,  while values greater than 0 will cause a 
+smoother transition to occur.
+</p><p>
+While <a href=bbanimate.html>bbAnimate</a> begins or ends an animation calling <a href=bbupdateworld.html>bbUpdateWorld</a> 
+once every main loop causes the animation to actually play.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbAnimate( BBObject o,int mode=1,float speed=1.0f,int seq=0,float trans=0.0f );</pre>
+<pre class=cs>public static int bb.Animate(int entity,int mode,float speed,int sequence,float transition)
+public static int bb.Animate(int entity,int mode,float speed,int sequence)
+public static int bb.Animate(int entity,int mode,float speed)
+public static int bb.Animate(int entity,int mode)
+public static int bb.Animate(int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbupdateworld.html>bbUpdateWorld</a> <a href=bbloadanimmesh.html>bbLoadAnimMesh</a> <a href=bbextractanimseq.html>bbExtractAnimSeq</a> <a href=bbloadanimseq.html>bbLoadAnimSeq</a> <a href=bbaddanimseq.html>bbAddAnimSeq</a>
+</p>
+</td></tr>
+</table>
+</body></html>

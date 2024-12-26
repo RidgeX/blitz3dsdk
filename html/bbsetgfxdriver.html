@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbSetGfxDriver</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetGfxDriver index</h1>
+<table class="doc" id="bbsetgfxdriver" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>index</td><td class=argvalue>index number of display device</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbsetgfxdriver.html>bbSetGfxDriver</a> command is used to change the current graphics driver.
+</p><p>
+The current graphics driver dictates which display device is used on 
+a multimonitor system when the <a href=bbgraphics.html>bbGraphics</a> command is used. It also
+affects the graphics modes reported by <a href=bbcountgfxmodes.html>bbCountGfxModes</a>.
+</p><p>
+The index parameter should be in the range of 1 up to and
+including the value returned by <a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetGfxDriver( int n );</pre>
+<pre class=cs>public static int bb.SetGfxDriver(int index)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgraphics.html>bbGraphics</a> <a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a> <a href=bbcountgfxmodes.html>bbCountGfxModes</a>
+</p>
+</td></tr>
+</table>
+</body></html>

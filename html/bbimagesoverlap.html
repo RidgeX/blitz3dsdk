@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbImagesOverlap</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbImagesOverlap ( image1,x1,y1,image2,x2,y2 )</h1>
+<table class="doc" id="bbimagesoverlap" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image1</td><td class=argvalue>first image to test</td></tr>
+<tr><td class=argname>x1</td><td class=argvalue>image1's x location</td></tr>
+<tr><td class=argname>y1</td><td class=argvalue>image1's y location</td></tr>
+<tr><td class=argname>image2</td><td class=argvalue>second image to test</td></tr>
+<tr><td class=argname>x2</td><td class=argvalue>image2's x location</td></tr>
+<tr><td class=argname>y2</td><td class=argvalue>image2's y location</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbimagesoverlap.html>bbImagesOverlap</a> function returns True if image1 drawn at the 
+specified pixel location would overlap with image2 if drawn at 
+its specified location.
+</p><p>
+<a href=bbimagesoverlap.html>bbImagesOverlap</a> does not take into account any transparent pixels and 
+hence is faster but less accurate than the comparable <a href=bbimagescollide.html>bbImagesCollide</a> 
+function.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbImagesOverlap( BBImage i1,int x1,int y1,BBImage i2,int x2,int y2 );</pre>
+<pre class=cs>public static int bb.ImagesOverlap(int image1,int x1,int y1,int image2,int x2,int y2)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbimagescollide.html>bbImagesCollide</a>
+</p>
+</td></tr>
+</table>
+</body></html>

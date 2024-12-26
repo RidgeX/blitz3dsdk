@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbSoundPitch</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSoundPitch sound,samplerate</h1>
+<table class="doc" id="bbsoundpitch" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sound</td><td class=argvalue>valid sound handle</td></tr>
+<tr><td class=argname>samplerate</td><td class=argvalue>playback rate in samples per second</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Modifies the pitch of an existing sound object by changing its
+playback rate.
+</p><p>
+Sounds are commonly recorded at rates such as 22050 and 44100
+samples per second and their playback rate defaults to the
+recorded rate.
+</p><p>
+Changing the sounds playback rate with the <a href=bbsoundpitch.html>bbSoundPitch</a> command
+will modify the pitch at which it is next played with the
+<a href=bbplaysound.html>bbPlaySound</a> command.
+</p><p>
+For more dynamic control see the <a href=bbchannelpitch.html>bbChannelPitch</a> command that
+allows modifying the pitch of a channel during playback of 
+a sound.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSoundPitch( BBSound sound,int pitch );</pre>
+<pre class=cs>public static int bb.SoundPitch(int sound,int samplerate)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbsoundvolume.html>bbSoundVolume</a> <a href=bbplaysound.html>bbPlaySound</a>
+</p>
+</td></tr>
+</table>
+</body></html>

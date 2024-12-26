@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbHandleSprite</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbHandleSprite sprite,x_handle#,y_handle#</h1>
+<table class="doc" id="bbhandlesprite" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sprite</td><td class=argvalue>sprite handle.</td></tr>
+<tr><td class=argname>x_handle#</td><td class=argvalue>x handle of sprite</td></tr>
+<tr><td class=argname>y_handle#</td><td class=argvalue>y handle of sprite</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets a sprite handle. 
+</p><p>
+As a sprite extends from -1,-1 to +1,+1 and the handle
+defaults to 0,0 the standard handle of a sprite is
+the center of its image.
+</p><p>
+A sprite's handle represents the relative position on the 
+sprite image used to position the sprite when 
+being rendered.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbHandleSprite( BBSprite s,float x,float y );</pre>
+<pre class=cs>public static int bb.HandleSprite(int sprite,float x_handle,float y_handle)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsprite.html>bbLoadSprite</a> <a href=bbcreatesprite.html>bbCreateSprite</a>
+</p>
+</td></tr>
+</table>
+</body></html>

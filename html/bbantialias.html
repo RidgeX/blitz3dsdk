@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbAntiAlias</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAntiAlias enable</h1>
+<table class="doc" id="bbantialias" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>enable</td><td class=argvalue>True to enable fullscreen antialiasing</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Enables or disables fullscreen antialiasing.
+</p><p>
+Fullscreen antialiasing is a technique used to smooth out the entire screen,
+so that jagged lines are made less noticeable.
+</p><p>
+AA rendering options can also be overridden by the user and are often ignored
+by the graphics driver.
+</p><p>
+Any AntiAlias setting should be made optional to the user as it may have
+a serious impact on the performance of your software on their system.
+</p><p>
+Default is False.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbAntiAlias( int enable );</pre>
+<pre class=cs>public static int bb.AntiAlias(int enable)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

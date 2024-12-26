@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbGfxDriverCaps3D</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGfxDriverCaps3D (  )</h1>
+<table class="doc" id="bbgfxdrivercaps3d" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the 'caps level' of the current graphics driver. Values are:
+</p><table class="data">
+<tr><th class=data>Level</th><th class=data>Description</th></tr>
+<tr><td class=data>100</td><td class=data>Card supports all 'standard' Blitz3D operations.</td></tr>
+<tr><td class=data>110</td><td class=data>Card supports all standard ops plus cubic environment mapping.</td></tr>
+</table><p class="hint">
+The program must already have configured the 3D display by 
+successfully calling <a href=bbgraphics3d.html>bbGraphics3D</a> before calling this function.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGfxDriverCaps3D();</pre>
+<pre class=cs>public static int bb.GfxDriverCaps3D()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatetexture.html>bbCreateTexture</a> <a href=bbgraphics3d.html>bbGraphics3D</a>
+</p>
+</td></tr>
+</table>
+</body></html>

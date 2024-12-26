@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>bbLoadBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadBuffer ( buffer,filename$ )</h1>
+<table class="doc" id="bbloadbuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>buffer</td><td class=argvalue>a valid graphics buffer</td></tr>
+<tr><td class=argname>filename$</td><td class=argvalue>the filename of an existing image file</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Instead of calling <a href=bbloadimage.html>bbLoadImage</a> and creating a new image
+the <a href=bbloadbuffer.html>bbLoadBuffer</a> command reads the contents of a valid image
+file into the contents of an existing image, texture
+or if required the front or back buffer of the current
+display.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbLoadBuffer( BBCanvas surf,const char *str );</pre>
+<pre class=cs>public static int bb.LoadBuffer(int buffer,String filename)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

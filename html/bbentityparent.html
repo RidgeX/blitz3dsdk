@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>bbEntityParent</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityParent entity,parent[,globalspace=True]</h1>
+<table class="doc" id="bbentityparent" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity handle</td></tr>
+<tr><td class=argname>global</td><td class=argvalue>true for the child entity to retain its global position  and orientation. Defaults to true.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Attaches an entity to a parent.
+</p><p>
+Parent may be 0, in which case the entity  will have no parent. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityParent( BBEntity e,BBEntity p=0,int global=1 );</pre>
+<pre class=cs>public static int bb.EntityParent(int entity,int parent,int globalspace)
+public static int bb.EntityParent(int entity,int parent)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

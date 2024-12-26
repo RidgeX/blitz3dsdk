@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbMD2AnimTime</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMD2AnimTime ( md2 )</h1>
+<table class="doc" id="bbmd2animtime" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>md2</td><td class=argvalue>md2 handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the animation time of an md2 model.
+</p><p>
+The animation time is the exact moment that the MD2 is at with
+regards its frames of animation.
+</p><p>
+For example, if the MD2 entity is currently animating between
+the third and fourth frames, then MD2AnimTime will return a 
+number somewhere between 3 and 4. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbMD2AnimTime( BBMD2Model m );</pre>
+<pre class=cs>public static int bb.MD2AnimTime(int md2)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

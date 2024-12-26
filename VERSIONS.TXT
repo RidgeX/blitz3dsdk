@@ -1,0 +1,53 @@
+
+***** V1.05 *****
+
++ Fixed animation glitch due to std::map optimization for anim keys.
+
+
+***** V1.04 *****
+
++ Lots of little tidy ups.
++ Fixed masked textures not working.
++ Added more stuff to bbSystemProperties().
++ Fixed a bunch of string related issues.
++ Added bbBeginBlitz3DEx() - see: render_to_hwnd.bmx in samples.
++ Added bbValidateGraphics() - see: render_to_hwnd.bmx in samples.
+
+
+***** V1.03 *****
+
++ Added source to SVN.
+
+
+***** V1.02 *****
+
++ Fixed lost 2d surfaces.
++ Added bbBufferDirty( buffer ). Use this after you writepixel/writepixelfast to a 2D image buffer. Not necessary for frequently modified buffers - ie: buffers that are modified every flip (or so).
++ fixed movie leak.
+
+
+***** V1.01 *****
+
++ Improved handling of ctrl-alt-delete, ctrl-alt-tab, logout etc.
++ Fixed collision problems.
++ Fixed memory leaks for loadimage and sound.
++ Fixed movie playback problems and memory leak.
++ Fixed keyboard event loss. 
+
+
+***** V1.00 *****
+
+Blitz3DSDK released June 2007!
+
+Changes to blitz3d runtime since version 197:
+
+alpha surface z-fighting issues fixed
+fix added for ATI discard buffer driver delays
+loading masked textures uses alpha channel from source file if present
+optimizations to render order for reducing surface state changes
+new commands added:
++ SetBlitz3DHWND - run Blitz3D inside your own window
++ SetBlitz3DCallback - provide you own message handlers
++ CaptureEntity - avoid ugly render tweening when modifying entities since last captureworld
++ EntityID - set a user integer handle
++ SetEntityID - retrieve the user handle

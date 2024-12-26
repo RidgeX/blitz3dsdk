@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbSetFont</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetFont fonthandle</h1>
+<table class="doc" id="bbsetfont" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>fonthandle</td><td class=argvalue>handle of a font successfully returned by <a href=bbloadfont.html>bbLoadFont</a></td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbsetfont.html>bbSetFont</a> command is used in combination with a prior LoadFont
+command to specify which font subsequent <a href=bbtext.html>bbText</a>, <a href=bbprint.html>bbPrint</a>, <a href=bbwrite.html>bbWrite</a>,
+<a href=bbfontwidth.html>bbFontWidth</a>, <a href=bbfontheigtht.html>bbFontHeigtht</a>, <a href=bbstringwidth.html>bbStringWidth</a> and <a href=bbstringheight.html>bbStringHeight</a> commands 
+will use.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetFont( BBFont f );</pre>
+<pre class=cs>public static int bb.SetFont(int fonthandle)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbtext.html>bbText</a> <a href=bbfreefont.html>bbFreeFont</a> <a href=bbprint.html>bbPrint</a> <a href=bbwrite.html>bbWrite</a> <a href=bbfontwidth.html>bbFontWidth</a> <a href=bbfontheight.html>bbFontHeight</a> <a href=bbstringwidth.html>bbStringWidth</a> <a href=bbstringheight.html>bbStringHeight</a>
+</p>
+</td></tr>
+</table>
+</body></html>

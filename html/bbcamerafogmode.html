@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbCameraFogMode</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraFogMode camera,mode</h1>
+<table class="doc" id="bbcamerafogmode" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>camera mode</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the camera fog mode.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Description</th></tr>
+<tr><td class=data>0</td><td class=data>No fog (default)</td></tr>
+<tr><td class=data>1</td><td class=data>Linear fog</td></tr>
+</table><p>
+This will enable/disable fogging, a technique  used to gradually fade
+out graphics the further they are away from the camera.  This can be used
+to avoid 'pop-up', the moment at which 3D objects suddenly appear on the
+horizon which itself is controlled by the <b>far</b> parameter of the
+<a href=bbcamerarange.html>bbCameraRange</a> command.
+</p><p>
+The default fog color is black and the default fog range
+is 1-1000. Change these values with the <a href=bbcamerafogcolor.html>bbCameraFogColor</a>
+and <a href=bbcamerafogrange.html>bbCameraFogRange</a> commands respectively. 
+</p><p>
+Each camera can have its own fog mode, for multiple on-screen
+fog effects.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraFogMode( BBCamera c,int mode );</pre>
+<pre class=cs>public static int bb.CameraFogMode(int camera,int mode)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcamerafogcolor.html>bbCameraFogColor</a> <a href=bbcamerafogrange.html>bbCameraFogRange</a> <a href=bbcamerarange.html>bbCameraRange</a>
+</p>
+</td></tr>
+</table>
+</body></html>

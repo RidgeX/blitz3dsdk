@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbBrushFX</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBrushFX brush,fx</h1>
+<table class="doc" id="bbbrushfx" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+<tr><td class=argname>fx</td><td class=argvalue>effects flags</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets miscellaneous effects for a brush.
+</p><p>
+Flags can be added to combine two or more effects. For example,
+specifying a flag of 3 (1+2) will result in  a full-bright 
+vertex-colored brush.
+</p><table class="data">
+<tr><th class=data>Flag</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>BRUSHFX_NONE</td><td class=data>0</td><td class=data>Nothing (default)</td></tr>
+<tr><td class=data>BRUSHFX_FULLBRIGHT</td><td class=data>1</td><td class=data>FullBright</td></tr>
+<tr><td class=data>BRUSHFX_VERTEXCOLOR</td><td class=data>2</td><td class=data>EnableVertexColors</td></tr>
+<tr><td class=data>BRUSHFX_FLATSHADED</td><td class=data>4</td><td class=data>FlatShaded</td></tr>
+<tr><td class=data>BRUSHFX_NOFOG</td><td class=data>8</td><td class=data>DisableFog</td></tr>
+<tr><td class=data>BRUSHFX_DOUBLESIDED</td><td class=data>16</td><td class=data>DoubleSided</td></tr>
+<tr><td class=data>BRUSHFX_VERTEXALPHA</td><td class=data>32</td><td class=data>EnableVertexAlpha</td></tr>
+</table><p>
+See the <a href=bbentityfx.html>bbEntityFX</a> command for details on the meaning of each flag.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBrushFX( BBBrush b,int fx );</pre>
+<pre class=cs>public static int bb.BrushFX(int brush,int fx)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityfx.html>bbEntityFX</a>
+</p>
+</td></tr>
+</table>
+</body></html>

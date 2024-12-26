@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbKeyHit</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbKeyHit ( scancode )</h1>
+<table class="doc" id="bbkeyhit" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>scancode</td><td class=argvalue>scancode of key to test</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the number of times the specified key has been pressed since
+the last time the <a href=bbkeyhit.html>bbKeyHit</a> command was called with the specified scancode.
+</p><p>
+<a href=bbkeyhit.html>bbKeyHit</a> will only return positive once when a key is pressed where as
+<a href=bbkeydown.html>bbKeyDown</a> will repeatedly return True until the specified key is released.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbKeyHit( int n );</pre>
+<pre class=cs>public static int bb.KeyHit(int scancode)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=_KeyboardScancodes.html>bbKeyboardScancodes</a> <a href=bbkeydown.html>bbKeyDown</a> <a href=bbgetkey.html>bbGetKey</a> <a href=bbwaitkey.html>bbWaitKey</a> <a href=bbflushkeys.html>bbFlushKeys</a>
+</p>
+</td></tr>
+</table>
+</body></html>

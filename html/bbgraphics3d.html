@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>bbGraphics3D</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGraphics3D width,height[,depth][,mode]</h1>
+<table class="doc" id="bbgraphics3d" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>width</td><td class=argvalue>width of screen resolution</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of screen resolution</td></tr>
+<tr><td class=argname>depth</td><td class=argvalue>optional color depth for fullscreen modes</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>display mode of window created</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbgraphics3d.html>bbGraphics3D</a> command resizes the graphics display to the 
+specified size in pixels and with the specified display 
+properties including color depth and fullscreen options.
+</p><p>
+This command is the same as the <a href=bbgraphics.html>bbGraphics</a> command with the
+additional feature that 3D programming is supported following
+a succesful call to the <a href=bbgraphics3d.html>bbGraphics3D</a> command.
+</p><p>
+A simple &quot;Graphics3D 640,480&quot; creates a window on the desktop
+ready for 3D program development. Once your program is
+running and debug mode has been disabled, the same command 
+opens a fullscreen display with standard VGA resolution
+of 640 pixels wide by 480 pixels high.
+</p><p>
+The <b>depth</b> parameter is optional, the default value of 0
+specifies that Blitz3D select the most appropriate color
+depth.
+</p><p>
+The <b>mode</b> parameter may be any of the following values:
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>GFX_DEFAULT</td><td class=data>0</td><td class=data>Default selects FixedWindow in Debug mode or FullScreen in Release</td></tr>
+<tr><td class=data>GFX_FULLSCREEN</td><td class=data>1</td><td class=data>FullScreen acheives optimal performance by owning the display</td></tr>
+<tr><td class=data>GFX_WINDOWED</td><td class=data>2</td><td class=data>FixedWindow opens a fixed size window placed on the desktop</td></tr>
+<tr><td class=data>GFX_WINDOWEDSCALED</td><td class=data>3</td><td class=data>ScaledWindow opens a user sizable window with graphics scaled to fit </td></tr>
+</table><p>
+Before using <a href=bbgraphics3d.html>bbGraphics3D</a> the specified resolution or support
+for 3D in Windows should be confirmed with the use of the
+<a href=bbgfxmode3dexists.html>bbGfxMode3DExists</a> or <a href=bbwindowed3d.html>bbWindowed3D</a> functions respectively.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbGraphics3D( int w,int h,int d=0,int mode=0 );</pre>
+<pre class=cs>public static int bb.Graphics3D(int width,int height,int depth,int mode)
+public static int bb.Graphics3D(int width,int height,int depth)
+public static int bb.Graphics3D(int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgfxmode3dexists.html>bbGfxMode3DExists</a> <a href=bbwindowed3d.html>bbWindowed3D</a> <a href=bbendgraphics.html>bbEndGraphics</a> <a href=bbgraphics.html>bbGraphics</a>
+</p>
+</td></tr>
+</table>
+</body></html>

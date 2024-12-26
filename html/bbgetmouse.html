@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbGetMouse</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetMouse (  )</h1>
+<table class="doc" id="bbgetmouse" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the mouse button pressed since the last call to <a href=bbgetmouse.html>bbGetMouse</a>
+or 0 if none.
+</p><p>
+<a href=bbgetmouse.html>bbGetMouse</a> will return 1 if the left button, 2 if the right and
+3 if the middle button has been recently pressed.
+</p><p>
+Mouse button presses are queued internally by Blitz so it is often
+useful to call <a href=bbgetmouse.html>bbGetMouse</a> repeatedly to empty the queue or use the
+<a href=bbflushmouse.html>bbFlushMouse</a> command.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGetMouse();</pre>
+<pre class=cs>public static int bb.GetMouse()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbflushmouse.html>bbFlushMouse</a> <a href=bbmousedown.html>bbMouseDown</a>
+</p>
+</td></tr>
+</table>
+</body></html>

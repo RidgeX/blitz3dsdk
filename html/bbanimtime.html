@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbAnimTime#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAnimTime# ( entity )</h1>
+<table class="doc" id="bbanimtime" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the current animation time of an entity.
+</p><p>
+<a href=bbanimtime.html>bbAnimTime</a> returns a float between 0.0 and the value returned
+by the <a href=bbanimlength.html>bbAnimLength</a>() function unless the animtion is in transition
+in which case a value of 0.0 is returned.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbAnimTime( BBObject o );</pre>
+<pre class=cs>public static float bb.AnimTime(int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbanimlength.html>bbAnimLength</a>
+</p>
+</td></tr>
+</table>
+</body></html>

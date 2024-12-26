@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>bbCameraRange</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraRange camera,near#,far#</h1>
+<table class="doc" id="bbcamerarange" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>near</td><td class=argvalue>distance in front of camera that 3D objects start being drawn</td></tr>
+<tr><td class=argname>far</td><td class=argvalue>distance in front of camera that 3D object stop being drawn</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets camera range.
+</p><p>
+Defaults to 1,1000.
+</p><p>
+The distance parameters used in <a href=bbcamerarange.html>bbCameraRange</a> define two planes.
+</p><p>
+The near plane will clip any objects that come too close to the
+camera while the far plane will ensure the camera does not render
+objects that are too far away (a common cause of slowdown
+in games).
+</p><p>
+Fog can be used to soften the transition when objects approach
+a <a href=bbcamerarange.html>bbCameraRange</a>'s <b>far</b> distance, see the <a href=bbcamerafogrange.html>bbCameraFogRange</a> command
+for more details.
+</p><p>
+The distance between <b>near</b> and <b>far</b> also affects the precision
+of the depth buffer which is used to determine which pixels from
+which polygon are drawn when they overlap or even intersect.
+</p><p>
+See the <a href=bbwbuffer.html>bbWBuffer</a> command for another command that can
+affect depth buffer performance.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraRange( BBCamera c,float nr,float fr );</pre>
+<pre class=cs>public static int bb.CameraRange(int camera,float near,float far)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcamerafogrange.html>bbCameraFogRange</a> <a href=bbwbuffer.html>bbWBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

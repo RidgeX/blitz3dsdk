@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Image Manipulation</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>Image Manipulation</h1>
+<DL>
+<DT><a href="bbcopyimage.html">bbCopyImage</a><DD>Returns an identical copy of the specified image.<DT><a href="bbgrabimage.html">bbGrabImage</a><DD>Copies pixels at the specified offset in the current 
+graphics buffer to the image specified.<DT><a href="bbimagebuffer.html">bbImageBuffer</a><DD>The <a href=bbimagebuffer.html>bbImageBuffer</a> function returns a graphics buffer that
+can be used with such commands as <a href=bbsetbuffer.html>bbSetBuffer</a> and <a href=bblockbuffer.html>bbLockBuffer</a>.<DT><a href="bbscaleimage.html">bbScaleImage</a><DD>The <a href=bbscaleimage.html>bbScaleImage</a> function returns a copy of an image 
+scaled in each axis by the specified factors.<DT><a href="bbresizeimage.html">bbResizeImage</a><DD>The <a href=bbresizeimage.html>bbResizeImage</a> function returns a copy of the
+specified image scaled to the specified pixel
+dimensions.<DT><a href="bbrotateimage.html">bbRotateImage</a><DD>The RotateImage function creates a new image by copying
+the specified image and rotating it <b>angle</b> degrees around
+its current handle.<DT><a href="bbtformimage.html">bbTFormImage</a><DD>The <a href=bbtformimage.html>bbTFormImage</a> function is similar in function to the
+<a href=bbscaleimage.html>bbScaleImage</a> and <a href=bbrotateimage.html>bbRotateImage</a> functions where the image
+returned is a transformed copy of the original image 
+Instead of using a scale factor or angle of rotation,
+<a href=bbtformimage.html>bbTFormImage</a> accepts 4 values that define a 2x2 matrix
+that allows the resultant copy to be the product of
+a transform that is a combination of both scale and
+rotation.<DT><a href="bbtformfilter.html">bbTFormFilter</a><DD>The <a href=bbtformfilter.html>bbTFormFilter</a> command controls the quality of transformation
+achieved when using the <a href=bbscaleimage.html>bbScaleImage</a>, <a href=bbrotateimage.html>bbRotateImage</a> and <a href=bbtformimage.html>bbTFormImage</a>
+commands.</DL>
+</body></html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>bbCreateBrush</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateBrush ( [red#=255],[green#=255],[blue#=255] )</h1>
+<table class="doc" id="bbcreatebrush" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>red</td><td class=argvalue>brush red value</td></tr>
+<tr><td class=argname>green</td><td class=argvalue>brush green value</td></tr>
+<tr><td class=argname>blue</td><td class=argvalue>brush blue value</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a brush with an optional color that can be used with the
+<a href=bbpaintentity.html>bbPaintEntity</a> and <a href=bbpaintsurface.html>bbPaintSurface</a> commands.
+</p><p>
+See the <a href=bbcolor.html>bbColor</a> command for more information on combining
+red, green and blue values to define colors. The brush will
+default to White if no color is specified.
+</p><p>
+A brush is a collection of properties including color, alpha,
+shininess, textures, blend mode and rendering effects.
+</p><p>
+All the properties of a brush are assigned to an entity or
+particular surface with the <a href=bbpaintentity.html>bbPaintEntity</a>, <a href=bbpaintmesh.html>bbPaintMesh</a> and 
+<a href=bbpaintsurface.html>bbPaintSurface</a> commands.
+</p><p>
+Painting an entity with a brush can be more efficient than
+setting its individual properties with individual calls
+to <a href=bbentitycolor.html>bbEntityColor</a>, <a href=bbentityfx.html>bbEntityFX</a>, <a href=bbentityalpha.html>bbEntityAlpha</a> etc.
+</p><p>
+Brushes are required in order to modify the equivalent
+surface properties of meshes that when combined with the
+entity properties result in the final rendering properties
+of the surface. See <a href=bbpaintsurface.html>bbPaintSurface</a> for more information.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBBrush bbCreateBrush( float r=255.0f,float g=255.0f,float b=255.0f );</pre>
+<pre class=cs>public static int bb.CreateBrush(float red,float green,float blue)
+public static int bb.CreateBrush(float red,float green)
+public static int bb.CreateBrush(float red)
+public static int bb.CreateBrush()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadbrush.html>bbLoadBrush</a> <a href=bbpaintentity.html>bbPaintEntity</a> <a href=bbpaintmesh.html>bbPaintMesh</a> <a href=bbpaintsurface.html>bbPaintSurface</a>
+</p>
+</td></tr>
+</table>
+</body></html>

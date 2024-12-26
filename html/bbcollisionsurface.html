@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbCollisionSurface</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCollisionSurface ( entity,index )</h1>
+<table class="doc" id="bbcollisionsurface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of collision</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the handle of the surface belonging to the specified entity that 
+was closest to the point of a particular collision.
+</p><p>
+Index should be in  the range 1...CountCollisions( entity ), inclusive.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBSurface bbCollisionSurface( BBObject o,int index );</pre>
+<pre class=cs>public static int bb.CollisionSurface(int entity,int index)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcollisionx.html>bbCollisionX</a> <a href=bbcollisiony.html>bbCollisionY</a> <a href=bbcollisionz.html>bbCollisionZ</a> <a href=bbcollisionnx.html>bbCollisionNX</a> <a href=bbcollisionny.html>bbCollisionNY</a> <a href=bbcollisionnz.html>bbCollisionNZ</a> <a href=bbcountcollisions.html>bbCountCollisions</a> <a href=bbentitycollided.html>bbEntityCollided</a> <a href=bbcollisiontime.html>bbCollisionTime</a> <a href=bbcollisionentity.html>bbCollisionEntity</a> <a href=bbcollisionsurface.html>bbCollisionSurface</a> <a href=bbcollisiontriangle.html>bbCollisionTriangle</a>
+</p>
+</td></tr>
+</table>
+</body></html>

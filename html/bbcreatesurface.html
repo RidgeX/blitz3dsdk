@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbCreateSurface</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateSurface ( mesh[,brush] )</h1>
+<table class="doc" id="bbcreatesurface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>brush</td><td class=argvalue>optional brush handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a surface attached to a mesh and returns the surface's handle.
+</p><p>
+Surfaces are sections of mesh which are then used
+to attach triangles to. You  must have at least one surface per mesh in
+order to create a visible mesh.
+</p><p>
+Multiple surfaces can be used per mesh when color and texture properties 
+vary in different sections of the same mesh.
+</p><p>
+Splitting a mesh up into lots of sections allows  you to affect those sections
+individually, which can be a lot more useful than if all the surfaces are
+combined into just a single surface. Single surface meshes however often 
+have the advantage of being faster to render.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBSurface bbCreateSurface( BBModel m,BBBrush b=0 );</pre>
+<pre class=cs>public static int bb.CreateSurface(int mesh,int brush)
+public static int bb.CreateSurface(int mesh)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbpaintsurface.html>bbPaintSurface</a>
+</p>
+</td></tr>
+</table>
+</body></html>

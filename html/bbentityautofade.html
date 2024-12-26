@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbEntityAutoFade</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityAutoFade entity,near#,far#</h1>
+<table class="doc" id="bbentityautofade" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>near#</td><td class=argvalue>distance from camera when entity begins to fade</td></tr>
+<tr><td class=argname>far#</td><td class=argvalue>distance from camera entity becomes completely invisible</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Enables auto fading for an entity.
+</p><p>
+<a href=bbentityautofade.html>bbEntityAutoFade</a> causes an entities alpha level to be adjusted at
+distances between near and far to create a 'fade-in' effect.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityAutoFade( BBModel m,float nr,float fr );</pre>
+<pre class=cs>public static int bb.EntityAutoFade(int entity,float near,float far)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityalpha.html>bbEntityAlpha</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbTerrainHeight#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTerrainHeight# ( terrain,grid_x,grid_z )</h1>
+<table class="doc" id="bbterrainheight" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>terrain</td><td class=argvalue>terrain handle</td></tr>
+<tr><td class=argname>grid_x</td><td class=argvalue>grid x coordinate of terrain</td></tr>
+<tr><td class=argname>grid_z</td><td class=argvalue>grid z coordinate of terrain</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the height of the terrain at terrain grid coordinates x,z.
+</p><p>
+The value returned is in the range 0 to 1.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbTerrainHeight( BBTerrain t,int x,int z );</pre>
+<pre class=cs>public static float bb.TerrainHeight(int terrain,int grid_x,int grid_z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbterrainy.html>bbTerrainY</a>
+</p>
+</td></tr>
+</table>
+</body></html>

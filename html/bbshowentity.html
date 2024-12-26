@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbShowEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbShowEntity entity</h1>
+<table class="doc" id="bbshowentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Shows an entity. Very
+much the opposite of HideEntity.
+</p><p>
+Once an entity has been hidden using <a href=bbhideentity.html>bbHideEntity</a>,  use <a href=bbshowentity.html>bbShowEntity</a> to make 
+it visible and involved in collisions again.
+</p><p>
+Note that ShowEntity has no effect if the enitities' parent object
+is hidden.
+</p><p>
+Entities are shown by default after creating/loading them,
+so you should  only need to use ShowEntity after using HideEntity. 
+</p><p>
+ShowEntity affects the specified entity only - child entities are not affected.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbShowEntity( BBEntity e );</pre>
+<pre class=cs>public static int bb.ShowEntity(int entity)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

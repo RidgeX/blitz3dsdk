@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbJoyHat</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbJoyHat ( [port] )</h1>
+<table class="doc" id="bbjoyhat" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>port</td><td class=argvalue>number of joystick port to check (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a compass angle between 0 and 360 degrees in 
+which the direction of the D-Pad or &quot;hat&quot; control
+is being pressed.
+</p><p>
+<a href=bbjoyhat.html>bbJoyHat</a> returns a value of -1 if the &quot;hat&quot; or D-Pad is 
+currently centered.
+</p><p>
+The optional port identifier provides access to a
+particular game controller, joystick or gamepad connected
+to the system and positively identified by <a href=bbjoytype.html>bbJoyType</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbJoyHat( int port=0 );</pre>
+<pre class=cs>public static int bb.JoyHat(int port)
+public static int bb.JoyHat()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbjoyx.html>bbJoyX</a> <a href=bbjoyy.html>bbJoyY</a> <a href=bbjoyz.html>bbJoyZ</a> <a href=bbjoyu.html>bbJoyU</a> <a href=bbjoyyaw.html>bbJoyYaw</a> <a href=bbjoypitch.html>bbJoyPitch</a> <a href=bbjoyroll.html>bbJoyRoll</a>
+</p>
+</td></tr>
+</table>
+</body></html>

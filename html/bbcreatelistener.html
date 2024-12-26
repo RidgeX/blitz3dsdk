@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbCreateListener</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateListener ( parent[,rolloff_factor#=1.0][,doppler_scale#=1.0][,distance_scale#=1.0] )</h1>
+<table class="doc" id="bbcreatelistener" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of listener. A parent entity, typically a camera,  must be specified to 'carry' the listener around.</td></tr>
+<tr><td class=argname>rolloff_factor#</td><td class=argvalue>the rate at which volume diminishes with distance.  Defaults to 1.</td></tr>
+<tr><td class=argname>doppler_scale#</td><td class=argvalue>the severity of the doppler effect. Defaults to  1.</td></tr>
+<tr><td class=argname>distance_scale#</td><td class=argvalue>artificially scales distances. Defaults to 1.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a listener entity and returns its handle.
+</p><p>
+Currently, only a single listener is supported which is typically parented
+to the program's main camera.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBEntity bbCreateListener( BBEntity p=0,float roll=1.0,float dopp=1.0,float dist=1.0 );</pre>
+<pre class=cs>public static int bb.CreateListener(int parent,float rolloff_factor,float doppler_scale,float distance_scale)
+public static int bb.CreateListener(int parent,float rolloff_factor,float doppler_scale)
+public static int bb.CreateListener(int parent,float rolloff_factor)
+public static int bb.CreateListener(int parent)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsound.html>bbLoadSound</a> <a href=bbemitsound.html>bbEmitSound</a>
+</p>
+</td></tr>
+</table>
+</body></html>

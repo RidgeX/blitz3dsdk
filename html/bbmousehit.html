@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbMouseHit</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMouseHit ( button )</h1>
+<table class="doc" id="bbmousehit" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>button</td><td class=argvalue>1,2 or 3 (left, right or middle)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbmousehit.html>bbMouseHit</a> function returns the number of times the specified 
+mouse button has been pressed down since the last call to <a href=bbmousehit.html>bbMouseHit</a>
+with the specified button.
+</p><p>
+Use the <a href=bbmousedown.html>bbMouseDown</a> command to test if the specified button is
+currently in a depressed state as opposed to if the button has
+just been hit. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbMouseHit( int n );</pre>
+<pre class=cs>public static int bb.MouseHit(int button)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbmousedown.html>bbMouseDown</a>
+</p>
+</td></tr>
+</table>
+</body></html>

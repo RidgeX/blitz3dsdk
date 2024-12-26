@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>bbLightMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLightMesh mesh,red#,green#,blue#[,range#][,light_x#][,light_y#][,light_z#]</h1>
+<table class="doc" id="bblightmesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>red#</td><td class=argvalue>mesh red value</td></tr>
+<tr><td class=argname>green#</td><td class=argvalue>mesh green value</td></tr>
+<tr><td class=argname>blue#</td><td class=argvalue>mesh blue value</td></tr>
+<tr><td class=argname>range#</td><td class=argvalue>optional light range</td></tr>
+<tr><td class=argname>light_x#</td><td class=argvalue>optional light x position</td></tr>
+<tr><td class=argname>light_y#</td><td class=argvalue>optional light y position</td></tr>
+<tr><td class=argname>light_z#</td><td class=argvalue>optional light z position</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Adds the effect of a specified point light to the color of all vertices.
+</p><p>
+If the range parameter is omitted it is assumed to be 0 and all vertices
+are lit equally. If the optional position parameters are omitted the
+light is assumed to be at the local origin (coordinate 0,0,0).
+</p><p>
+See the <a href=bbentityfx.html>bbEntityFX</a> command for selecting EnableVertexColors which must
+be active for the results of LightMesh to be visible.
+</p><p>
+Because <a href=bblightmesh.html>bbLightMesh</a> is an additive operation and vertex colors default
+to white, negative white can be applied initially to reset all vertex
+colors to black:
+</p><pre>	LightMesh ent,-255,-255,-255
+</pre>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbLightMesh( BBModel m,float r,float g,float b,float range,float x,float y,float z );</pre>
+<pre class=cs>public static int bb.LightMesh(int mesh,float red,float green,float blue,float range,float light_x,float light_y,float light_z)
+public static int bb.LightMesh(int mesh,float red,float green,float blue,float range,float light_x,float light_y)
+public static int bb.LightMesh(int mesh,float red,float green,float blue,float range,float light_x)
+public static int bb.LightMesh(int mesh,float red,float green,float blue,float range)
+public static int bb.LightMesh(int mesh,float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityfx.html>bbEntityFX</a> <a href=bbbrushfx.html>bbBrushFX</a>
+</p>
+</td></tr>
+</table>
+</body></html>

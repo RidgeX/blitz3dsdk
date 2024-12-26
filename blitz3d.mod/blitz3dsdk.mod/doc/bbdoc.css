@@ -1,0 +1,119 @@
+td.argname{
+	color: #000000;
+	font-weight: bold;
+	padding-right: 40px;
+}
+
+div.warning{
+	background: #808080;
+}	
+div.hint{
+	background: #808080;
+}	
+
+td.doctop{
+	font-size: 14pt;
+	padding: 10px;
+	padding-top: 32px;
+	border-bottom: 1px solid #aaaaaa;
+	vertical-align: text-top; 
+	font-weight: bold;
+}
+td.docleft{
+	font-size: 10pt;
+	padding:10px;
+	padding-top:13px;
+	vertical-align: top; 
+}
+td.docright{
+	font-size: 13pt;
+	padding:10px;
+	border-bottom: 1px solid #aaaaaa;
+	vertical-align: text-top; 
+	width: 90%;
+}
+
+table.data{
+	border-collapse: collapse;
+	border-bottom: 2px solid;
+	border-right: 1px solid;
+}
+
+th.data{
+	border: 1px solid;
+	text-align: left;
+	padding:4px;
+}
+td.data{
+	border: 1px solid;
+	padding:3px;
+}
+pre{
+	font: 10pt courier;
+	background: #eeeeee;
+	padding: 8px;
+}
+
+pre.bb{
+	font: 10pt courier;
+	background: #eeeeff;
+	padding: 8px;
+}
+pre.c{
+	font: 10pt courier;
+	background: #ffeeee;
+	padding: 8px;
+}
+pre.cs{
+	font: 10pt courier;
+	background: #eeffee;
+	padding: 8px;
+}
+
+
+
+font.token{
+	font-weight: bold;
+}
+
+font.syntax{
+	color: #005555;
+}
+
+a{
+	color: #000088;
+	font: 10pt helvetica;
+	text-decoration: none;
+}
+a.navbig{
+	color: #000088;
+	font: 9pt helvetica;
+	text-decoration: none;
+}
+a.navsmall{
+	color: #000088;
+	font: 8pt helvetica;
+	text-decoration: none;
+}
+a:hover{
+	color: #000088;
+}
+a.small{
+	color: #000088;
+	font: 8pt helvetica;
+}
+a.token{
+	color: #000088;
+	text-decoration: underline;
+}
+a.null{
+	text-decoration: none;
+}
+div.entries{
+	display: none;
+	margin-left: 16px;
+}
+img{
+	border:0px;
+	padding-right:4px;
+}

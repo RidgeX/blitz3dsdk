@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbReadPixelFast</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbReadPixelFast ( x,y[,buffer] )</h1>
+<table class="doc" id="bbreadpixelfast" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>buffer</td><td class=argvalue>valid graphics buffer</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bbreadpixelfast.html>bbReadPixelFast</a> is similar in function to <a href=bbreadpixel.html>bbReadPixel</a> but the buffer
+must be locked with the <a href=bblockbuffer.html>bbLockBuffer</a> command and no bounds checking 
+is performed in the interests of speed.
+</p><p>
+Warning: like <a href=bbwritepixelfast.html>bbWritePixelFast</a> extreme care must be taken to ensure
+the pixel position specified falls inside the specified buffers
+area to avoid crashing the computer.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbReadPixelFast( int x,int y,BBCanvas buff );</pre>
+<pre class=cs>public static int bb.ReadPixelFast(int x,int y,int buffer)
+public static int bb.ReadPixelFast(int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbreadpixel.html>bbReadPixel</a> <a href=bblockbuffer.html>bbLockBuffer</a> <a href=bbunlockbuffer.html>bbUnlockBuffer</a> <a href=bbwritepixelfast.html>bbWritePixelFast</a>
+</p>
+</td></tr>
+</table>
+</body></html>

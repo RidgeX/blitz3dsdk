@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>bbEntityPickMode</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityPickMode entity,pick_geometry[,obscurer=True]</h1>
+<table class="doc" id="bbentitypickmode" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>pick_geometry</td><td class=argvalue>type of geometry used for picking</td></tr>
+<tr><td class=argname>obscurer</td><td class=argvalue>False to make entity transparent</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the pick mode for an entity.
+</p><p>
+The obscurer option if True
+entities during an EntityVisible call. Defaults to True.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>PICK_NONE</td><td class=data>0</td><td class=data>Unpickable (default)</td></tr>
+<tr><td class=data>PICK_SPHERE</td><td class=data>1</td><td class=data>Sphere (EntityRadius is used)</td></tr>
+<tr><td class=data>PICK_POLY</td><td class=data>2</td><td class=data>Polygon</td></tr>
+<tr><td class=data>PICK_BOX</td><td class=data>3</td><td class=data>Box (EntityBox is used)</td></tr>
+</table><p>
+The optional <b>obscurer</b> parameter is used with EntityVisible to determine 
+just what can get in the way of the line-of-sight between 2 entities.
+</p><p>
+This allows some entities to be pickable using the other pick commands, 
+but to be ignored (i.e. 'transparent') when using EntityVisible.
+</p><p class="hint">
+A valid mesh entity is required for Polygon type picking.
+Use Sphere or Box type picking for all other entity classes
+including sprites, terrains, pivots etc.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityPickMode( BBObject o,int mode,int obs );</pre>
+<pre class=cs>public static int bb.EntityPickMode(int entity,int pick_geometry,int obscurer)
+public static int bb.EntityPickMode(int entity,int pick_geometry)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitypick.html>bbEntityPick</a> <a href=bblinepick.html>bbLinePick</a> <a href=bbcamerapick.html>bbCameraPick</a> <a href=bbentitypickmode.html>bbEntityPickMode</a>
+</p>
+</td></tr>
+</table>
+</body></html>

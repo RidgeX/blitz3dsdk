@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbLoadMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadMesh ( filename$,[parent] )</h1>
+<table class="doc" id="bbloadmesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>filename$</td><td class=argvalue>name of the file containing the model to load</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>optional <b>parent</b> entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a new mesh entity loaded from a .X, .3DS or .B3D file.
+</p><p>
+Any hierarchy and animation information is ignored.
+</p><p>
+Use the <a href=bbloadanimmesh.html>bbLoadAnimMesh</a> function to load both mesh, hierarchy 
+and animation information.
+</p><p>
+The optional <b>parent</b> parameter attaches the new mesh
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p><p>
+The .b3d file format is the native file format of Blitz3D
+and supports features such as multitexturing, weighted 
+bone skinning and hierachial animation.
+</p><p>
+See the <a href=bbblitz3d file format.html>bbBlitz3D File Format</a> chapter for more information.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbLoadMesh( const char *f,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.LoadMesh(String filename,int parent)
+public static int bb.LoadMesh(String filename)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadanimmesh.html>bbLoadAnimMesh</a> <a href=bbloadermatrix.html>bbLoaderMatrix</a> <a href=bbblitz3d file format.html>bbBlitz3D File Format</a>
+</p>
+</td></tr>
+</table>
+</body></html>

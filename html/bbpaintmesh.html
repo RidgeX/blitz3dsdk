@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbPaintMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPaintMesh mesh,brush</h1>
+<table class="doc" id="bbpaintmesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Paints a mesh with a brush.
+</p><p>
+Color, texture, shininess, fx and blend mode properties are copied from
+the brush to each of the entity's surfaces.
+</p><p>
+Use the <a href=bbpaintsurface.html>bbPaintSurface</a> command to paint individual surfaces.
+</p><p>
+See the <a href=bbcreatebrush.html>bbCreateBrush</a>() function for more information about setting up a
+brush with which to paint entities and individual surfaces.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPaintMesh( BBModel m,BBBrush b );</pre>
+<pre class=cs>public static int bb.PaintMesh(int mesh,int brush)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatebrush.html>bbCreateBrush</a> <a href=bbpaintentity.html>bbPaintEntity</a> <a href=bbpaintsurface.html>bbPaintSurface</a>
+</p>
+</td></tr>
+</table>
+</body></html>

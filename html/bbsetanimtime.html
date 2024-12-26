@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbSetAnimTime</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetAnimTime entity,time#[,anim_seq]</h1>
+<table class="doc" id="bbsetanimtime" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>a valid entity handle.</td></tr>
+<tr><td class=argname>time#</td><td class=argvalue>a floating point time value.</td></tr>
+<tr><td class=argname>anim_seq</td><td class=argvalue>an optional animation sequence number.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+SetAnimTime allows you to manually animate entities.
+</p><p>
+A combination of <a href=bbanimate.html>bbAnimate</a> and <a href=bbupdateworld.html>bbUpdateWorld</a> are usually
+required for animation however the <a href=bbsetanimtime.html>bbSetAnimTime</a> allows
+an alternative method for the program to control animation
+by manually controlling the entity's progress along its
+animation timeline.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetAnimTime( BBObject o,float time,int seq );</pre>
+<pre class=cs>public static int bb.SetAnimTime(int entity,float time,int anim_seq)
+public static int bb.SetAnimTime(int entity,float time)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

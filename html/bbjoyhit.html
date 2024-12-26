@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbJoyHit</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbJoyHit ( button[,port] )</h1>
+<table class="doc" id="bbjoyhit" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>button</td><td class=argvalue>number of joystick button to check</td></tr>
+<tr><td class=argname>port</td><td class=argvalue>number of joystick port to check (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the number of times a specified joystick button 
+has been hit since the last time it was specified in 
+a <a href=bbjoyhit.html>bbJoyHit</a> function call.
+</p><p>
+The optional <b>port</b> identifier provides access to a
+particular game controller, joystick or gamepad connected
+to the system and positively identified by <a href=bbjoytype.html>bbJoyType</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbJoyHit( int n,int port=0 );</pre>
+<pre class=cs>public static int bb.JoyHit(int button,int port)
+public static int bb.JoyHit(int button)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbkeyhit.html>bbKeyHit</a> <a href=bbmousehit.html>bbMouseHit</a>
+</p>
+</td></tr>
+</table>
+</body></html>

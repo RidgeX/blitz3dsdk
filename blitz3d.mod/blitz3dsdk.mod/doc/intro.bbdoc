@@ -1,0 +1,23 @@
+<style>
+body{
+	background: #ffeeff;
+}	
+td.argname{
+	background: white;
+	color: #000000;
+	font-weight: bold;
+	padding-right: 40px;
+}
+td.argvalue{
+	background: white;
+	color: #000000;
+	font-style: italic;
+	padding-right: 80px;
+}
+</style>
+
+The Blitz3DSDK module provides a complete command set for producing
+3D games and interactive applications for Windows computers.
+
+See the blitz3dsdk.chm User Manual for more information and our website
+for more Blitz3DSDK resources and information.

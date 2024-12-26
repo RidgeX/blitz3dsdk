@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbChannelPitch</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbChannelPitch channel,samplerate</h1>
+<table class="doc" id="bbchannelpitch" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>channel</td><td class=argvalue>valid playback channel</td></tr>
+<tr><td class=argname>samplerate</td><td class=argvalue>playback rate in samples per second</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Modifies the pitch of an active audio channel by changing its
+playback rate.
+</p><p>
+Sound sources are commonly recorded at rates such as 22050 
+and 44100 samples per second and their playback rate defaults 
+to the recorded rate.
+</p><p>
+Changing a channel's playback rate with the <a href=bbchannelpitch.html>bbChannelPitch</a> command
+will modify the pitch of the recorded audio currently used as
+a playback source.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbChannelPitch( BBChannel channel,int pitch );</pre>
+<pre class=cs>public static int bb.ChannelPitch(int channel,int samplerate)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsound.html>bbLoadSound</a> <a href=bbsoundpitch.html>bbSoundPitch</a>
+</p>
+</td></tr>
+</table>
+</body></html>

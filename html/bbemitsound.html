@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbEmitSound</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEmitSound ( sound,entity )</h1>
+<table class="doc" id="bbemitsound" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sound</td><td class=argvalue>sound handle</td></tr>
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Emits a sound attached to the specified entity and returns a sound channel.
+</p><p>
+The sound must have been loaded using <a href=bbloadsound.html>bbLoadSound</a> with the SOUND3D
+flag.
+</p><p>
+The sound channel returned can subsequently be used with such sound channel 
+commands as <a href=bbchannelvolume.html>bbChannelVolume</a> and <a href=bbchannelpitch.html>bbChannelPitch</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBChannel bbEmitSound( BBSound sound,BBObject o );</pre>
+<pre class=cs>public static int bb.EmitSound(int sound,int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsound.html>bbLoadSound</a> <a href=bbcreatelistener.html>bbCreateListener</a> <a href=bbchannelvolume.html>bbChannelVolume</a> <a href=bbchannelpitch.html>bbChannelPitch</a>
+</p>
+</td></tr>
+</table>
+</body></html>

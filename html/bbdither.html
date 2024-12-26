@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbDither</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDither enable</h1>
+<table class="doc" id="bbdither" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>enable</td><td class=argvalue>True to enable dithering</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Enables or disables hardware dithering.
+</p><p>
+Only displays configured to use 16 bit color depth benefit from
+dithering which attempts to reduce the course shading that lower
+color resolutions often suffer.
+</p><p>
+The default is True.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbDither( int enable );</pre>
+<pre class=cs>public static int bb.Dither(int enable)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>bbRenderWorld</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbRenderWorld [tween#=1.0]</h1>
+<table class="doc" id="bbrenderworld" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>tween#</td><td class=argvalue>optional value to render between updates</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+All visible entities in the World are rendered on each
+enabled camera to the <a href=bbbackbuffer.html>bbBackBuffer</a> of the current
+<a href=bbgraphics3d.html>bbGraphics3D</a> display device.
+</p><p>
+The area of the <a href=bbgraphics3d.html>bbGraphics3D</a> display each camera renders
+to is specified with the <a href=bbcameraviewport.html>bbCameraViewport</a> command.
+</p><p>
+A camera will not render if its <a href=bbcameraprojmode.html>bbCameraProjMode</a> has
+been set to 0 or it has not been hidden due to a call
+to the <a href=bbhideentity.html>bbHideEntity</a> command.
+</p><p>
+A tween value of 0 will render all entities in the same
+state they were when <a href=bbcaptureworld.html>bbCaptureWorld</a> was last called and 
+a tween value of 1 (the default) will render all entities in their
+current state.
+</p><p>
+The use of tweening allows you to render more than one 
+frame per game logic update, while still keeping the 
+display smooth. See <a href=bbcaptureworld.html>bbCaptureWorld</a> for more information
+regarding the use of tweening in Blitz3D.
+</p><p>
+Render tweening is an advanced technique, and it is not 
+necessary for normal use. See the castle demo  included in
+the mak (nickname of Mark Sibly, author of Blitz3D) directory 
+of the Blitz3D samples section for a demonstration of render 
+tweening.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbRenderWorld( float tween=1.0 );</pre>
+<pre class=cs>public static int bb.RenderWorld(float tween)
+public static int bb.RenderWorld()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgraphics3d.html>bbGraphics3D</a> <a href=bbcaptureworld.html>bbCaptureWorld</a> <a href=bbcameraviewport.html>bbCameraViewport</a> <a href=bbcameraprojmode.html>bbCameraProjMode</a> <a href=bbtrisrendered.html>bbTrisRendered</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbOval</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbOval x,y,width,height[,solid=True]</h1>
+<table class="doc" id="bboval" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontl pixel position</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel position</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width in pixels</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height in pixels</td></tr>
+<tr><td class=argname>solid</td><td class=argvalue>False draws an outline only</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bboval.html>bbOval</a> command can be used to draw circles and ovals in 
+solid or outline form.
+</p><p>
+The shape of the <a href=bboval.html>bbOval</a> drawn is the largest that can fit inside
+the specified rectangle.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbOval( int x,int y,int w,int h,int solid=1 );</pre>
+<pre class=cs>public static int bb.Oval(int x,int y,int width,int height,int solid)
+public static int bb.Oval(int x,int y,int width,int height)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

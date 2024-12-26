@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbEntityBox</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityBox entity,x#,y#,z#,width#,height#,depth#</h1>
+<table class="doc" id="bbentitybox" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle#</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x position of entity's collision box</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y position of entity's collision box</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z position of entity's collision box</td></tr>
+<tr><td class=argname>width#</td><td class=argvalue>width of entity's collision box</td></tr>
+<tr><td class=argname>height#</td><td class=argvalue>height of entity's collision box</td></tr>
+<tr><td class=argname>depth#</td><td class=argvalue>depth of entity's collision box</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the dimensions of an entity's collision box.
+</p><p>
+Any entity types featured as the destination of 
+type 3 <a href=bbcollisions.html>bbCollisions</a> (ellipsoid to box) require 
+an <a href=bbentitybox.html>bbEntityBox</a> to define their collision space.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityBox( BBObject o,float x,float y,float z,float w,float h,float d );</pre>
+<pre class=cs>public static int bb.EntityBox(int entity,float x,float y,float z,float width,float height,float depth)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityradius.html>bbEntityRadius</a> <a href=bbcollisions.html>bbCollisions</a> <a href=bbentitytype.html>bbEntityType</a>
+</p>
+</td></tr>
+</table>
+</body></html>

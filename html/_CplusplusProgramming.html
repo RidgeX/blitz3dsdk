@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>C++ Programming</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>C++ Programming</h1>
+<p>
+The following is a simple C++ application featuring a rotating cube using the
+Blitz3DSDK library.
+</p><pre>#include &lt;windows.h&gt;
+
+#include &quot;blitz3dsdk.h&quot;
+
+extern int WINAPI WinMain(HINSTANCE hThisInst,HINSTANCE hPrevInst,LPSTR lpszArgs,int nWinMode){
+
+	bbBeginBlitz3D();
+
+	bbGraphics3D(800,600,0,2);
+
+	BBLight light=bbCreateLight();
+	BBCamera camera=bbCreateCamera();
+	BBMeshModel cube=bbCreateCube();
+
+	bbPositionEntity(camera,0,0,-4);
+
+	while (!bbKeyHit(1)){
+		bbTurnEntity(cube,1,2,3);
+		bbRenderWorld();
+		bbFlip();
+	}
+
+	bbEndBlitz3D();
+	return 0;
+}
+</pre><DL>
+</DL>
+</body></html>

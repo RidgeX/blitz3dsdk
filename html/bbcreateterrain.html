@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>bbCreateTerrain</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateTerrain ( grid_size[,parent] )</h1>
+<table class="doc" id="bbcreateterrain" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>grid_size</td><td class=argvalue>no of grid squares along each side of terrain</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>optional <b>parent</b> entity of terrain</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a terrain entity and returns its handle.
+</p><p>
+The terrain extends from 0,0,0 to grid_size,1,grid_size. 
+</p><p>
+The grid_size, no of grid squares along each side of terrain, and must 
+be a  power of 2 value, e.g. 32, 64, 128, 256, 512, 1024.
+</p><p>
+A terrain is a special type of polygon object that uses real-time level of
+detail (LOD) to display landscapes which should theoretically consist of 
+over a million polygons with only a few thousand.
+</p><p>
+The way it does this is by constantly rearranging a certain amount of
+polygons to display high levels of detail close to the viewer and low
+levels further away. 
+</p><p>
+This constant rearrangement of polygons is occasionally noticeable 
+however,  and is a well-known side-effect of all LOD landscapes.
+</p><p>
+This 'pop-in' effect  can be reduced in lots of ways though, as the 
+other terrain help files will  go on to explain. 
+</p><p>
+The optional <b>parent</b> parameter attaches the new terrain
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBTerrain bbCreateTerrain( int n,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateTerrain(int grid_size,int parent)
+public static int bb.CreateTerrain(int grid_size)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadterrain.html>bbLoadTerrain</a>
+</p>
+</td></tr>
+</table>
+</body></html>

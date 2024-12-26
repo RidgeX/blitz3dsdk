@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbSetBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetBuffer buffer</h1>
+<table class="doc" id="bbsetbuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>buffer</td><td class=argvalue>a valid graphics buffer</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbsetbuffer.html>bbSetBuffer</a> command is used to set the current graphics buffer.
+</p><p>
+After calling <a href=bbsetbuffer.html>bbSetBuffer</a>, All 2D rendering commands will write to the specified
+graphics buffer. 3D rendering always writes to the back buffer.
+</p><p>
+<a href=bbsetbuffer.html>bbSetBuffer</a> also resets the <a href=bborigin.html>bbOrigin</a> to 0,0 and the <a href=bbviewport.html>bbViewport</a> to the
+dimensions of the entire selected buffer.
+</p><p>
+<b>buffer</b> should be a valid graphics buffer returned by <a href=bbfrontbuffer.html>bbFrontBuffer</a>, 
+<a href=bbbackbuffer.html>bbBackBuffer</a>, <a href=bbimagebuffer.html>bbImageBuffer</a>, <a href=bbtexturebuffer.html>bbTextureBuffer</a> or the result of a previous call 
+to <a href=bbgraphicsbuffer.html>bbGraphicsBuffer</a>.
+</p><p>
+At the beginning of program execution and following any call
+to <a href=bbgraphics.html>bbGraphics</a> the current graphics buffer is set to the display's
+<a href=bbfrontbuffer.html>bbFrontBuffer</a>.
+</p><p>
+After a call to <a href=bbgraphics3d.html>bbGraphics3D</a> the current buffer is set to the
+display's <a href=bbbackbuffer.html>bbBackBuffer</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetBuffer( BBCanvas buff );</pre>
+<pre class=cs>public static int bb.SetBuffer(int buffer)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgraphicsbuffer.html>bbGraphicsBuffer</a> <a href=bbfrontbuffer.html>bbFrontBuffer</a> <a href=bbbackbuffer.html>bbBackBuffer</a> <a href=bbimagebuffer.html>bbImageBuffer</a> <a href=bbtexturebuffer.html>bbTextureBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

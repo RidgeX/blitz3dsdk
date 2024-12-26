@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>bbFitMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFitMesh mesh,x#,y#,z#,width#,height#,depth#[,uniform]</h1>
+<table class="doc" id="bbfitmesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x position of mesh</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y position ofmesh</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z position of mesh</td></tr>
+<tr><td class=argname>width#</td><td class=argvalue>width of mesh</td></tr>
+<tr><td class=argname>height#</td><td class=argvalue>height of mesh</td></tr>
+<tr><td class=argname>depth#</td><td class=argvalue>depth of mesh</td></tr>
+<tr><td class=argname>uniform</td><td class=argvalue>optional, True to scale all axis the same amount</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Scales and translates all vertices of a mesh so that the mesh 
+occupies the specified box.
+</p><p>
+The <b>uniform</b> parameter defaults to false.
+</p><p>
+A <b>uniform</b> fit will scale the size of the mesh evenly in
+each axis until the mesh fits in the dimensions specified
+retaining the mesh's original aspect ratio.
+</p><p class="hint">
+A width, height or depth of 0 should never be used
+if the geometry of the mesh is to remain intact, use
+a value near 0 instead to &quot;flatten&quot; a mesh.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFitMesh( BBModel m,float x,float y,float z,float w,float h,float d,int uniform=0 );</pre>
+<pre class=cs>public static int bb.FitMesh(int mesh,float x,float y,float z,float width,float height,float depth,int uniform)
+public static int bb.FitMesh(int mesh,float x,float y,float z,float width,float height,float depth)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbscalemesh.html>bbScaleMesh</a> <a href=bbscaleentity.html>bbScaleEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

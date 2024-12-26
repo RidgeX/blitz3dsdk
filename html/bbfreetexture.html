@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>bbFreeTexture</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFreeTexture texture</h1>
+<table class="doc" id="bbfreetexture" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture</td><td class=argvalue>texture handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Frees a texture's resources from memory.
+</p><p>
+Freeing a texture means you will not be able to use it again; however, 
+entities already textured with it will not lose the texture.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFreeTexture( BBTexture t );</pre>
+<pre class=cs>public static int bb.FreeTexture(int texture)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

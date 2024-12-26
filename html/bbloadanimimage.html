@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbLoadAnimImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadAnimImage ( filename$,width,height,first,count )</h1>
+<table class="doc" id="bbloadanimimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>filename$</td><td class=argvalue>the name of the image file to be loaded</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width in pixels of each frame in the image.</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height in pixels of each frame in the image.</td></tr>
+<tr><td class=argname>first</td><td class=argvalue>index of first animation frame in source image to load(usually 0)</td></tr>
+<tr><td class=argname>count</td><td class=argvalue>number of frames to load</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbloadanimimage.html>bbLoadAnimImage</a> function is an alternative to 
+<a href=bbloadimage.html>bbLoadImage</a> that can load many frames of animation 
+from a single image file.
+</p><p>
+The frames must be drawn in similar sized rectangles
+arranged from left to right, top to bottom on the
+image source.
+</p><p>
+Animation is achieved by selecting a different frame
+of animation to be used each time the image is drawn.
+The optional <b>frame</b> parameter of commands such as
+<a href=bbdrawimage.html>bbDrawImage</a> select a specific frame of animation 
+to draw of the specified <b>image</b> loaded with this
+command.
+</p><p>
+If the image file cannot be located or there is a
+problem loading, <a href=bbloadanimimage.html>bbLoadAnimImage</a> will fail and return 0.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBImage bbLoadAnimImage( const char *s,int w,int h,int first,int cnt );</pre>
+<pre class=cs>public static int bb.LoadAnimImage(String filename,int width,int height,int first,int count)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawimage.html>bbDrawImage</a> <a href=bbloadimage.html>bbLoadImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

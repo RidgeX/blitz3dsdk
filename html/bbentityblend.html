@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>bbEntityBlend</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityBlend entity,blend</h1>
+<table class="doc" id="bbentityblend" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>blend</td><td class=argvalue>blend mode of the entity.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the blending mode of an entity.
+</p><p>
+A blending mode determines the way in which the color and 
+alpha (RGBA) on an entity's surface (source) is combined 
+with the color of the background (destination) during rendering.
+</p><p>
+The possible blend modes are:
+</p><table class="data">
+<tr><th class=data>Name</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>BLEND_ALPHA</td><td class=data>1</td><td class=data>Combines <b>alpha</b> amount of src with 1-<b>alpha</b> of dest</td><td class=data>most things</td></tr>
+<tr><td class=data>BLEND_MULT</td><td class=data>2</td><td class=data>Blends src color with dest</td><td class=data>lightmaps</td></tr>
+<tr><td class=data>BLEND_ADD</td><td class=data>Adds src color to dest</td><td class=data>explosions lasers etc.</td></tr>
+</table><p>
+Alpha - blends the pixels according to the Alpha value. This is 
+roughly done to the formula:
+</p><p>
+Rr = ( An * Rn ) + ( ( 1.0 - An ) * Ro )
+</p><p>
+Gr = ( An * Gn ) + ( ( 1.0 - An ) * Go )
+</p><p>
+Br = ( An * Bn ) + ( ( 1.0 - An ) * Bo )
+</p><p>
+Where R = Red, G = Green, B = Blue, n = new pixel color values, 
+r = resultant color values, o = old pixel color values.
+</p><p>
+Alpha blending is the default blending mode and is used
+with most world objects.
+</p><p>
+Multiply - darkens the underlying pixels. If you think of each RGB value as 
+being on a scale from 0% to 100%, where 0 = 0% and 255 = 100%, the multiply 
+blend mode will multiply the red, green and blue values individually together 
+in order to get the new RGB value, roughly according to:
+</p><p>
+Rr = ( ( Rn / 255.0 ) * ( Ro / 255.0 ) ) * 255.0
+</p><p>
+Gr = ( ( Gn / 255.0 ) * ( Go / 255.0 ) ) * 255.0
+</p><p>
+Br = ( ( Bn / 255.0 ) * ( Bo / 255.0 ) ) * 255.0
+</p><p>
+The alpha value has no effect with multiplicative blending.
+</p><p>
+Blending a RGB value of 255, 255, 255 will make no difference, while an 
+RGB value of 128, 128, 128 will darken the pixels by a factor of 2 and an 
+RGB value of 0, 0, 0 will completely blacken out the resultant pixels.
+</p><p>
+An RGB value of 0, 255, 255 will remove the red component of the underlying 
+pixel while leaving the other color values untouched.
+</p><p>
+Multiply blending is most often used for lightmaps, shadows or anything else 
+that needs to 'darken' the resultant pixels.
+</p><p>
+Add - additive blending will add the new color values to the old, roughly
+according to:
+</p><p>
+Rr = ( Rn * An ) + Ro
+</p><p>
+Gr = ( Gn * An ) + Go
+</p><p>
+Br = ( Bn * An ) + Bo
+</p><p>
+The resultant RGB values are clipped out at 255, meaning
+that multiple additive effects can quickly cause visible 
+banding from smooth gradients.
+</p><p>
+Additive blending is extremely useful for effects such as
+laser shots and fire.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityBlend( BBModel m,int blend );</pre>
+<pre class=cs>public static int bb.EntityBlend(int entity,int blend)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbbrushblend.html>bbBrushBlend</a> <a href=bbtextureblend.html>bbTextureBlend</a> <a href=bbentityalpha.html>bbEntityAlpha</a>
+</p>
+</td></tr>
+</table>
+</body></html>

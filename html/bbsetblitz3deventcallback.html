@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>bbSetBlitz3DEventCallback</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetBlitz3DEventCallback ( callback )</h1>
+<table class="doc" id="bbsetblitz3deventcallback" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Installs an event handler for use by the Blitz3DSDK. 
+</p><p>
+<a href=bbsetblitz3deventcallback.html>bbSetBlitz3DEventCallback</a> must be called before <a href=bbbeginblitz3d.html>bbBeginBlitz3D</a>.
+</p><p>
+The prototype for the callback is:
+</p><pre>int (*eventhandler)(int hwnd,int msg,int wp,int lp);
+</pre><p>
+The following BlitzMax code demonstrates the use of an eventhandler which
+enables standard BlitzMax input commands to be used with the Blitz3DSDK.
+</p><pre>Import blitz3d.blitz3dsdk
+
+Strict
+
+Function BBEventHandler(hwnd,msg,wp,lp) &quot;win32&quot;
+	bbSystemEmitOSEvent hwnd,msg,wp,lp,Null
+	Return -1
+End Function
+
+bbSetBlitz3DEventCallback(BBEventHandler)
+
+bbBeginBlitz3D()
+
+bbGraphics3D 800,600,0,2
+
+Local cube=bbCreateCube()
+Local light=bbCreateLight()
+Local camera=bbCreateCamera()
+
+bbPositionEntity camera,0,0,-4
+
+EnablePolledinput
+
+While Not KeyDown(KEY_ESCAPE)
+	bbTurnEntity cube,1,2,3
+	bbRenderWorld
+	bbText 20,20,&quot;mouse:&quot;+MouseX()+&quot;,&quot;+MouseY()
+	bbFlip 
+Wend
+</pre>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetBlitz3DEventCallback(int (*callback)(int hwnd,int msg,int wparam,int lparam));</pre>
+<pre class=cs>public static int bb.SetBlitz3DEventCallback(int callback)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>BlitzMax</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>BlitzMax</h1>
+<h4 id="_ModuleInstallation">Module Installation</h4><p>
+To install the Blitz3DSDK BlitzMax module copy the 'blitz3d.mod' folder
+from the SDK to your blitzmax 'mod' folder. The blitz3d.mod folder should
+be located alongside the brl.mod and pub.mod module folders and contains
+the actual blitz3dsdk.mod module.
+
+</p><p>
+Once the blitz3d.mod module group has been copied use the docmods
+feature in the MaxIDE Tools menu to include the documentation included
+with the Blitz3DSDK module.
+
+</p><p>
+Links to samples and games can be found in the SDK 'samples' folder.
+
+</p>
+<h4 id="_SimpleExample">Simple Example</h4><p>
+The following is a simple BlitzMax application featuring a rotating cube
+using the Blitz3DSDK module.
+
+</p><pre>
+Import blitz3d.blitz3dsdk
+
+Strict
+
+bbBeginBlitz3D
+
+bbGraphics3D 800,600,0,2
+
+Local cube=bbCreateCube()
+Local light=bbCreateLight()
+Local camera=bbCreateCamera()
+
+bbPositionEntity camera,0,0,-4
+
+While Not bbKeyHit(1)
+	bbTurnEntity cube,1,2,3
+	bbRenderWorld
+	bbFlip 1
+Wend
+</pre>
+<DL>
+</DL>
+</body></html>

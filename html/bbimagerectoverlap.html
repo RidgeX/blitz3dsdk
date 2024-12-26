@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbImageRectOverlap</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbImageRectOverlap ( image,x,y,rectx,recty,rectw,recth )</h1>
+<table class="doc" id="bbimagerectoverlap" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location of image</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location of image</td></tr>
+<tr><td class=argname>rectx</td><td class=argvalue>horizontal pixel location of rect</td></tr>
+<tr><td class=argname>recty</td><td class=argvalue>vertical pixel location of rect</td></tr>
+<tr><td class=argname>rectw</td><td class=argvalue>width of the rect</td></tr>
+<tr><td class=argname>recth</td><td class=argvalue>height of the rect</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbimagerectoverlap.html>bbImageRectOverlap</a> function returns True if the image specified
+drawn at the location specified would overlap with the rectangle
+described.
+</p><p>
+<a href=bbimagerectoverlap.html>bbImageRectOverlap</a> perform a fast rectangular based test ignoring
+the shape of any image mask, see <a href=bbimagerectcollide.html>bbImageRectCollide</a> for a more
+exact collision test.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbImageRectOverlap( BBImage i,int x,int y,int r_x,int r_y,int r_w,int r_h );</pre>
+<pre class=cs>public static int bb.ImageRectOverlap(int image,int x,int y,int rectx,int recty,int rectw,int recth)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbimagesoverlap.html>bbImagesOverlap</a> <a href=bbrectsoverlap.html>bbRectsOverlap</a> <a href=bbimagerectcollide.html>bbImageRectCollide</a>
+</p>
+</td></tr>
+</table>
+</body></html>

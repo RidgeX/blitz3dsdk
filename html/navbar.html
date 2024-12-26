@@ -1,0 +1,607 @@
+<html>
+<head>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+<script>function toggle(a){if(a.display!='block')a.display='block';else a.display='none';}</script>
+</head>
+<body class=navbar>
+<a onClick=toggle(Blitz3DSDK.style) class=navbig href=Blitz3DSDK.html target=main><img src=images/open.png> Blitz3D SDK</a><br>
+<div id=Blitz3DSDK class=entries style=display:block>
+<a onClick=toggle(_Blitz3DSDKUserGuide.style) class=navbig href=_Blitz3DSDKUserGuide.html target=main><img src=images/open.png> Blitz3DSDK User Guide</a><br>
+<div id=_Blitz3DSDKUserGuide class=entries>
+<a onClick=toggle(_Credits.style) class=navbig href=_Credits.html target=main><img src=images/open.png> Credits</a><br>
+<div id=_Credits class=entries>
+</div>
+<a onClick=toggle(_Blitz3DSDKContents.style) class=navbig href=_Blitz3DSDKContents.html target=main><img src=images/open.png> Blitz3DSDK Contents</a><br>
+<div id=_Blitz3DSDKContents class=entries>
+</div>
+<a onClick=toggle(_BlitzMax.style) class=navbig href=_BlitzMax.html target=main><img src=images/open.png> BlitzMax</a><br>
+<div id=_BlitzMax class=entries>
+</div>
+<a onClick=toggle(_PureBasic.style) class=navbig href=_PureBasic.html target=main><img src=images/open.png> PureBasic</a><br>
+<div id=_PureBasic class=entries>
+</div>
+<a onClick=toggle(_VisualStudioExpress.style) class=navbig href=_VisualStudioExpress.html target=main><img src=images/open.png> Visual Studio Express</a><br>
+<div id=_VisualStudioExpress class=entries>
+</div>
+<a onClick=toggle(_CreatingVisualCplusplusProjects.style) class=navbig href=_CreatingVisualCplusplusProjects.html target=main><img src=images/open.png> Creating Visual C++ Projects</a><br>
+<div id=_CreatingVisualCplusplusProjects class=entries>
+</div>
+<a onClick=toggle(_CplusplusProgramming.style) class=navbig href=_CplusplusProgramming.html target=main><img src=images/open.png> C++ Programming</a><br>
+<div id=_CplusplusProgramming class=entries>
+</div>
+<a onClick=toggle(_CsharpProgramming.style) class=navbig href=_CsharpProgramming.html target=main><img src=images/open.png> C# Programming </a><br>
+<div id=_CsharpProgramming class=entries>
+</div>
+</div>
+<a onClick=toggle(_Blitz3DRuntime.style) class=navbig href=_Blitz3DRuntime.html target=main><img src=images/open.png> Blitz3D Runtime</a><br>
+<div id=_Blitz3DRuntime class=entries>
+<a onClick=toggle(_RuntimeControl.style) class=navbig href=_RuntimeControl.html target=main><img src=images/open.png> Runtime Control</a><br>
+<div id=_RuntimeControl class=entries>
+<a class=navsmall href=bbbeginblitz3d.html target=main><img src=images/doc.png> bbBeginBlitz3D</a><br>
+<a class=navsmall href=bbendblitz3d.html target=main><img src=images/doc.png> bbEndBlitz3D</a><br>
+<a class=navsmall href=bbruntimeerror.html target=main><img src=images/doc.png> bbRuntimeError</a><br>
+<a class=navsmall href=bbsetblitz3ddebugmode.html target=main><img src=images/doc.png> bbSetBlitz3DDebugMode</a><br>
+<a class=navsmall href=bbsetblitz3ddebugcallback.html target=main><img src=images/doc.png> bbSetBlitz3DDebugCallback</a><br>
+<a class=navsmall href=bbsetblitz3deventcallback.html target=main><img src=images/doc.png> bbSetBlitz3DEventCallback</a><br>
+<a class=navsmall href=bbsetblitz3dhwnd.html target=main><img src=images/doc.png> bbSetBlitz3DHWND</a><br>
+<a class=navsmall href=bbsetblitz3dtitle.html target=main><img src=images/doc.png> bbSetBlitz3DTitle</a><br>
+</div>
+</div>
+<a onClick=toggle(_2DGraphics.style) class=navbig href=_2DGraphics.html target=main><img src=images/open.png> 2D Graphics</a><br>
+<div id=_2DGraphics class=entries>
+<a onClick=toggle(_Graphics.style) class=navbig href=_Graphics.html target=main><img src=images/open.png> Graphics</a><br>
+<div id=_Graphics class=entries>
+<a class=navsmall href=bbgraphics.html target=main><img src=images/doc.png> bbGraphics</a><br>
+<a class=navsmall href=bbflip.html target=main><img src=images/doc.png> bbFlip</a><br>
+<a class=navsmall href=bbbackbuffer.html target=main><img src=images/doc.png> bbBackBuffer</a><br>
+<a class=navsmall href=bbfrontbuffer.html target=main><img src=images/doc.png> bbFrontBuffer</a><br>
+<a class=navsmall href=bbgraphicswidth.html target=main><img src=images/doc.png> bbGraphicsWidth</a><br>
+<a class=navsmall href=bbgraphicsheight.html target=main><img src=images/doc.png> bbGraphicsHeight</a><br>
+<a class=navsmall href=bbgraphicsdepth.html target=main><img src=images/doc.png> bbGraphicsDepth</a><br>
+<a class=navsmall href=bbendgraphics.html target=main><img src=images/doc.png> bbEndGraphics</a><br>
+<a class=navsmall href=bbvwait.html target=main><img src=images/doc.png> bbVWait</a><br>
+<a class=navsmall href=bbscanline.html target=main><img src=images/doc.png> bbScanLine</a><br>
+<a class=navsmall href=bbtotalvidmem.html target=main><img src=images/doc.png> bbTotalVidMem</a><br>
+<a class=navsmall href=bbavailvidmem.html target=main><img src=images/doc.png> bbAvailVidMem</a><br>
+<a class=navsmall href=bbsetgamma.html target=main><img src=images/doc.png> bbSetGamma</a><br>
+<a class=navsmall href=bbupdategamma.html target=main><img src=images/doc.png> bbUpdateGamma</a><br>
+<a class=navsmall href=bbgammared.html target=main><img src=images/doc.png> bbGammaRed</a><br>
+<a class=navsmall href=bbgammagreen.html target=main><img src=images/doc.png> bbGammaGreen</a><br>
+<a class=navsmall href=bbgammablue.html target=main><img src=images/doc.png> bbGammaBlue</a><br>
+</div>
+<a onClick=toggle(_PrintingandBASICInput.style) class=navbig href=_PrintingandBASICInput.html target=main><img src=images/open.png> Printing and BASIC Input</a><br>
+<div id=_PrintingandBASICInput class=entries>
+<a class=navsmall href=bbprint.html target=main><img src=images/doc.png> bbPrint</a><br>
+<a class=navsmall href=bbwrite.html target=main><img src=images/doc.png> bbWrite</a><br>
+<a class=navsmall href=bbinput.html target=main><img src=images/doc.png> bbInput$</a><br>
+<a class=navsmall href=bblocate.html target=main><img src=images/doc.png> bbLocate</a><br>
+</div>
+<a onClick=toggle(_2DDrawing.style) class=navbig href=_2DDrawing.html target=main><img src=images/open.png> 2D Drawing</a><br>
+<div id=_2DDrawing class=entries>
+<a class=navsmall href=bbcls.html target=main><img src=images/doc.png> bbCls</a><br>
+<a class=navsmall href=bbplot.html target=main><img src=images/doc.png> bbPlot</a><br>
+<a class=navsmall href=bbline.html target=main><img src=images/doc.png> bbLine</a><br>
+<a class=navsmall href=bbrect.html target=main><img src=images/doc.png> bbRect</a><br>
+<a class=navsmall href=bboval.html target=main><img src=images/doc.png> bbOval</a><br>
+<a class=navsmall href=bbcolor.html target=main><img src=images/doc.png> bbColor</a><br>
+<a class=navsmall href=bbclscolor.html target=main><img src=images/doc.png> bbClsColor</a><br>
+<a class=navsmall href=bborigin.html target=main><img src=images/doc.png> bbOrigin</a><br>
+<a class=navsmall href=bbviewport.html target=main><img src=images/doc.png> bbViewport</a><br>
+<a class=navsmall href=bbgetcolor.html target=main><img src=images/doc.png> bbGetColor</a><br>
+<a class=navsmall href=bbcolorred.html target=main><img src=images/doc.png> bbColorRed</a><br>
+<a class=navsmall href=bbcolorgreen.html target=main><img src=images/doc.png> bbColorGreen</a><br>
+<a class=navsmall href=bbcolorblue.html target=main><img src=images/doc.png> bbColorBlue</a><br>
+</div>
+<a onClick=toggle(_TextandFonts.style) class=navbig href=_TextandFonts.html target=main><img src=images/open.png> Text and Fonts</a><br>
+<div id=_TextandFonts class=entries>
+<a class=navsmall href=bbtext.html target=main><img src=images/doc.png> bbText</a><br>
+<a class=navsmall href=bbloadfont.html target=main><img src=images/doc.png> bbLoadFont</a><br>
+<a class=navsmall href=bbsetfont.html target=main><img src=images/doc.png> bbSetFont</a><br>
+<a class=navsmall href=bbfreefont.html target=main><img src=images/doc.png> bbFreeFont</a><br>
+<a class=navsmall href=bbfontwidth.html target=main><img src=images/doc.png> bbFontWidth</a><br>
+<a class=navsmall href=bbfontheight.html target=main><img src=images/doc.png> bbFontHeight</a><br>
+<a class=navsmall href=bbstringwidth.html target=main><img src=images/doc.png> bbStringWidth</a><br>
+<a class=navsmall href=bbstringheight.html target=main><img src=images/doc.png> bbStringHeight</a><br>
+</div>
+<a onClick=toggle(_Images.style) class=navbig href=_Images.html target=main><img src=images/open.png> Images</a><br>
+<div id=_Images class=entries>
+<a class=navsmall href=bbloadimage.html target=main><img src=images/doc.png> bbLoadImage</a><br>
+<a class=navsmall href=bbloadanimimage.html target=main><img src=images/doc.png> bbLoadAnimImage</a><br>
+<a class=navsmall href=bbcreateimage.html target=main><img src=images/doc.png> bbCreateImage</a><br>
+<a class=navsmall href=bbmaskimage.html target=main><img src=images/doc.png> bbMaskImage</a><br>
+<a class=navsmall href=bbimagewidth.html target=main><img src=images/doc.png> bbImageWidth</a><br>
+<a class=navsmall href=bbimageheight.html target=main><img src=images/doc.png> bbImageHeight</a><br>
+<a class=navsmall href=bbsaveimage.html target=main><img src=images/doc.png> bbSaveImage</a><br>
+<a class=navsmall href=bbfreeimage.html target=main><img src=images/doc.png> bbFreeImage</a><br>
+</div>
+<a onClick=toggle(_DrawingwithImages.style) class=navbig href=_DrawingwithImages.html target=main><img src=images/open.png> Drawing with Images</a><br>
+<div id=_DrawingwithImages class=entries>
+<a class=navsmall href=bbdrawimage.html target=main><img src=images/doc.png> bbDrawImage</a><br>
+<a class=navsmall href=bbdrawblock.html target=main><img src=images/doc.png> bbDrawBlock</a><br>
+<a class=navsmall href=bbdrawimagerect.html target=main><img src=images/doc.png> bbDrawImageRect</a><br>
+<a class=navsmall href=bbdrawblockrect.html target=main><img src=images/doc.png> bbDrawBlockRect</a><br>
+<a class=navsmall href=bbtileimage.html target=main><img src=images/doc.png> bbTileImage</a><br>
+<a class=navsmall href=bbtileblock.html target=main><img src=images/doc.png> bbTileBlock</a><br>
+</div>
+<a onClick=toggle(_ImageHandles.style) class=navbig href=_ImageHandles.html target=main><img src=images/open.png> Image Handles</a><br>
+<div id=_ImageHandles class=entries>
+<a class=navsmall href=bbhandleimage.html target=main><img src=images/doc.png> bbHandleImage</a><br>
+<a class=navsmall href=bbmidhandle.html target=main><img src=images/doc.png> bbMidHandle</a><br>
+<a class=navsmall href=bbautomidhandle.html target=main><img src=images/doc.png> bbAutoMidHandle</a><br>
+<a class=navsmall href=bbimagexhandle.html target=main><img src=images/doc.png> bbImageXHandle</a><br>
+<a class=navsmall href=bbimageyhandle.html target=main><img src=images/doc.png> bbImageYHandle</a><br>
+</div>
+<a onClick=toggle(_ImageManipulation.style) class=navbig href=_ImageManipulation.html target=main><img src=images/open.png> Image Manipulation</a><br>
+<div id=_ImageManipulation class=entries>
+<a class=navsmall href=bbcopyimage.html target=main><img src=images/doc.png> bbCopyImage</a><br>
+<a class=navsmall href=bbgrabimage.html target=main><img src=images/doc.png> bbGrabImage</a><br>
+<a class=navsmall href=bbimagebuffer.html target=main><img src=images/doc.png> bbImageBuffer</a><br>
+<a class=navsmall href=bbscaleimage.html target=main><img src=images/doc.png> bbScaleImage</a><br>
+<a class=navsmall href=bbresizeimage.html target=main><img src=images/doc.png> bbResizeImage</a><br>
+<a class=navsmall href=bbrotateimage.html target=main><img src=images/doc.png> bbRotateImage</a><br>
+<a class=navsmall href=bbtformimage.html target=main><img src=images/doc.png> bbTFormImage</a><br>
+<a class=navsmall href=bbtformfilter.html target=main><img src=images/doc.png> bbTFormFilter</a><br>
+</div>
+<a onClick=toggle(_CollisionFunctions.style) class=navbig href=_CollisionFunctions.html target=main><img src=images/open.png> Collision Functions</a><br>
+<div id=_CollisionFunctions class=entries>
+<a class=navsmall href=bbrectsoverlap.html target=main><img src=images/doc.png> bbRectsOverlap</a><br>
+<a class=navsmall href=bbimagesoverlap.html target=main><img src=images/doc.png> bbImagesOverlap</a><br>
+<a class=navsmall href=bbimagescollide.html target=main><img src=images/doc.png> bbImagesCollide</a><br>
+<a class=navsmall href=bbimagerectoverlap.html target=main><img src=images/doc.png> bbImageRectOverlap</a><br>
+<a class=navsmall href=bbimagerectcollide.html target=main><img src=images/doc.png> bbImageRectCollide</a><br>
+</div>
+<a onClick=toggle(_GraphicsBuffers.style) class=navbig href=_GraphicsBuffers.html target=main><img src=images/open.png> Graphics Buffers</a><br>
+<div id=_GraphicsBuffers class=entries>
+<a class=navsmall href=bbsetbuffer.html target=main><img src=images/doc.png> bbSetBuffer</a><br>
+<a class=navsmall href=bbgraphicsbuffer.html target=main><img src=images/doc.png> bbGraphicsBuffer</a><br>
+<a class=navsmall href=bbloadbuffer.html target=main><img src=images/doc.png> bbLoadBuffer</a><br>
+<a class=navsmall href=bbsavebuffer.html target=main><img src=images/doc.png> bbSaveBuffer</a><br>
+<a class=navsmall href=bbreadpixel.html target=main><img src=images/doc.png> bbReadPixel</a><br>
+<a class=navsmall href=bbwritepixel.html target=main><img src=images/doc.png> bbWritePixel</a><br>
+<a class=navsmall href=bbcopypixel.html target=main><img src=images/doc.png> bbCopyPixel</a><br>
+<a class=navsmall href=bbcopyrect.html target=main><img src=images/doc.png> bbCopyRect</a><br>
+<a class=navsmall href=bblockbuffer.html target=main><img src=images/doc.png> bbLockBuffer</a><br>
+<a class=navsmall href=bbunlockbuffer.html target=main><img src=images/doc.png> bbUnlockBuffer</a><br>
+<a class=navsmall href=bbreadpixelfast.html target=main><img src=images/doc.png> bbReadPixelFast</a><br>
+<a class=navsmall href=bbwritepixelfast.html target=main><img src=images/doc.png> bbWritePixelFast</a><br>
+<a class=navsmall href=bbcopypixelfast.html target=main><img src=images/doc.png> bbCopyPixelFast</a><br>
+</div>
+<a onClick=toggle(_GraphicsModesandDrivers.style) class=navbig href=_GraphicsModesandDrivers.html target=main><img src=images/open.png> Graphics Modes and Drivers</a><br>
+<div id=_GraphicsModesandDrivers class=entries>
+<a class=navsmall href=bbcountgfxmodes.html target=main><img src=images/doc.png> bbCountGfxModes</a><br>
+<a class=navsmall href=bbgfxmodewidth.html target=main><img src=images/doc.png> bbGfxModeWidth</a><br>
+<a class=navsmall href=bbgfxmodeheight.html target=main><img src=images/doc.png> bbGfxModeHeight</a><br>
+<a class=navsmall href=bbgfxmodedepth.html target=main><img src=images/doc.png> bbGfxModeDepth</a><br>
+<a class=navsmall href=bbgfxmodeexists.html target=main><img src=images/doc.png> bbGfxModeExists</a><br>
+<a class=navsmall href=bbcountgfxdrivers.html target=main><img src=images/doc.png> bbCountGfxDrivers</a><br>
+<a class=navsmall href=bbgfxdrivername.html target=main><img src=images/doc.png> bbGfxDriverName$</a><br>
+<a class=navsmall href=bbsetgfxdriver.html target=main><img src=images/doc.png> bbSetGfxDriver</a><br>
+</div>
+</div>
+<a onClick=toggle(_MediaPlayback.style) class=navbig href=_MediaPlayback.html target=main><img src=images/open.png> Media Playback</a><br>
+<div id=_MediaPlayback class=entries>
+<a onClick=toggle(_SoundandMusic.style) class=navbig href=_SoundandMusic.html target=main><img src=images/open.png> Sound and Music</a><br>
+<div id=_SoundandMusic class=entries>
+<a class=navsmall href=bbloadsound.html target=main><img src=images/doc.png> bbLoadSound</a><br>
+<a class=navsmall href=bbplaysound.html target=main><img src=images/doc.png> bbPlaySound</a><br>
+<a class=navsmall href=bbfreesound.html target=main><img src=images/doc.png> bbFreeSound</a><br>
+<a class=navsmall href=bbloopsound.html target=main><img src=images/doc.png> bbLoopSound</a><br>
+<a class=navsmall href=bbsoundpitch.html target=main><img src=images/doc.png> bbSoundPitch</a><br>
+<a class=navsmall href=bbsoundvolume.html target=main><img src=images/doc.png> bbSoundVolume</a><br>
+<a class=navsmall href=bbsoundpan.html target=main><img src=images/doc.png> bbSoundPan</a><br>
+<a class=navsmall href=bbplaymusic.html target=main><img src=images/doc.png> bbPlayMusic</a><br>
+<a class=navsmall href=bbplaycdtrack.html target=main><img src=images/doc.png> bbPlayCDTrack</a><br>
+<a class=navsmall href=bbstopchannel.html target=main><img src=images/doc.png> bbStopChannel</a><br>
+<a class=navsmall href=bbpausechannel.html target=main><img src=images/doc.png> bbPauseChannel</a><br>
+<a class=navsmall href=bbresumechannel.html target=main><img src=images/doc.png> bbResumeChannel</a><br>
+<a class=navsmall href=bbchannelpitch.html target=main><img src=images/doc.png> bbChannelPitch</a><br>
+<a class=navsmall href=bbchannelvolume.html target=main><img src=images/doc.png> bbChannelVolume</a><br>
+<a class=navsmall href=bbchannelpan.html target=main><img src=images/doc.png> bbChannelPan</a><br>
+<a class=navsmall href=bbchannelplaying.html target=main><img src=images/doc.png> bbChannelPlaying</a><br>
+</div>
+<a onClick=toggle(_Movies.style) class=navbig href=_Movies.html target=main><img src=images/open.png> Movies</a><br>
+<div id=_Movies class=entries>
+<a class=navsmall href=bbopenmovie.html target=main><img src=images/doc.png> bbOpenMovie</a><br>
+<a class=navsmall href=bbclosemovie.html target=main><img src=images/doc.png> bbCloseMovie</a><br>
+<a class=navsmall href=bbdrawmovie.html target=main><img src=images/doc.png> bbDrawMovie</a><br>
+<a class=navsmall href=bbmoviewidth.html target=main><img src=images/doc.png> bbMovieWidth</a><br>
+<a class=navsmall href=bbmovieheight.html target=main><img src=images/doc.png> bbMovieHeight</a><br>
+<a class=navsmall href=bbmovieplaying.html target=main><img src=images/doc.png> bbMoviePlaying</a><br>
+</div>
+</div>
+<a onClick=toggle(_UserInput.style) class=navbig href=_UserInput.html target=main><img src=images/open.png> User Input</a><br>
+<div id=_UserInput class=entries>
+<a onClick=toggle(_KeyboardInput.style) class=navbig href=_KeyboardInput.html target=main><img src=images/open.png> Keyboard Input</a><br>
+<div id=_KeyboardInput class=entries>
+<a class=navsmall href=bbgetkey.html target=main><img src=images/doc.png> bbGetKey</a><br>
+<a class=navsmall href=bbwaitkey.html target=main><img src=images/doc.png> bbWaitKey</a><br>
+<a class=navsmall href=bbkeydown.html target=main><img src=images/doc.png> bbKeyDown</a><br>
+<a class=navsmall href=bbkeyhit.html target=main><img src=images/doc.png> bbKeyHit</a><br>
+<a class=navsmall href=bbflushkeys.html target=main><img src=images/doc.png> bbFlushKeys</a><br>
+</div>
+<a onClick=toggle(_MouseInput.style) class=navbig href=_MouseInput.html target=main><img src=images/open.png> Mouse Input</a><br>
+<div id=_MouseInput class=entries>
+<a class=navsmall href=bbmousex.html target=main><img src=images/doc.png> bbMouseX</a><br>
+<a class=navsmall href=bbmousey.html target=main><img src=images/doc.png> bbMouseY</a><br>
+<a class=navsmall href=bbmousez.html target=main><img src=images/doc.png> bbMouseZ</a><br>
+<a class=navsmall href=bbmousedown.html target=main><img src=images/doc.png> bbMouseDown</a><br>
+<a class=navsmall href=bbmousehit.html target=main><img src=images/doc.png> bbMouseHit</a><br>
+<a class=navsmall href=bbgetmouse.html target=main><img src=images/doc.png> bbGetMouse</a><br>
+<a class=navsmall href=bbwaitmouse.html target=main><img src=images/doc.png> bbWaitMouse</a><br>
+<a class=navsmall href=bbshowpointer.html target=main><img src=images/doc.png> bbShowPointer</a><br>
+<a class=navsmall href=bbhidepointer.html target=main><img src=images/doc.png> bbHidePointer</a><br>
+<a class=navsmall href=bbmovemouse.html target=main><img src=images/doc.png> bbMoveMouse</a><br>
+<a class=navsmall href=bbmousexspeed.html target=main><img src=images/doc.png> bbMouseXSpeed</a><br>
+<a class=navsmall href=bbmouseyspeed.html target=main><img src=images/doc.png> bbMouseYSpeed</a><br>
+<a class=navsmall href=bbmousezspeed.html target=main><img src=images/doc.png> bbMouseZSpeed</a><br>
+<a class=navsmall href=bbflushmouse.html target=main><img src=images/doc.png> bbFlushMouse</a><br>
+</div>
+<a onClick=toggle(_JoystickInput.style) class=navbig href=_JoystickInput.html target=main><img src=images/open.png> Joystick Input</a><br>
+<div id=_JoystickInput class=entries>
+<a class=navsmall href=bbjoytype.html target=main><img src=images/doc.png> bbJoyType</a><br>
+<a class=navsmall href=bbgetjoy.html target=main><img src=images/doc.png> bbGetJoy</a><br>
+<a class=navsmall href=bbjoydown.html target=main><img src=images/doc.png> bbJoyDown</a><br>
+<a class=navsmall href=bbjoyhit.html target=main><img src=images/doc.png> bbJoyHit</a><br>
+<a class=navsmall href=bbwaitjoy.html target=main><img src=images/doc.png> bbWaitJoy</a><br>
+<a class=navsmall href=bbflushjoy.html target=main><img src=images/doc.png> bbFlushJoy</a><br>
+<a class=navsmall href=bbjoyhat.html target=main><img src=images/doc.png> bbJoyHat</a><br>
+<a class=navsmall href=bbjoyx.html target=main><img src=images/doc.png> bbJoyX</a><br>
+<a class=navsmall href=bbjoyxdir.html target=main><img src=images/doc.png> bbJoyXDir</a><br>
+<a class=navsmall href=bbjoyy.html target=main><img src=images/doc.png> bbJoyY</a><br>
+<a class=navsmall href=bbjoyydir.html target=main><img src=images/doc.png> bbJoyYDir</a><br>
+<a class=navsmall href=bbjoyz.html target=main><img src=images/doc.png> bbJoyZ</a><br>
+<a class=navsmall href=bbjoyzdir.html target=main><img src=images/doc.png> bbJoyZDir</a><br>
+<a class=navsmall href=bbjoyu.html target=main><img src=images/doc.png> bbJoyU</a><br>
+<a class=navsmall href=bbjoyudir.html target=main><img src=images/doc.png> bbJoyUDir</a><br>
+<a class=navsmall href=bbjoyv.html target=main><img src=images/doc.png> bbJoyV</a><br>
+<a class=navsmall href=bbjoyvdir.html target=main><img src=images/doc.png> bbJoyVDir</a><br>
+<a class=navsmall href=bbjoyyaw.html target=main><img src=images/doc.png> bbJoyYaw#</a><br>
+<a class=navsmall href=bbjoypitch.html target=main><img src=images/doc.png> bbJoyPitch#</a><br>
+<a class=navsmall href=bbjoyroll.html target=main><img src=images/doc.png> bbJoyRoll#</a><br>
+</div>
+</div>
+<a onClick=toggle(_3DGraphics.style) class=navbig href=_3DGraphics.html target=main><img src=images/open.png> 3D Graphics</a><br>
+<div id=_3DGraphics class=entries>
+<a onClick=toggle(_3DGraphicsDisplays.style) class=navbig href=_3DGraphicsDisplays.html target=main><img src=images/open.png> 3D Graphics Displays</a><br>
+<div id=_3DGraphicsDisplays class=entries>
+<a class=navsmall href=bbgraphics3d.html target=main><img src=images/doc.png> bbGraphics3D</a><br>
+<a class=navsmall href=bbdither.html target=main><img src=images/doc.png> bbDither</a><br>
+<a class=navsmall href=bbwbuffer.html target=main><img src=images/doc.png> bbWBuffer</a><br>
+<a class=navsmall href=bbantialias.html target=main><img src=images/doc.png> bbAntiAlias</a><br>
+<a class=navsmall href=bbwireframe.html target=main><img src=images/doc.png> bbWireFrame</a><br>
+<a class=navsmall href=bbhwmultitex.html target=main><img src=images/doc.png> bbHWMultiTex</a><br>
+</div>
+<a onClick=toggle(_3DWorldCommands.style) class=navbig href=_3DWorldCommands.html target=main><img src=images/open.png> 3D World Commands</a><br>
+<div id=_3DWorldCommands class=entries>
+<a class=navsmall href=bbrenderworld.html target=main><img src=images/doc.png> bbRenderWorld</a><br>
+<a class=navsmall href=bbupdateworld.html target=main><img src=images/doc.png> bbUpdateWorld</a><br>
+<a class=navsmall href=bbcaptureworld.html target=main><img src=images/doc.png> bbCaptureWorld</a><br>
+<a class=navsmall href=bbclearworld.html target=main><img src=images/doc.png> bbClearWorld</a><br>
+<a class=navsmall href=bbtrisrendered.html target=main><img src=images/doc.png> bbTrisRendered</a><br>
+</div>
+<a onClick=toggle(_Cameras.style) class=navbig href=_Cameras.html target=main><img src=images/open.png> Cameras</a><br>
+<div id=_Cameras class=entries>
+<a class=navsmall href=bbcreatecamera.html target=main><img src=images/doc.png> bbCreateCamera</a><br>
+<a class=navsmall href=bbcameraviewport.html target=main><img src=images/doc.png> bbCameraViewport</a><br>
+<a class=navsmall href=bbcameraclsmode.html target=main><img src=images/doc.png> bbCameraClsMode</a><br>
+<a class=navsmall href=bbcameraclscolor.html target=main><img src=images/doc.png> bbCameraClsColor</a><br>
+<a class=navsmall href=bbcamerarange.html target=main><img src=images/doc.png> bbCameraRange</a><br>
+<a class=navsmall href=bbcamerazoom.html target=main><img src=images/doc.png> bbCameraZoom</a><br>
+<a class=navsmall href=bbcameraprojmode.html target=main><img src=images/doc.png> bbCameraProjMode</a><br>
+<a class=navsmall href=bbcamerafogmode.html target=main><img src=images/doc.png> bbCameraFogMode</a><br>
+<a class=navsmall href=bbcamerafogcolor.html target=main><img src=images/doc.png> bbCameraFogColor</a><br>
+<a class=navsmall href=bbcamerafogrange.html target=main><img src=images/doc.png> bbCameraFogRange</a><br>
+<a class=navsmall href=bbcameraproject.html target=main><img src=images/doc.png> bbCameraProject</a><br>
+<a class=navsmall href=bbprojectedx.html target=main><img src=images/doc.png> bbProjectedX#</a><br>
+<a class=navsmall href=bbprojectedy.html target=main><img src=images/doc.png> bbProjectedY#</a><br>
+<a class=navsmall href=bbprojectedz.html target=main><img src=images/doc.png> bbProjectedZ#</a><br>
+<a class=navsmall href=bbentityinview.html target=main><img src=images/doc.png> bbEntityInView</a><br>
+</div>
+<a onClick=toggle(_Lights.style) class=navbig href=_Lights.html target=main><img src=images/open.png> Lights</a><br>
+<div id=_Lights class=entries>
+<a class=navsmall href=bbambientlight.html target=main><img src=images/doc.png> bbAmbientLight</a><br>
+<a class=navsmall href=bbcreatelight.html target=main><img src=images/doc.png> bbCreateLight</a><br>
+<a class=navsmall href=bblightrange.html target=main><img src=images/doc.png> bbLightRange</a><br>
+<a class=navsmall href=bblightcolor.html target=main><img src=images/doc.png> bbLightColor</a><br>
+<a class=navsmall href=bblightconeangles.html target=main><img src=images/doc.png> bbLightConeAngles</a><br>
+</div>
+<a onClick=toggle(_Primitives.style) class=navbig href=_Primitives.html target=main><img src=images/open.png> Primitives</a><br>
+<div id=_Primitives class=entries>
+<a class=navsmall href=bbcreatepivot.html target=main><img src=images/doc.png> bbCreatePivot</a><br>
+<a class=navsmall href=bbcreatecube.html target=main><img src=images/doc.png> bbCreateCube</a><br>
+<a class=navsmall href=bbcreatesphere.html target=main><img src=images/doc.png> bbCreateSphere</a><br>
+<a class=navsmall href=bbcreatecylinder.html target=main><img src=images/doc.png> bbCreateCylinder</a><br>
+<a class=navsmall href=bbcreatecone.html target=main><img src=images/doc.png> bbCreateCone</a><br>
+<a class=navsmall href=bbcreateplane.html target=main><img src=images/doc.png> bbCreatePlane</a><br>
+<a class=navsmall href=bbcreatemirror.html target=main><img src=images/doc.png> bbCreateMirror</a><br>
+<a class=navsmall href=bbcopyentity.html target=main><img src=images/doc.png> bbCopyEntity</a><br>
+</div>
+<a onClick=toggle(_Textures.style) class=navbig href=_Textures.html target=main><img src=images/open.png> Textures</a><br>
+<div id=_Textures class=entries>
+<a class=navsmall href=bbloadtexture.html target=main><img src=images/doc.png> bbLoadTexture</a><br>
+<a class=navsmall href=bbloadanimtexture.html target=main><img src=images/doc.png> bbLoadAnimTexture</a><br>
+<a class=navsmall href=bbcreatetexture.html target=main><img src=images/doc.png> bbCreateTexture</a><br>
+<a class=navsmall href=bbfreetexture.html target=main><img src=images/doc.png> bbFreeTexture</a><br>
+<a class=navsmall href=bbtextureblend.html target=main><img src=images/doc.png> bbTextureBlend</a><br>
+<a class=navsmall href=bbtexturecoords.html target=main><img src=images/doc.png> bbTextureCoords</a><br>
+<a class=navsmall href=bbscaletexture.html target=main><img src=images/doc.png> bbScaleTexture</a><br>
+<a class=navsmall href=bbpositiontexture.html target=main><img src=images/doc.png> bbPositionTexture</a><br>
+<a class=navsmall href=bbrotatetexture.html target=main><img src=images/doc.png> bbRotateTexture</a><br>
+<a class=navsmall href=bbtexturewidth.html target=main><img src=images/doc.png> bbTextureWidth</a><br>
+<a class=navsmall href=bbtextureheight.html target=main><img src=images/doc.png> bbTextureHeight</a><br>
+<a class=navsmall href=bbtexturebuffer.html target=main><img src=images/doc.png> bbTextureBuffer</a><br>
+<a class=navsmall href=bbtexturename.html target=main><img src=images/doc.png> bbTextureName$</a><br>
+<a class=navsmall href=bbgetbrushtexture.html target=main><img src=images/doc.png> bbGetBrushTexture</a><br>
+<a class=navsmall href=bbtexturefilter.html target=main><img src=images/doc.png> bbTextureFilter</a><br>
+<a class=navsmall href=bbcleartexturefilters.html target=main><img src=images/doc.png> bbClearTextureFilters</a><br>
+<a class=navsmall href=bbsetcubeface.html target=main><img src=images/doc.png> bbSetCubeFace</a><br>
+<a class=navsmall href=bbsetcubemode.html target=main><img src=images/doc.png> bbSetCubeMode</a><br>
+</div>
+<a onClick=toggle(_Brushes.style) class=navbig href=_Brushes.html target=main><img src=images/open.png> Brushes</a><br>
+<div id=_Brushes class=entries>
+<a class=navsmall href=bbcreatebrush.html target=main><img src=images/doc.png> bbCreateBrush</a><br>
+<a class=navsmall href=bbloadbrush.html target=main><img src=images/doc.png> bbLoadBrush</a><br>
+<a class=navsmall href=bbfreebrush.html target=main><img src=images/doc.png> bbFreeBrush</a><br>
+<a class=navsmall href=bbbrushcolor.html target=main><img src=images/doc.png> bbBrushColor</a><br>
+<a class=navsmall href=bbbrushalpha.html target=main><img src=images/doc.png> bbBrushAlpha</a><br>
+<a class=navsmall href=bbbrushblend.html target=main><img src=images/doc.png> bbBrushBlend</a><br>
+<a class=navsmall href=bbbrushfx.html target=main><img src=images/doc.png> bbBrushFX</a><br>
+<a class=navsmall href=bbbrushshininess.html target=main><img src=images/doc.png> bbBrushShininess</a><br>
+<a class=navsmall href=bbbrushtexture.html target=main><img src=images/doc.png> bbBrushTexture</a><br>
+<a class=navsmall href=bbgetentitybrush.html target=main><img src=images/doc.png> bbGetEntityBrush</a><br>
+<a class=navsmall href=bbgetsurfacebrush.html target=main><img src=images/doc.png> bbGetSurfaceBrush</a><br>
+</div>
+<a onClick=toggle(_3DGraphicsModesandDrivers.style) class=navbig href=_3DGraphicsModesandDrivers.html target=main><img src=images/open.png> 3D Graphics Modes and Drivers</a><br>
+<div id=_3DGraphicsModesandDrivers class=entries>
+<a class=navsmall href=bbcountgfxmodes3d.html target=main><img src=images/doc.png> bbCountGfxModes3D</a><br>
+<a class=navsmall href=bbgfxmode3d.html target=main><img src=images/doc.png> bbGfxMode3D</a><br>
+<a class=navsmall href=bbwindowed3d.html target=main><img src=images/doc.png> bbWindowed3D</a><br>
+<a class=navsmall href=bbgfxmode3dexists.html target=main><img src=images/doc.png> bbGfxMode3DExists</a><br>
+<a class=navsmall href=bbgfxdriver3d.html target=main><img src=images/doc.png> bbGfxDriver3D</a><br>
+<a class=navsmall href=bbgfxdrivercaps3d.html target=main><img src=images/doc.png> bbGfxDriverCaps3D</a><br>
+<a class=navsmall href=bbhwtexunits.html target=main><img src=images/doc.png> bbHWTexUnits</a><br>
+</div>
+<a onClick=toggle(_3DMaths.style) class=navbig href=_3DMaths.html target=main><img src=images/open.png> 3D Maths</a><br>
+<div id=_3DMaths class=entries>
+<a class=navsmall href=bbvectoryaw.html target=main><img src=images/doc.png> bbVectorYaw#</a><br>
+<a class=navsmall href=bbvectorpitch.html target=main><img src=images/doc.png> bbVectorPitch#</a><br>
+<a class=navsmall href=bbtformpoint.html target=main><img src=images/doc.png> bbTFormPoint</a><br>
+<a class=navsmall href=bbtformvector.html target=main><img src=images/doc.png> bbTFormVector</a><br>
+<a class=navsmall href=bbtformnormal.html target=main><img src=images/doc.png> bbTFormNormal</a><br>
+<a class=navsmall href=bbtformedx.html target=main><img src=images/doc.png> bbTFormedX#</a><br>
+<a class=navsmall href=bbtformedy.html target=main><img src=images/doc.png> bbTFormedY#</a><br>
+<a class=navsmall href=bbtformedz.html target=main><img src=images/doc.png> bbTFormedZ#</a><br>
+</div>
+</div>
+<a onClick=toggle(_Entities.style) class=navbig href=_Entities.html target=main><img src=images/open.png> Entities</a><br>
+<div id=_Entities class=entries>
+<a onClick=toggle(_Position.style) class=navbig href=_Position.html target=main><img src=images/open.png> Position</a><br>
+<div id=_Position class=entries>
+<a class=navsmall href=bbpositionentity.html target=main><img src=images/doc.png> bbPositionEntity</a><br>
+<a class=navsmall href=bbmoveentity.html target=main><img src=images/doc.png> bbMoveEntity</a><br>
+<a class=navsmall href=bbtranslateentity.html target=main><img src=images/doc.png> bbTranslateEntity</a><br>
+<a class=navsmall href=bbentityx.html target=main><img src=images/doc.png> bbEntityX#</a><br>
+<a class=navsmall href=bbentityy.html target=main><img src=images/doc.png> bbEntityY#</a><br>
+<a class=navsmall href=bbentityz.html target=main><img src=images/doc.png> bbEntityZ#</a><br>
+</div>
+<a onClick=toggle(_Rotation.style) class=navbig href=_Rotation.html target=main><img src=images/open.png> Rotation</a><br>
+<div id=_Rotation class=entries>
+<a class=navsmall href=bbrotateentity.html target=main><img src=images/doc.png> bbRotateEntity</a><br>
+<a class=navsmall href=bbturnentity.html target=main><img src=images/doc.png> bbTurnEntity</a><br>
+<a class=navsmall href=bbpointentity.html target=main><img src=images/doc.png> bbPointEntity</a><br>
+<a class=navsmall href=bbaligntovector.html target=main><img src=images/doc.png> bbAlignToVector</a><br>
+<a class=navsmall href=bbentityroll.html target=main><img src=images/doc.png> bbEntityRoll#</a><br>
+<a class=navsmall href=bbentityyaw.html target=main><img src=images/doc.png> bbEntityYaw#</a><br>
+<a class=navsmall href=bbentitypitch.html target=main><img src=images/doc.png> bbEntityPitch#</a><br>
+<a class=navsmall href=bbgetmatelement.html target=main><img src=images/doc.png> bbGetMatElement#</a><br>
+</div>
+<a onClick=toggle(_Scale.style) class=navbig href=_Scale.html target=main><img src=images/open.png> Scale</a><br>
+<div id=_Scale class=entries>
+<a class=navsmall href=bbscaleentity.html target=main><img src=images/doc.png> bbScaleEntity</a><br>
+</div>
+<a onClick=toggle(_Hierachy.style) class=navbig href=_Hierachy.html target=main><img src=images/open.png> Hierachy</a><br>
+<div id=_Hierachy class=entries>
+<a class=navsmall href=bbentityparent.html target=main><img src=images/doc.png> bbEntityParent</a><br>
+<a class=navsmall href=bbgetparent.html target=main><img src=images/doc.png> bbGetParent</a><br>
+<a class=navsmall href=bbcountchildren.html target=main><img src=images/doc.png> bbCountChildren</a><br>
+<a class=navsmall href=bbgetchild.html target=main><img src=images/doc.png> bbGetChild</a><br>
+<a class=navsmall href=bbfindchild.html target=main><img src=images/doc.png> bbFindChild</a><br>
+</div>
+<a onClick=toggle(_Visibility.style) class=navbig href=_Visibility.html target=main><img src=images/open.png> Visibility</a><br>
+<div id=_Visibility class=entries>
+<a class=navsmall href=bbshowentity.html target=main><img src=images/doc.png> bbShowEntity</a><br>
+<a class=navsmall href=bbhideentity.html target=main><img src=images/doc.png> bbHideEntity</a><br>
+<a class=navsmall href=bbentityautofade.html target=main><img src=images/doc.png> bbEntityAutoFade</a><br>
+<a class=navsmall href=bbentityorder.html target=main><img src=images/doc.png> bbEntityOrder</a><br>
+<a class=navsmall href=bbfreeentity.html target=main><img src=images/doc.png> bbFreeEntity</a><br>
+</div>
+<a onClick=toggle(_Painting.style) class=navbig href=_Painting.html target=main><img src=images/open.png> Painting</a><br>
+<div id=_Painting class=entries>
+<a class=navsmall href=bbentitycolor.html target=main><img src=images/doc.png> bbEntityColor</a><br>
+<a class=navsmall href=bbentityalpha.html target=main><img src=images/doc.png> bbEntityAlpha</a><br>
+<a class=navsmall href=bbentityshininess.html target=main><img src=images/doc.png> bbEntityShininess</a><br>
+<a class=navsmall href=bbentitytexture.html target=main><img src=images/doc.png> bbEntityTexture</a><br>
+<a class=navsmall href=bbentityblend.html target=main><img src=images/doc.png> bbEntityBlend</a><br>
+<a class=navsmall href=bbentityfx.html target=main><img src=images/doc.png> bbEntityFX</a><br>
+<a class=navsmall href=bbpaintentity.html target=main><img src=images/doc.png> bbPaintEntity</a><br>
+</div>
+<a onClick=toggle(_Collisions.style) class=navbig href=_Collisions.html target=main><img src=images/open.png> Collisions</a><br>
+<div id=_Collisions class=entries>
+<a class=navsmall href=bbcollisions.html target=main><img src=images/doc.png> bbCollisions</a><br>
+<a class=navsmall href=bbclearcollisions.html target=main><img src=images/doc.png> bbClearCollisions</a><br>
+<a class=navsmall href=bbentitytype.html target=main><img src=images/doc.png> bbEntityType</a><br>
+<a class=navsmall href=bbgetentitytype.html target=main><img src=images/doc.png> bbGetEntityType</a><br>
+<a class=navsmall href=bbresetentity.html target=main><img src=images/doc.png> bbResetEntity</a><br>
+<a class=navsmall href=bbentityradius.html target=main><img src=images/doc.png> bbEntityRadius</a><br>
+<a class=navsmall href=bbentitybox.html target=main><img src=images/doc.png> bbEntityBox</a><br>
+<a class=navsmall href=bbentitycollided.html target=main><img src=images/doc.png> bbEntityCollided</a><br>
+<a class=navsmall href=bbcountcollisions.html target=main><img src=images/doc.png> bbCountCollisions</a><br>
+<a class=navsmall href=bbcollisionx.html target=main><img src=images/doc.png> bbCollisionX#</a><br>
+<a class=navsmall href=bbcollisiony.html target=main><img src=images/doc.png> bbCollisionY#</a><br>
+<a class=navsmall href=bbcollisionz.html target=main><img src=images/doc.png> bbCollisionZ#</a><br>
+<a class=navsmall href=bbcollisionnx.html target=main><img src=images/doc.png> bbCollisionNX#</a><br>
+<a class=navsmall href=bbcollisionny.html target=main><img src=images/doc.png> bbCollisionNY#</a><br>
+<a class=navsmall href=bbcollisionnz.html target=main><img src=images/doc.png> bbCollisionNZ#</a><br>
+<a class=navsmall href=bbcollisiontime.html target=main><img src=images/doc.png> bbCollisionTime#</a><br>
+<a class=navsmall href=bbcollisionentity.html target=main><img src=images/doc.png> bbCollisionEntity</a><br>
+<a class=navsmall href=bbcollisionsurface.html target=main><img src=images/doc.png> bbCollisionSurface</a><br>
+<a class=navsmall href=bbcollisiontriangle.html target=main><img src=images/doc.png> bbCollisionTriangle</a><br>
+</div>
+<a onClick=toggle(_Picking.style) class=navbig href=_Picking.html target=main><img src=images/open.png> Picking</a><br>
+<div id=_Picking class=entries>
+<a class=navsmall href=bbentitypickmode.html target=main><img src=images/doc.png> bbEntityPickMode</a><br>
+<a class=navsmall href=bblinepick.html target=main><img src=images/doc.png> bbLinePick</a><br>
+<a class=navsmall href=bbentitypick.html target=main><img src=images/doc.png> bbEntityPick</a><br>
+<a class=navsmall href=bbcamerapick.html target=main><img src=images/doc.png> bbCameraPick</a><br>
+<a class=navsmall href=bbpickedx.html target=main><img src=images/doc.png> bbPickedX#</a><br>
+<a class=navsmall href=bbpickedy.html target=main><img src=images/doc.png> bbPickedY#</a><br>
+<a class=navsmall href=bbpickedz.html target=main><img src=images/doc.png> bbPickedZ#</a><br>
+<a class=navsmall href=bbpickednx.html target=main><img src=images/doc.png> bbPickedNX</a><br>
+<a class=navsmall href=bbpickedny.html target=main><img src=images/doc.png> bbPickedNY</a><br>
+<a class=navsmall href=bbpickednz.html target=main><img src=images/doc.png> bbPickedNZ</a><br>
+<a class=navsmall href=bbpickedtime.html target=main><img src=images/doc.png> bbPickedTime</a><br>
+<a class=navsmall href=bbpickedentity.html target=main><img src=images/doc.png> bbPickedEntity</a><br>
+<a class=navsmall href=bbpickedsurface.html target=main><img src=images/doc.png> bbPickedSurface</a><br>
+<a class=navsmall href=bbpickedtriangle.html target=main><img src=images/doc.png> bbPickedTriangle</a><br>
+</div>
+<a onClick=toggle(_Meshes.style) class=navbig href=_Meshes.html target=main><img src=images/open.png> Meshes</a><br>
+<div id=_Meshes class=entries>
+<a class=navsmall href=bbloadmesh.html target=main><img src=images/doc.png> bbLoadMesh</a><br>
+<a class=navsmall href=bbloadanimmesh.html target=main><img src=images/doc.png> bbLoadAnimMesh</a><br>
+<a class=navsmall href=bbloadermatrix.html target=main><img src=images/doc.png> bbLoaderMatrix</a><br>
+<a class=navsmall href=bbcopymesh.html target=main><img src=images/doc.png> bbCopyMesh</a><br>
+<a class=navsmall href=bbcreatemesh.html target=main><img src=images/doc.png> bbCreateMesh</a><br>
+<a class=navsmall href=bbaddmesh.html target=main><img src=images/doc.png> bbAddMesh</a><br>
+<a class=navsmall href=bbflipmesh.html target=main><img src=images/doc.png> bbFlipMesh</a><br>
+<a class=navsmall href=bbpaintmesh.html target=main><img src=images/doc.png> bbPaintMesh</a><br>
+<a class=navsmall href=bblightmesh.html target=main><img src=images/doc.png> bbLightMesh</a><br>
+<a class=navsmall href=bbfitmesh.html target=main><img src=images/doc.png> bbFitMesh</a><br>
+<a class=navsmall href=bbscalemesh.html target=main><img src=images/doc.png> bbScaleMesh</a><br>
+<a class=navsmall href=bbrotatemesh.html target=main><img src=images/doc.png> bbRotateMesh</a><br>
+<a class=navsmall href=bbpositionmesh.html target=main><img src=images/doc.png> bbPositionMesh</a><br>
+<a class=navsmall href=bbupdatenormals.html target=main><img src=images/doc.png> bbUpdateNormals</a><br>
+<a class=navsmall href=bbmeshesintersect.html target=main><img src=images/doc.png> bbMeshesIntersect</a><br>
+<a class=navsmall href=bbmeshwidth.html target=main><img src=images/doc.png> bbMeshWidth#</a><br>
+<a class=navsmall href=bbmeshheight.html target=main><img src=images/doc.png> bbMeshHeight#</a><br>
+<a class=navsmall href=bbmeshdepth.html target=main><img src=images/doc.png> bbMeshDepth#</a><br>
+<a class=navsmall href=bbmeshcullbox.html target=main><img src=images/doc.png> bbMeshCullBox</a><br>
+<a class=navsmall href=bbcountsurfaces.html target=main><img src=images/doc.png> bbCountSurfaces</a><br>
+<a class=navsmall href=bbgetsurface.html target=main><img src=images/doc.png> bbGetSurface</a><br>
+</div>
+<a onClick=toggle(_Surfaces.style) class=navbig href=_Surfaces.html target=main><img src=images/open.png> Surfaces</a><br>
+<div id=_Surfaces class=entries>
+<a class=navsmall href=bbcreatesurface.html target=main><img src=images/doc.png> bbCreateSurface</a><br>
+<a class=navsmall href=bbpaintsurface.html target=main><img src=images/doc.png> bbPaintSurface</a><br>
+<a class=navsmall href=bbclearsurface.html target=main><img src=images/doc.png> bbClearSurface</a><br>
+<a class=navsmall href=bbfindsurface.html target=main><img src=images/doc.png> bbFindSurface</a><br>
+<a class=navsmall href=bbaddvertex.html target=main><img src=images/doc.png> bbAddVertex</a><br>
+<a class=navsmall href=bbaddtriangle.html target=main><img src=images/doc.png> bbAddTriangle</a><br>
+<a class=navsmall href=bbvertexcoords.html target=main><img src=images/doc.png> bbVertexCoords</a><br>
+<a class=navsmall href=bbvertexnormal.html target=main><img src=images/doc.png> bbVertexNormal</a><br>
+<a class=navsmall href=bbvertexcolor.html target=main><img src=images/doc.png> bbVertexColor</a><br>
+<a class=navsmall href=bbvertextexcoords.html target=main><img src=images/doc.png> bbVertexTexCoords</a><br>
+<a class=navsmall href=bbcountvertices.html target=main><img src=images/doc.png> bbCountVertices</a><br>
+<a class=navsmall href=bbcounttriangles.html target=main><img src=images/doc.png> bbCountTriangles</a><br>
+<a class=navsmall href=bbvertexx.html target=main><img src=images/doc.png> bbVertexX#</a><br>
+<a class=navsmall href=bbvertexy.html target=main><img src=images/doc.png> bbVertexY#</a><br>
+<a class=navsmall href=bbvertexz.html target=main><img src=images/doc.png> bbVertexZ#</a><br>
+<a class=navsmall href=bbvertexnx.html target=main><img src=images/doc.png> bbVertexNX#</a><br>
+<a class=navsmall href=bbvertexny.html target=main><img src=images/doc.png> bbVertexNY#</a><br>
+<a class=navsmall href=bbvertexnz.html target=main><img src=images/doc.png> bbVertexNZ#</a><br>
+<a class=navsmall href=bbvertexred.html target=main><img src=images/doc.png> bbVertexRed#</a><br>
+<a class=navsmall href=bbvertexgreen.html target=main><img src=images/doc.png> bbVertexGreen#</a><br>
+<a class=navsmall href=bbvertexblue.html target=main><img src=images/doc.png> bbVertexBlue#</a><br>
+<a class=navsmall href=bbvertexalpha.html target=main><img src=images/doc.png> bbVertexAlpha#</a><br>
+<a class=navsmall href=bbvertexu.html target=main><img src=images/doc.png> bbVertexU#</a><br>
+<a class=navsmall href=bbvertexv.html target=main><img src=images/doc.png> bbVertexV#</a><br>
+<a class=navsmall href=bbvertexw.html target=main><img src=images/doc.png> bbVertexW#</a><br>
+<a class=navsmall href=bbtrianglevertex.html target=main><img src=images/doc.png> bbTriangleVertex</a><br>
+</div>
+<a onClick=toggle(_Properties.style) class=navbig href=_Properties.html target=main><img src=images/open.png> Properties</a><br>
+<div id=_Properties class=entries>
+<a class=navsmall href=bbentityclass.html target=main><img src=images/doc.png> bbEntityClass$</a><br>
+<a class=navsmall href=bbentityname.html target=main><img src=images/doc.png> bbEntityName$</a><br>
+<a class=navsmall href=bbnameentity.html target=main><img src=images/doc.png> bbNameEntity</a><br>
+<a class=navsmall href=bbentityid.html target=main><img src=images/doc.png> bbEntityID</a><br>
+<a class=navsmall href=bbsetentityid.html target=main><img src=images/doc.png> bbSetEntityID</a><br>
+<a class=navsmall href=bbcaptureentity.html target=main><img src=images/doc.png> bbCaptureEntity</a><br>
+</div>
+<a onClick=toggle(_Comparisons.style) class=navbig href=_Comparisons.html target=main><img src=images/open.png> Comparisons</a><br>
+<div id=_Comparisons class=entries>
+<a class=navsmall href=bbentityvisible.html target=main><img src=images/doc.png> bbEntityVisible</a><br>
+<a class=navsmall href=bbentitydistance.html target=main><img src=images/doc.png> bbEntityDistance#</a><br>
+<a class=navsmall href=bbdeltayaw.html target=main><img src=images/doc.png> bbDeltaYaw#</a><br>
+<a class=navsmall href=bbdeltapitch.html target=main><img src=images/doc.png> bbDeltaPitch#</a><br>
+</div>
+<a onClick=toggle(_Animation.style) class=navbig href=_Animation.html target=main><img src=images/open.png> Animation</a><br>
+<div id=_Animation class=entries>
+<a class=navsmall href=bbanimate.html target=main><img src=images/doc.png> bbAnimate</a><br>
+<a class=navsmall href=bbextractanimseq.html target=main><img src=images/doc.png> bbExtractAnimSeq</a><br>
+<a class=navsmall href=bbaddanimseq.html target=main><img src=images/doc.png> bbAddAnimSeq</a><br>
+<a class=navsmall href=bbsetanimkey.html target=main><img src=images/doc.png> bbSetAnimKey</a><br>
+<a class=navsmall href=bbloadanimseq.html target=main><img src=images/doc.png> bbLoadAnimSeq</a><br>
+<a class=navsmall href=bbsetanimtime.html target=main><img src=images/doc.png> bbSetAnimTime</a><br>
+<a class=navsmall href=bbanimseq.html target=main><img src=images/doc.png> bbAnimSeq</a><br>
+<a class=navsmall href=bbanimlength.html target=main><img src=images/doc.png> bbAnimLength</a><br>
+<a class=navsmall href=bbanimtime.html target=main><img src=images/doc.png> bbAnimTime#</a><br>
+<a class=navsmall href=bbanimating.html target=main><img src=images/doc.png> bbAnimating</a><br>
+</div>
+<a onClick=toggle(_Terrains.style) class=navbig href=_Terrains.html target=main><img src=images/open.png> Terrains</a><br>
+<div id=_Terrains class=entries>
+<a class=navsmall href=bbcreateterrain.html target=main><img src=images/doc.png> bbCreateTerrain</a><br>
+<a class=navsmall href=bbloadterrain.html target=main><img src=images/doc.png> bbLoadTerrain</a><br>
+<a class=navsmall href=bbterraindetail.html target=main><img src=images/doc.png> bbTerrainDetail</a><br>
+<a class=navsmall href=bbterrainshading.html target=main><img src=images/doc.png> bbTerrainShading</a><br>
+<a class=navsmall href=bbmodifyterrain.html target=main><img src=images/doc.png> bbModifyTerrain</a><br>
+<a class=navsmall href=bbterrainsize.html target=main><img src=images/doc.png> bbTerrainSize</a><br>
+<a class=navsmall href=bbterrainheight.html target=main><img src=images/doc.png> bbTerrainHeight#</a><br>
+<a class=navsmall href=bbterrainx.html target=main><img src=images/doc.png> bbTerrainX#</a><br>
+<a class=navsmall href=bbterrainy.html target=main><img src=images/doc.png> bbTerrainY#</a><br>
+<a class=navsmall href=bbterrainz.html target=main><img src=images/doc.png> bbTerrainZ#</a><br>
+</div>
+<a onClick=toggle(_Sprites.style) class=navbig href=_Sprites.html target=main><img src=images/open.png> Sprites</a><br>
+<div id=_Sprites class=entries>
+<a class=navsmall href=bbcreatesprite.html target=main><img src=images/doc.png> bbCreateSprite</a><br>
+<a class=navsmall href=bbloadsprite.html target=main><img src=images/doc.png> bbLoadSprite</a><br>
+<a class=navsmall href=bbspriteviewmode.html target=main><img src=images/doc.png> bbSpriteViewMode</a><br>
+<a class=navsmall href=bbrotatesprite.html target=main><img src=images/doc.png> bbRotateSprite</a><br>
+<a class=navsmall href=bbscalesprite.html target=main><img src=images/doc.png> bbScaleSprite</a><br>
+<a class=navsmall href=bbhandlesprite.html target=main><img src=images/doc.png> bbHandleSprite</a><br>
+</div>
+<a onClick=toggle(_MD2Animations.style) class=navbig href=_MD2Animations.html target=main><img src=images/open.png> MD2 Animations</a><br>
+<div id=_MD2Animations class=entries>
+<a class=navsmall href=bbloadmd2.html target=main><img src=images/doc.png> bbLoadMD2</a><br>
+<a class=navsmall href=bbanimatemd2.html target=main><img src=images/doc.png> bbAnimateMD2</a><br>
+<a class=navsmall href=bbmd2animtime.html target=main><img src=images/doc.png> bbMD2AnimTime</a><br>
+<a class=navsmall href=bbmd2animlength.html target=main><img src=images/doc.png> bbMD2AnimLength</a><br>
+<a class=navsmall href=bbmd2animating.html target=main><img src=images/doc.png> bbMD2Animating</a><br>
+</div>
+<a onClick=toggle(_BSPMapFiles.style) class=navbig href=_BSPMapFiles.html target=main><img src=images/open.png> BSP Map Files</a><br>
+<div id=_BSPMapFiles class=entries>
+<a class=navsmall href=bbloadbsp.html target=main><img src=images/doc.png> bbLoadBSP</a><br>
+<a class=navsmall href=bbbspambientlight.html target=main><img src=images/doc.png> bbBSPAmbientLight</a><br>
+<a class=navsmall href=bbbsplighting.html target=main><img src=images/doc.png> bbBSPLighting</a><br>
+</div>
+<a onClick=toggle(_Listeners.style) class=navbig href=_Listeners.html target=main><img src=images/open.png> Listeners</a><br>
+<div id=_Listeners class=entries>
+<a class=navsmall href=bbcreatelistener.html target=main><img src=images/doc.png> bbCreateListener</a><br>
+<a class=navsmall href=bbemitsound.html target=main><img src=images/doc.png> bbEmitSound</a><br>
+</div>
+</div>
+<a onClick=toggle(_Appendix.style) class=navbig href=_Appendix.html target=main><img src=images/open.png> Appendix</a><br>
+<div id=_Appendix class=entries>
+<a onClick=toggle(_FileFormats.style) class=navbig href=_FileFormats.html target=main><img src=images/open.png> File Formats</a><br>
+<div id=_FileFormats class=entries>
+</div>
+<a onClick=toggle(_KeyboardScancodes.style) class=navbig href=_KeyboardScancodes.html target=main><img src=images/open.png> Keyboard Scancodes</a><br>
+<div id=_KeyboardScancodes class=entries>
+</div>
+<a onClick=toggle(_AsciiChart.style) class=navbig href=_AsciiChart.html target=main><img src=images/open.png> Ascii Chart</a><br>
+<div id=_AsciiChart class=entries>
+</div>
+<a onClick=toggle(_Blitz3DFileFormat.style) class=navbig href=_Blitz3DFileFormat.html target=main><img src=images/open.png> Blitz3D File Format</a><br>
+<div id=_Blitz3DFileFormat class=entries>
+</div>
+</div>
+</div>
+</body></html>

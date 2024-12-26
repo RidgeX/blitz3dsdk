@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbGetJoy</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetJoy ( [port] )</h1>
+<table class="doc" id="bbgetjoy" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>port</td><td class=argvalue>optional joystick port to read</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the number of any button press that
+has not already been reported by the <a href=bbgetjoy.html>bbGetJoy</a> 
+command. 
+</p><p>
+Returns 0 if the system button buffer is
+empty.
+</p><p>
+The <a href=bbgetjoy.html>bbGetJoy</a> command may be called multiple
+times until it signals there are no more
+button events queued by returning 0.
+</p><p>
+The optional port identifier provides access to a
+particular game controller, joystick or gamepad connected
+to the system and positively identified by <a href=bbjoytype.html>bbJoyType</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGetJoy( int port=0 );</pre>
+<pre class=cs>public static int bb.GetJoy(int port)
+public static int bb.GetJoy()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbjoytype.html>bbJoyType</a>
+</p>
+</td></tr>
+</table>
+</body></html>

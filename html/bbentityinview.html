@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbEntityInView</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityInView ( entity,camera )</h1>
+<table class="doc" id="bbentityinview" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns true if the specified entity is visible to the specified camera.
+</p><p>
+If the entity is a mesh, its bounding box will be checked for visibility. 
+</p><p>
+For all other types of entities, only their centre position will be checked.
+</p><p class="hint">
+For animated meshes it is important their bounding box allow for all
+possible frames of animation for EntityInView to function correctly.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbEntityInView( BBEntity e,BBCamera c );</pre>
+<pre class=cs>public static int bb.EntityInView(int entity,int camera)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

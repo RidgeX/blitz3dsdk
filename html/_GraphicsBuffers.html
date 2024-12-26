@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Graphics Buffers</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>Graphics Buffers</h1>
+<DL>
+<DT><a href="bbsetbuffer.html">bbSetBuffer</a><DD>The <a href=bbsetbuffer.html>bbSetBuffer</a> command is used to set the current graphics buffer.<DT><a href="bbgraphicsbuffer.html">bbGraphicsBuffer</a><DD>Returns the currently selected graphics buffer.<DT><a href="bbloadbuffer.html">bbLoadBuffer</a><DD>Instead of calling <a href=bbloadimage.html>bbLoadImage</a> and creating a new image
+the <a href=bbloadbuffer.html>bbLoadBuffer</a> command reads the contents of a valid image
+file into the contents of an existing image, texture
+or if required the front or back buffer of the current
+display.<DT><a href="bbsavebuffer.html">bbSaveBuffer</a><DD>The <a href=bbsavebuffer.html>bbSaveBuffer</a> function is similar to the <a href=bbsaveimage.html>bbSaveImage</a> function
+in that it creates a .bmp image file with the specified <b>filename.</b>
+Unlike <a href=bbsaveimage.html>bbSaveImage</a>, <a href=bbsavebuffer.html>bbSaveBuffer</a> uses the pixels from the specified
+graphics buffer and so is useful for making screenshots.<DT><a href="bbreadpixel.html">bbReadPixel</a><DD>The <a href=bbreadpixel.html>bbReadPixel</a> function determines the color of a pixel at the
+specified location of the specified graphics buffer.<DT><a href="bbwritepixel.html">bbWritePixel</a><DD>The <a href=bbwritepixel.html>bbWritePixel</a> command sets the color of a pixel at the
+specified location of the specified graphics buffer to the
+value <b>color.</b>
+The <b>color</b> value is an integer with the red, green and blue
+values packed into the low 24 binary bits and if required
+the transparency value in the high 8 bits.<DT><a href="bbcopypixel.html">bbCopyPixel</a><DD>The <a href=bbcopypixel.html>bbCopyPixel</a> command sets the color of a pixel at the
+destination location of the destination graphics buffer 
+to the color of the pixel at the source location of
+the source buffer.<DT><a href="bbcopyrect.html">bbCopyRect</a><DD>The <a href=bbcopyrect.html>bbCopyRect</a> command is similar to <a href=bbcopypixel.html>bbCopyPixel</a> but copies
+a region of pixels <b>width</b>, <b>height</b> in size.<DT><a href="bblockbuffer.html">bbLockBuffer</a><DD><a href=bblockbuffer.html>bbLockBuffer</a> locks the specified graphics buffer.<DT><a href="bbunlockbuffer.html">bbUnlockBuffer</a><DD><a href=bbunlockbuffer.html>bbUnlockBuffer</a> must be used once the high speed pixel manipulation
+is complete on a locked buffer.<DT><a href="bbreadpixelfast.html">bbReadPixelFast</a><DD><a href=bbreadpixelfast.html>bbReadPixelFast</a> is similar in function to <a href=bbreadpixel.html>bbReadPixel</a> but the buffer
+must be locked with the <a href=bblockbuffer.html>bbLockBuffer</a> command and no bounds checking 
+is performed in the interests of speed.<DT><a href="bbwritepixelfast.html">bbWritePixelFast</a><DD><a href=bbwritepixelfast.html>bbWritePixelFast</a> is similar in function to <a href=bbreadpixel.html>bbReadPixel</a> but the buffer
+must be locked with the <a href=bblockbuffer.html>bbLockBuffer</a> command and no bounds checking 
+is performed in the interests of speed.<DT><a href="bbcopypixelfast.html">bbCopyPixelFast</a><DD><a href=bbcopypixelfast.html>bbCopyPixelFast</a> is similar in function to <a href=bbcopypixel.html>bbCopyPixel</a> but the buffer
+must be locked with the <a href=bblockbuffer.html>bbLockBuffer</a> command and no bounds checking 
+is performed in the interests of speed.</DL>
+</body></html>

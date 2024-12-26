@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbFlushJoy</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFlushJoy </h1>
+<table class="doc" id="bbflushjoy" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Resets the state of the internal joystick button map 
+so all buttons of all joysticks are considered up
+and all joystick events are discarded.
+</p><p>
+<a href=bbflushjoy.html>bbFlushJoy</a> is useful when transitioning from control
+systems based on the state commands such as <a href=bbjoydown.html>bbJoyDown</a>
+to an event style control using the <a href=bbgetjoy.html>bbGetJoy</a> command
+and any buffered button presses need to be discarded.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFlushJoy();</pre>
+<pre class=cs>public static int bb.FlushJoy()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbjoydown.html>bbJoyDown</a> <a href=bbgetjoy.html>bbGetJoy</a>
+</p>
+</td></tr>
+</table>
+</body></html>

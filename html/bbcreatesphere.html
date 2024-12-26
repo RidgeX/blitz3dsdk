@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbCreateSphere</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateSphere ( [segments=8][,parent] )</h1>
+<table class="doc" id="bbcreatesphere" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>segments</td><td class=argvalue>sphere detail. Defaults to 8.</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of new sphere</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a geometric sphere, a mesh the shape of a round ball.
+</p><p>
+The sphere will be centred  at 0,0,0 and will have a radius of 1. 
+</p><p>
+The optional segements value affects how many triangles are used
+in the resulting mesh:
+</p><table class="data">
+<tr><th class=data>Value</th><th class=data>Triangles</th><th class=data>Comment</th></tr>
+<tr><td class=data>8</td><td class=data>224</td><td class=data>Bare minimum amount of polygons for a sphere</td></tr>
+<tr><td class=data>16</td><td class=data>960</td><td class=data>Smooth looking sphere at medium-far distances</td></tr>
+<tr><td class=data>32</td><td class=data>3968</td><td class=data>Smooth sphere at close distances</td></tr>
+</table><p>
+The optional <b>parent</b> parameter attaches the new sphere
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbCreateSphere( int segs=8,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateSphere(int segments,int parent)
+public static int bb.CreateSphere(int segments)
+public static int bb.CreateSphere()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbscalemesh.html>bbScaleMesh</a> <a href=bbcreatecube.html>bbCreateCube</a> <a href=bbcreatecylinder.html>bbCreateCylinder</a> <a href=bbcreatecone.html>bbCreateCone</a>
+</p>
+</td></tr>
+</table>
+</body></html>

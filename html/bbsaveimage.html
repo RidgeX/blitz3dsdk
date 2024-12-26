@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbSaveImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSaveImage ( image,bmpfile$[,frame] )</h1>
+<table class="doc" id="bbsaveimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>bmpfile$</td><td class=argvalue>the filename to be used when the image file is created</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame of the image to save</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bbsaveimage.html>bbSaveImage</a> saves an image or one of its frames to a .bmp format
+image file.
+</p><p>
+Returns True
+</p><p class="hint">
+The .bmp suffix should be included at the end of the filename if the 
+image file created by <a href=bbsaveimage.html>bbSaveImage</a> is to be recognized as a valid image 
+by the system and other applications. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbSaveImage( BBImage i,const char *filename,int frame );</pre>
+<pre class=cs>public static int bb.SaveImage(int image,String bmpfile,int frame)
+public static int bb.SaveImage(int image,String bmpfile)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadimage.html>bbLoadImage</a> <a href=bbsavebuffer.html>bbSaveBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

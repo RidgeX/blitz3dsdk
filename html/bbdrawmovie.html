@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbDrawMovie</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDrawMovie movie[,x,y[,width,height]]</h1>
+<table class="doc" id="bbdrawmovie" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>movie</td><td class=argvalue>movie handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal position</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical position</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width of movie in pixels</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of movie in pixels</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Draws the current frame of the specified playing movie
+onto the current graphics buffer.
+</p><p>
+The movie must not overlap the edges of the current graphics
+buffer or else nothing is drawn. 
+</p><p>
+The Viewport and Origin are not taken into account.
+</p><p>
+See the <a href=bbopenmovie.html>bbOpenMovie</a> command for more details regarding supported
+movie files and how to open them before using the <a href=bbdrawmovie.html>bbDrawMovie</a>
+command.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbDrawMovie( BBMovie movie,int x,int y,int w,int h );</pre>
+<pre class=cs>public static int bb.DrawMovie(int movie,int x,int y,int width,int height)
+public static int bb.DrawMovie(int movie,int x,int y,int width)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbopenmovie.html>bbOpenMovie</a> <a href=bbclosemovie.html>bbCloseMovie</a> <a href=bbmovieplaying.html>bbMoviePlaying</a> <a href=bbmoviewidth.html>bbMovieWidth</a> <a href=bbmovieheight.html>bbMovieHeight</a>
+</p>
+</td></tr>
+</table>
+</body></html>

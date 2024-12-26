@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbTileBlock</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTileBlock image[,x,y[,frame=0]]</h1>
+<table class="doc" id="bbtileblock" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel offset</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel offset</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame number</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Similar to <a href=bbtileimage.html>bbTileImage</a> but ignores transparency.
+</p><p>
+Use this to tile an entire or portion of the screen 
+with a single repetitive image.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTileBlock( BBImage i,int x,int y,int frame );</pre>
+<pre class=cs>public static int bb.TileBlock(int image,int x,int y,int frame)
+public static int bb.TileBlock(int image,int x,int y)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

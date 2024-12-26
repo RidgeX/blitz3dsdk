@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbKeyDown</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbKeyDown ( scancode )</h1>
+<table class="doc" id="bbkeydown" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>scancode</td><td class=argvalue>scancode of key to test</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns True
+being pressed.
+</p><p>
+Note that keyboard scan codes relate to the physical position of a key
+on the keyboard and should not be confused with ascii character codes.
+</p><p class="hint">
+There are physical limitations regarding the rows and columns
+of some physical keyboards that will not report certain key
+combinations. It is advisable to thoroughly test all default
+scancode combinations that a game may provide for keyboard 
+control.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbKeyDown( int n );</pre>
+<pre class=cs>public static int bb.KeyDown(int scancode)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=_KeyboardScancodes.html>bbKeyboardScancodes</a> <a href=bbkeyhit.html>bbKeyHit</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbCopyRect</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCopyRect src_x,src_y,width,height,dest_x,dest_y,[src_buffer],[dest_buffer]</h1>
+<table class="doc" id="bbcopyrect" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>src_x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>src_y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>horizontal size of pixel region to copy</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>vertical size of pixel region to copy</td></tr>
+<tr><td class=argname>dest_x</td><td class=argvalue>horizontal destination pixel location</td></tr>
+<tr><td class=argname>dest_y</td><td class=argvalue>vertical destination pixel location</td></tr>
+<tr><td class=argname>src_buffer</td><td class=argvalue>valid graphics buffer</td></tr>
+<tr><td class=argname>dest_buffer</td><td class=argvalue>valid graphics buffer</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbcopyrect.html>bbCopyRect</a> command is similar to <a href=bbcopypixel.html>bbCopyPixel</a> but copies
+a region of pixels <b>width</b>, <b>height</b> in size.
+</p><p>
+If src_buffer and dest_buffer are not specified <a href=bbcopyrect.html>bbCopyRect</a> uses
+the current graphics buffer, see <a href=bbsetbuffer.html>bbSetBuffer</a> for more details.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCopyRect( int sx,int sy,int w,int h,int dx,int dy,BBCanvas src,BBCanvas dest );</pre>
+<pre class=cs>public static int bb.CopyRect(int src_x,int src_y,int width,int height,int dest_x,int dest_y,int src_buffer,int dest_buffer)
+public static int bb.CopyRect(int src_x,int src_y,int width,int height,int dest_x,int dest_y,int src_buffer)
+public static int bb.CopyRect(int src_x,int src_y,int width,int height,int dest_x,int dest_y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcopypixel.html>bbCopyPixel</a>
+</p>
+</td></tr>
+</table>
+</body></html>

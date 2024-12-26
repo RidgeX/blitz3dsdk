@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbChannelPan</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbChannelPan channel,pan#</h1>
+<table class="doc" id="bbchannelpan" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>channel</td><td class=argvalue>valid playback channel</td></tr>
+<tr><td class=argname>pan#</td><td class=argvalue>left right stereo position</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Position the output of an audio channel in left right stereo 
+space.
+</p><table class="data">
+<tr><th class=data>Value</th><th class=data>Effective pan</th></tr>
+<tr><td class=data>0.0</td><td class=data>Left</td></tr>
+<tr><td class=data>0.25</td><td class=data>Center Left</td></tr>
+<tr><td class=data>0.5</td><td class=data>Center</td></tr>
+<tr><td class=data>0.75</td><td class=data>Center Right</td></tr>
+<tr><td class=data>1.0</td><td class=data>Right</td></tr>
+</table><p>
+Panning the position of sound effects in a video game is a
+useful technique for adding to the immersive experience.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbChannelPan( BBChannel channel,float pan );</pre>
+<pre class=cs>public static int bb.ChannelPan(int channel,float pan)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

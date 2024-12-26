@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>bbSpriteViewMode</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSpriteViewMode sprite,view_mode</h1>
+<table class="doc" id="bbspriteviewmode" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sprite</td><td class=argvalue>spritehandle</td></tr>
+<tr><td class=argname>view_mode</td><td class=argvalue>view_mode of sprite</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the view mode of a sprite.
+</p><p>
+The view mode determines how at rendertime a sprite alters its 
+orientation in respect to the camera:
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>SPRITE_TURNXY</td><td class=data>1</td><td class=data>Turn about X and Y axis to face camera</td></tr>
+<tr><td class=data>SPRITE_STILL</td><td class=data>2</td><td class=data>Do not modify orientation at render time.</td></tr>
+<tr><td class=data>SPRITE_ALIGNZ</td><td class=data>3</td><td class=data>Turn about X and Y axis to face camera and align Z axis with camera</td></tr>
+<tr><td class=data>SPRITE_TURNY</td><td class=data>4</td><td class=data>Turn about Y axis to face camera</td></tr>
+</table><p>
+This allows the sprite to in  some instances give the impression
+that it is more than two dimensional. 
+</p><p>
+In technical terms, the four sprite modes perform the following 
+changes: 
+</p><p>
+Mode 1 - Sprite changes its pitch and yaw values to face camera, 
+but doesn't roll, good for most smoke and particle effects.
+</p><p>
+Mode 2 - Sprite does not change either its pitch, yaw or roll 
+values, good for generic flat rectangular entities such as fences.
+</p><p>
+Mode 3 - Sprite changes its yaw and pitch to face camera, and 
+changes its roll value to match cameras, useful for overlays.
+</p><p>
+Mode 4 - Sprite changes its yaw to face camera, pitch and roll
+are unmodified. Useful for trees and other upstanding scenery.
+</p><p class="hint">
+The <a href=bbentityfx.html>bbEntityFX</a> flag 16 can be used to make a Sprite double sided
+and hence visible from both sides. This applies to Mode 2 Sprites 
+in particular.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSpriteViewMode( BBSprite s,int mode );</pre>
+<pre class=cs>public static int bb.SpriteViewMode(int sprite,int view_mode)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatesprite.html>bbCreateSprite</a> <a href=bbloadsprite.html>bbLoadSprite</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>bbScaleEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbScaleEntity entity,x_scale#,y_scale#,z_scale#[,globalspace]</h1>
+<table class="doc" id="bbscaleentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>name of the entity to be scaled</td></tr>
+<tr><td class=argname>x_scale#</td><td class=argvalue>x scalar value</td></tr>
+<tr><td class=argname>y_scale#</td><td class=argvalue>y scalar value</td></tr>
+<tr><td class=argname>z_scale#</td><td class=argvalue>z scalar value</td></tr>
+<tr><td class=argname>global</td><td class=argvalue>True means relative to world not parent's scale</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Scales the size of an entity a scalar amount in each axis.
+</p><p>
+The values 1,1,1 are the default scale of a newly created
+entity which has no affect on the entity size.
+</p><p>
+A scalar values of 2 will double the size of an entity in the
+specified axis, 0.5 will halve the size.
+</p><p>
+Negative scalar values invert that entities axis and may
+result in reversed facing surfaces. 
+</p><p>
+A global value of False is default and multiplies the specified
+scale with the entity parent's scale. A global value of True
+ignores the scale of the parent.
+</p><p class="hint">
+A scale value of 0,0,0 should be avoided as it can produce
+dramatic performance problems on some computers due to the
+infinite nature of the surface normals it produces.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbScaleEntity( BBEntity e,float x,float y,float z,int global=1 );</pre>
+<pre class=cs>public static int bb.ScaleEntity(int entity,float x_scale,float y_scale,float z_scale,int globalspace)
+public static int bb.ScaleEntity(int entity,float x_scale,float y_scale,float z_scale)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbscalemesh.html>bbScaleMesh</a> <a href=bbfitmesh.html>bbFitMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

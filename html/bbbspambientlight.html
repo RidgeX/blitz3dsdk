@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbBSPAmbientLight</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBSPAmbientLight bsp,red#,green#,blue#</h1>
+<table class="doc" id="bbbspambientlight" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>bsp</td><td class=argvalue>BSP handle</td></tr>
+<tr><td class=argname>red#</td><td class=argvalue>red BSP ambient light value</td></tr>
+<tr><td class=argname>green#</td><td class=argvalue>green BSP ambient light value</td></tr>
+<tr><td class=argname>blue#</td><td class=argvalue>blue BSP ambient light value</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the ambient lighting color for a BSP model.
+</p><p>
+The red, green and blue values should  be in the range 0-255. The default
+BSP ambient light color is 0,0,0.
+</p><p>
+Note that BSP models  do not use the <a href=bbambientlight.html>bbAmbientLight</a> setting. 
+</p><p>
+This can also be used to increase the brightness of a BSP model,
+but the effect is  not as 'nice' as using the <b>gamma_adjust</b> parameter of
+LoadBSP.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBSPAmbientLight( BBQ3BSPModel t,float r,float g,float b );</pre>
+<pre class=cs>public static int bb.BSPAmbientLight(int bsp,float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadbsp.html>bbLoadBSP</a> <a href=bbbsplighting.html>bbBSPLighting</a>
+</p>
+</td></tr>
+</table>
+</body></html>

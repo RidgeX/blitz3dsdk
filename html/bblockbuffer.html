@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbLockBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLockBuffer [buffer]</h1>
+<table class="doc" id="bblockbuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>buffer</td><td class=argvalue>any valid graphics buffer</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bblockbuffer.html>bbLockBuffer</a> locks the specified graphics buffer.
+</p><p>
+High speed pixel functions such as <a href=bbreadpixelfast.html>bbReadPixelFast</a>, <a href=bbwritepixelfast.html>bbWritePixelFast</a> 
+and <a href=bbcopypixelfast.html>bbCopyPixelFast</a> require the graphics buffer be in a locked state.
+</p><p>
+<a href=bbunlockbuffer.html>bbUnlockBuffer</a> must be used once the high speed pixel manipulation
+is complete.
+</p><p>
+Standard drawing commands should not be issued when a buffer is in
+a locked state.
+</p><p>
+See the other commands for more
+information.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbLockBuffer( BBCanvas buff );</pre>
+<pre class=cs>public static int bb.LockBuffer(int buffer)
+public static int bb.LockBuffer()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbunlockbuffer.html>bbUnlockBuffer</a> <a href=bbreadpixelfast.html>bbReadPixelFast</a> <a href=bbwritepixelfast.html>bbWritePixelFast</a> <a href=bbcopypixelfast.html>bbCopyPixelFast</a>
+</p>
+</td></tr>
+</table>
+</body></html>

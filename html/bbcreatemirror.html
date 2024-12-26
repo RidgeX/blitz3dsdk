@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbCreateMirror</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateMirror ( [parent] )</h1>
+<table class="doc" id="bbcreatemirror" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of mirror</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a mirror entity which is an invisible plane with a surface that 
+reflects all visible geometry when rendered.
+</p><p>
+The optional <b>parent</b> parameter attaches the new mirror
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p><p>
+See <a href=bbcreateplane.html>bbCreatePlane</a> for more information about the size and shape of a
+mirror's geometry.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBMirror bbCreateMirror( BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateMirror(int parent)
+public static int bb.CreateMirror()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreateplane.html>bbCreatePlane</a>
+</p>
+</td></tr>
+</table>
+</body></html>

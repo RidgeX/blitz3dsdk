@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Text and Fonts</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>Text and Fonts</h1>
+<DL>
+<DT><a href="bbtext.html">bbText</a><DD>The <a href=bbtext.html>bbText</a> command prints the <b>string</b> specified at the pixel
+coordinate <b>x</b>,<b>y.</b>
+<a href=bbtext.html>bbText</a> uses the current font which can be modified with the
+<a href=bbsetfont.html>bbSetFont</a> command and the current color which can be modified
+with the <a href=bbcolor.html>bbColor</a> command.<DT><a href="bbloadfont.html">bbLoadFont</a><DD>The <a href=bbloadfont.html>bbLoadFont</a> function loads a font and returns a font handle which can
+subsequently used with commands such as <a href=bbsetfont.html>bbSetFont</a> and <a href=bbfreefont.html>bbFreeFont</a>.<DT><a href="bbsetfont.html">bbSetFont</a><DD>The <a href=bbsetfont.html>bbSetFont</a> command is used in combination with a prior LoadFont
+command to specify which font subsequent <a href=bbtext.html>bbText</a>, <a href=bbprint.html>bbPrint</a>, <a href=bbwrite.html>bbWrite</a>,
+<a href=bbfontwidth.html>bbFontWidth</a>, <a href=bbfontheigtht.html>bbFontHeigtht</a>, <a href=bbstringwidth.html>bbStringWidth</a> and <a href=bbstringheight.html>bbStringHeight</a> commands 
+will use.<DT><a href="bbfreefont.html">bbFreeFont</a><DD>Use the <a href=bbfreefont.html>bbFreeFont</a> command when a font returned by the <a href=bbloadfont.html>bbLoadFont</a>
+command is no longer required for text drawing duties.<DT><a href="bbfontwidth.html">bbFontWidth</a><DD>Returns the current width in pixels of the WIDEST character in
+the font.<DT><a href="bbfontheight.html">bbFontHeight</a><DD>Returns the current height in pixels of the currently selected font.<DT><a href="bbstringwidth.html">bbStringWidth</a><DD>Returns the width in pixels of the specified string accounting 
+for the current font selected with the most recent <a href=bbsetfont.html>bbSetFont</a> 
+command for the current graphics buffer.<DT><a href="bbstringheight.html">bbStringHeight</a><DD>Returns the height in pixels of the specified string accounting 
+for the current font selected with the most recent <a href=bbsetfont.html>bbSetFont</a> 
+command for the current graphics buffer.</DL>
+</body></html>

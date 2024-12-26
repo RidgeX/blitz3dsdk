@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbGetBrushTexture</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetBrushTexture ( brush[,index=0] )</h1>
+<table class="doc" id="bbgetbrushtexture" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>optional index of texture applied to brush, from 0..7. Defaults to 0.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the texture that is applied to the specified brush.
+</p><p>
+The optional <b>index</b> parameter allows you to specify which particular 
+texture you'd like returning, if there are more than one textures 
+applied to a brush.
+</p><p>
+You should release the texture returned by GetBrushTexture after use 
+to prevent leaks! Use <a href=bbfreetexture.html>bbFreeTexture</a> to do this.
+</p><p>
+To find out the name of the texture, use <a href=bbtexturename.html>bbTextureName</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBTexture bbGetBrushTexture( BBBrush b,int index );</pre>
+<pre class=cs>public static int bb.GetBrushTexture(int brush,int index)
+public static int bb.GetBrushTexture(int brush)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbtexturename.html>bbTextureName</a> <a href=bbfreetexture.html>bbFreeTexture</a> <a href=bbgetentitybrush.html>bbGetEntityBrush</a> <a href=bbgetsurfacebrush.html>bbGetSurfaceBrush</a>
+</p>
+</td></tr>
+</table>
+</body></html>

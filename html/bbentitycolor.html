@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbEntityColor</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityColor entity,red#,green#,blue#</h1>
+<table class="doc" id="bbentitycolor" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>red#</td><td class=argvalue>red value of entity</td></tr>
+<tr><td class=argname>green#</td><td class=argvalue>green value of entity</td></tr>
+<tr><td class=argname>blue#</td><td class=argvalue>blue value of entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the color of an entity.
+</p><p>
+See the <a href=bbcolor.html>bbColor</a> command for more information on combining
+red, green and blue values to define colors.
+</p><p>
+The <a href=bbpaintentity.html>bbPaintEntity</a> command can also be used to set the color
+properties of individual entities.
+</p><p>
+The <a href=bbpaintsurface.html>bbPaintSurface</a> command is used to set the color properties
+of the individual surfaces of a mesh.
+</p><p class="hint">
+The final render color of a surface of an entity mesh is calculated
+by multiplying the entity color with the surface color. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityColor( BBModel m,float r,float g,float b );</pre>
+<pre class=cs>public static int bb.EntityColor(int entity,float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbpaintentity.html>bbPaintEntity</a> <a href=bbpaintsurface.html>bbPaintSurface</a> <a href=bbentityalpha.html>bbEntityAlpha</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbCaptureEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCaptureEntity entity</h1>
+<table class="doc" id="bbcaptureentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Takes a snapshot of the entity including the position,
+rotation, scale and alpha. 
+</p><p>
+The <a href=bbcaptureentity.html>bbCaptureEntity</a> command can be used after
+<a href=bbcaptureworld.html>bbCaptureWorld</a> to control the tweening of a specific
+Entity. This is most useful when an entity needs to
+be repositioned and tweening between it's last state
+and current is not desired.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCaptureEntity( BBObject o );</pre>
+<pre class=cs>public static int bb.CaptureEntity(int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcaptureworld.html>bbCaptureWorld</a>
+</p>
+</td></tr>
+</table>
+</body></html>

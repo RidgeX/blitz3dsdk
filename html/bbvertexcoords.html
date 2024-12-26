@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbVertexCoords</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVertexCoords surface,index,x#,y#,z#</h1>
+<table class="doc" id="bbvertexcoords" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of vertex</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x position of vertex</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y position of vertex</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z position of vertex</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the geometric coordinates of an existing vertex.
+</p><p>
+The index value should be in the range 0..CountVertices()-1.
+</p><p>
+By changing the position of individual verticies in a mesh, dynamic
+'mesh deforming' effects and high performance 'particle systems'
+can be programmed in Blitz3D.
+</p><p>
+See the <a href=bbvertexnormal.html>bbVertexNormal</a> or <a href=bbupdatenormals.html>bbUpdateNormals</a> commands for correcting
+lighting errors that may be introduced when deforming a mesh.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbVertexCoords( BBSurface s,int n,float x,float y,float z );</pre>
+<pre class=cs>public static int bb.VertexCoords(int surface,int index,float x,float y,float z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbvertexnormal.html>bbVertexNormal</a> <a href=bbvertexcolor.html>bbVertexColor</a>
+</p>
+</td></tr>
+</table>
+</body></html>

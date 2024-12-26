@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbDeltaYaw#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDeltaYaw# ( src_entity,dest_entity )</h1>
+<table class="doc" id="bbdeltayaw" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>src_entity</td><td class=argvalue>source entity handle</td></tr>
+<tr><td class=argname>dest_entity</td><td class=argvalue>destination entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the yaw angle, that src_entity should be rotated by in order 
+to face dest_entity.
+</p><p>
+This command can be used to be point one entity at another, rotating on
+the y axis only.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbDeltaYaw( BBEntity src,BBEntity dest );</pre>
+<pre class=cs>public static float bb.DeltaYaw(int src_entity,int dest_entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdeltapitch.html>bbDeltaPitch</a>
+</p>
+</td></tr>
+</table>
+</body></html>

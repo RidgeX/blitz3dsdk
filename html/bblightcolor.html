@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbLightColor</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLightColor light,red#,green#,blue#</h1>
+<table class="doc" id="bblightcolor" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>light</td><td class=argvalue>light handle</td></tr>
+<tr><td class=argname>red</td><td class=argvalue>red value of light</td></tr>
+<tr><td class=argname>green</td><td class=argvalue>green value of light</td></tr>
+<tr><td class=argname>blue</td><td class=argvalue>blue value of light</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the color and brightness of a light.
+</p><p>
+See the <a href=bbcolor.html>bbColor</a> command for more information on combining
+red, green and blue values to define colors.
+</p><p>
+Values of 255,255,255 sets a light to emit bright white light.
+</p><p>
+A value of black or 0,0,0 effectively disables a light.
+</p><p>
+Values of less than 0 can be used to remove light from a
+scene. This is  known as 'negative lighting', and is useful 
+for shadow effects.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbLightColor( BBLight light,float r,float g,float b );</pre>
+<pre class=cs>public static int bb.LightColor(int light,float red,float green,float blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatelight.html>bbCreateLight</a> <a href=bblightrange.html>bbLightRange</a> <a href=bblightconeangles.html>bbLightConeAngles</a>
+</p>
+</td></tr>
+</table>
+</body></html>

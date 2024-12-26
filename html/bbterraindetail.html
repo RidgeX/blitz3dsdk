@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbTerrainDetail</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTerrainDetail terrain,detail_level[,vertex_morph]</h1>
+<table class="doc" id="bbterraindetail" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>terrain</td><td class=argvalue>terrain handle</td></tr>
+<tr><td class=argname>detail_level</td><td class=argvalue>detail level of terrain</td></tr>
+<tr><td class=argname>vertex_morph</td><td class=argvalue>True to enable vertex morphing of terrain. Defaults to False.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the detail level for a terrain. This is the number
+of triangles used  to represent the terrain. A typical value is 2000.
+</p><p>
+The optional <b>vertex_morph</b>  parameter specifies whether to enable vertex
+morphing. It is recommended you  set this to True, as it will reduce the
+visibility of LOD 'pop-in'. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTerrainDetail( BBTerrain t,int n,int m );</pre>
+<pre class=cs>public static int bb.TerrainDetail(int terrain,int detail_level,int vertex_morph)
+public static int bb.TerrainDetail(int terrain,int detail_level)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbGammaRed</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGammaRed ( value )</h1>
+<table class="doc" id="bbgammared" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>value</td><td class=argvalue>an integer index into the red gamma table</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the adjusted output value of the red channel given the 
+specified input <b>value</b> by referencing the current gamma correction
+tables.
+</p><p>
+See <b>SetGamma</b> for more information
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbGammaRed( int n );</pre>
+<pre class=cs>public static int bb.GammaRed(int value)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgammagreen.html>bbGammaGreen</a> <a href=bbgammablue.html>bbGammaBlue</a> <a href=bbsetgamma.html>bbSetGamma</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbAddAnimSeq</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAddAnimSeq ( entity,length )</h1>
+<table class="doc" id="bbaddanimseq" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>length</td><td class=argvalue>number of frames to be added</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates an animation sequence for an entity.
+</p><p>
+This must be done before any animation keys set by <a href=bbsetanimkey.html>bbSetAnimKey</a> can be 
+used in  an actual animation however this is optional.
+</p><p>
+You may use it to &quot;bake&quot; the frames you have added previously
+using SetAnimKey.
+</p><p>
+Returns the animation sequence number added.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbAddAnimSeq( BBObject o,int length );</pre>
+<pre class=cs>public static int bb.AddAnimSeq(int entity,int length)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbsetanimkey.html>bbSetAnimKey</a>
+</p>
+</td></tr>
+</table>
+</body></html>

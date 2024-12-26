@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbAlignToVector</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAlignToVector entity,vector_x#,vector_y#,vector_z#,axis[,rate#=1.0]</h1>
+<table class="doc" id="bbaligntovector" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>vector_x#</td><td class=argvalue>vector x</td></tr>
+<tr><td class=argname>vector_y#</td><td class=argvalue>vector y</td></tr>
+<tr><td class=argname>vector_z#</td><td class=argvalue>vector z</td></tr>
+<tr><td class=argname>axis</td><td class=argvalue>axis of entity that will be aligned to vector</td></tr>
+<tr><td class=argname>rate#</td><td class=argvalue>rate at which entity is aligned from current orientation to vector orientation.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Aligns an entity axis to a vector.
+</p><p>
+Rate should be in the range 0 to 1, 0.1 for smooth transition and 1.0 for 'snap' 
+transition. Defaults to 1.0. 
+</p><table class="data">
+<tr><th class=data>Axis</th><th class=data>Description</th></tr>
+<tr><td class=data>1</td><td class=data>X axis</td></tr>
+<tr><td class=data>2</td><td class=data>Y axis</td></tr>
+<tr><td class=data>3</td><td class=data>Z axis</td></tr>
+</table><p>
+The <a href=bbaligntovector.html>bbAlignToVector</a> command offers an advanced alternative to the
+<a href=bbrotateentity.html>bbRotateEntity</a>, <a href=bbturnentity.html>bbTurnEntity</a> and <a href=bbpointentity.html>bbPointEntity</a> commands. <a href=bbaligntovector.html>bbAlignToVector</a>
+provides a method of steering entities by turning them so a
+specified axis aligns to a precalculated directions in an optionally
+smooth manner.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbAlignToVector( BBEntity e,float nx,float ny,float nz,int axis,float rate );</pre>
+<pre class=cs>public static int bb.AlignToVector(int entity,float vector_x,float vector_y,float vector_z,int axis,float rate)
+public static int bb.AlignToVector(int entity,float vector_x,float vector_y,float vector_z,int axis)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbrotateentity.html>bbRotateEntity</a> <a href=bbturnentity.html>bbTurnEntity</a> <a href=bbpointentity.html>bbPointEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

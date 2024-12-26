@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbEntityPick</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityPick ( entity,range# )</h1>
+<table class="doc" id="bbentitypick" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>range#</td><td class=argvalue>range of pick area around entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the nearest pickable entity 'infront' of the 
+specified entity.
+</p><p>
+The scale of the <b>range</b> parameter is affected by the 
+scale of the entity and affects the maximum distance
+of the pick.
+</p><p>
+Use the <a href=bbentitypickmode.html>bbEntityPickMode</a> command to make an entity
+pickable.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBEntity bbEntityPick( BBObject src,float range );</pre>
+<pre class=cs>public static int bb.EntityPick(int entity,float range)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitypickmode.html>bbEntityPickMode</a> <a href=bblinepick.html>bbLinePick</a> <a href=bbcamerapick.html>bbCameraPick</a> <a href=bbentitypickmode.html>bbEntityPickMode</a>
+</p>
+</td></tr>
+</table>
+</body></html>

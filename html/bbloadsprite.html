@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>bbLoadSprite</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadSprite ( path$[,tex_flag][,parent] )</h1>
+<table class="doc" id="bbloadsprite" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>path$</td><td class=argvalue>filename of image file to be used as sprite</td></tr>
+<tr><td class=argname>tex_flag</td><td class=argvalue>optional texture flag</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>optional <b>parent</b> of entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a sprite entity, and assigns a texture to it.
+</p><table class="data">
+<tr><th class=data>Name</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>TX_COLOR</td><td class=data>1</td><td class=data>Color (default)</td></tr>
+<tr><td class=data>TX_ALPHA</td><td class=data>2</td><td class=data>Alpha</td></tr>
+<tr><td class=data>TX_MASKED</td><td class=data>4</td><td class=data>Masked</td></tr>
+<tr><td class=data>TX_MIP</td><td class=data>8</td><td class=data>Mipmapped</td></tr>
+<tr><td class=data>TX_CLAMPU</td><td class=data>16</td><td class=data>Clamp U</td></tr>
+<tr><td class=data>TX_CLAMPV</td><td class=data>32</td><td class=data>Clamp V</td></tr>
+<tr><td class=data>TX_SPHERE</td><td class=data>64</td><td class=data>Spherical reflection map</td></tr>
+<tr><td class=data>TX_CUBIC</td><td class=data>128</td><td class=data>Cubic environment map</td></tr>
+<tr><td class=data>TX_VRAM</td><td class=data>256</td><td class=data>Store texture in vram</td></tr>
+<tr><td class=data>TX_HIGHCOLOR</td><td class=data>512</td><td class=data>Force the use of high color textures</td></tr>
+</table><p>
+See the <a href=bbcreatetexture.html>bbCreateTexture</a> command for a detailed description
+of the texture flags.
+</p><p>
+The optional <b>parent</b> parameter attaches the new Sprite entity to a 
+specified parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for more 
+information on entity hierachy.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBSprite bbLoadSprite( const char *file,int flags=1,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.LoadSprite(String path,int tex_flag,int parent)
+public static int bb.LoadSprite(String path,int tex_flag)
+public static int bb.LoadSprite(String path)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsprite.html>bbLoadSprite</a> <a href=bbrotatesprite.html>bbRotateSprite</a> <a href=bbscalesprite.html>bbScaleSprite</a> <a href=bbhandlesprite.html>bbHandleSprite</a> <a href=bbspriteviewmode.html>bbSpriteViewMode</a> <a href=bbpositionentity.html>bbPositionEntity</a> <a href=bbmoveentity.html>bbMoveEntity</a> <a href=bbtranslateentity.html>bbTranslateEntity</a> <a href=bbentityalpha.html>bbEntityAlpha</a> <a href=bbfreeentity.html>bbFreeEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

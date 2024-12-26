@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>bbCollisions</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCollisions src_type,dest_type,detectionmethod,response</h1>
+<table class="doc" id="bbcollisions" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>src_type</td><td class=argvalue>entity type to be checked for collisions.</td></tr>
+<tr><td class=argname>dest_type</td><td class=argvalue>entity type to be collided with.</td></tr>
+<tr><td class=argname>detectionmethod</td><td class=argvalue>collision detection method.</td></tr>
+<tr><td class=argname>response</td><td class=argvalue>what the source entity does when a collision occurs.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Configures method and response for collisions between two
+entities of the specified collision types.
+</p><p>
+The <b>method</b> parameter can be one of the following:
+</p><table class="data">
+<tr><th class=data>Method</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>COLLIDE_SPHERESPHERE</td><td class=data>1</td><td class=data>Ellipsoid-to-ellipsoid collisions</td></tr>
+<tr><td class=data>COLLIDE_SPHEREPOLY</td><td class=data>2</td><td class=data>Ellipsoid-to-polygon collisions</td></tr>
+<tr><td class=data>COLLIDE_SPHEREBOX</td><td class=data>3</td><td class=data>Ellipsoid-to-box collisions</td></tr>
+</table><p>
+The <b>response</b> parameter can be one of the following:
+</p><table class="data">
+<tr><th class=data>Response</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>COLLIDE_STOP</td><td class=data>1</td><td class=data>source entity halts at point of collision</td></tr>
+<tr><td class=data>COLLIDE_SLIDE1</td><td class=data>2</td><td class=data>slide source entity along the collision plane</td></tr>
+<tr><td class=data>COLLIDE_SLIDE2</td><td class=data>3</td><td class=data>same as slide1 but y component ignored</td></tr>
+</table><p>
+After calling <a href=bbupdateworld.html>bbUpdateWorld</a> the <a href=bbcountcollisions.html>bbCountCollisions</a>
+command can be used to detect collisions incurred
+by each entity and information about each of those
+collisions is returned by functions such as
+<a href=bbentitycollided.html>bbEntityCollided</a>, <a href=bbcollisionx.html>bbCollisionX</a>, <a href=bbcollisionnx.html>bbCollisionNX</a> etc.
+</p><p class="hint">
+A series of calls to the <a href=bbcollisions.html>bbCollisions</a> command is usually
+only required during a game's initialization and not
+every game loop as <a href=bbcollisions.html>bbCollisions</a> settings remain effective 
+until a call to <a href=bbclearcollisions.html>bbClearCollisions</a> or a call to <a href=bbcollisions.html>bbCollisions</a>
+with matching <b>source</b> and <b>target</b> entity types overwrites
+the existing method and reponse settings.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCollisions( int src_type,int dest_type,int method,int response );</pre>
+<pre class=cs>public static int bb.Collisions(int src_type,int dest_type,int detectionmethod,int response)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitybox.html>bbEntityBox</a> <a href=bbentityradius.html>bbEntityRadius</a> <a href=bbcollisions.html>bbCollisions</a> <a href=bbentitytype.html>bbEntityType</a> <a href=bbresetentity.html>bbResetEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

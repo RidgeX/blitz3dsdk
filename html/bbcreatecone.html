@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>bbCreateCone</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateCone ( [segments=8][,solid=True][,parent] )</h1>
+<table class="doc" id="bbcreatecone" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>segments</td><td class=argvalue>cone detail. Defaults to 8.</td></tr>
+<tr><td class=argname>solid</td><td class=argvalue>True
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of cone</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a mesh entity the shape of a cone with optional base.
+</p><p>
+The cone will be centred  at 0,0,0 and the base of the cone will have a 
+radius of 1. 
+</p><p>
+The segments value has a range 3-100 inclusive and results
+in cones with the following triangle counts:
+</p><table class="data">
+<tr><th class=data>Value</th><th class=data>Triangles</th><th class=data>Description</th></tr>
+<tr><td class=data>4</td><td class=data>6</td><td class=data>A pyramid</td></tr>
+<tr><td class=data>8</td><td class=data>14</td><td class=data>Bare minimum amount of polygons for a cone</td></tr>
+<tr><td class=data>16</td><td class=data>30</td><td class=data>Smooth cone at medium-far distances</td></tr>
+<tr><td class=data>32</td><td class=data>62</td><td class=data>Smooth cone at close distances </td></tr>
+</table><p>
+The optional <b>parent</b> parameter attaches the new cone
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbCreateCone( int segs=8,int solid=1,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateCone(int segments,int solid,int parent)
+public static int bb.CreateCone(int segments,int solid)
+public static int bb.CreateCone(int segments)
+public static int bb.CreateCone()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatecube.html>bbCreateCube</a> <a href=bbcreatesphere.html>bbCreateSphere</a> <a href=bbcreatecylinder.html>bbCreateCylinder</a>
+</p>
+</td></tr>
+</table>
+</body></html>

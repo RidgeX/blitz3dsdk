@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbCameraProject</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraProject camera,x#,y#,z#</h1>
+<table class="doc" id="bbcameraproject" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>world coordinate x</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>world coordinate y</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>world coordinate z</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Projects the world coordinate x,y,z on to the 2D screen.
+</p><p>
+Use the <a href=bbprojectedx.html>bbProjectedX</a>, <a href=bbprojectedy.html>bbProjectedY</a> and <a href=bbprojectedz.html>bbProjectedZ</a> functions
+to determine the pixel location on the camera's viewport and its
+distance from the camera the global position specified would
+be rendered at.
+</p><p>
+<a href=bbcameraproject.html>bbCameraProject</a> is useful for positioning 2D lines or text
+relative to the world positions of corresponding entity
+or verticy locations. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbCameraProject( BBCamera c,float x,float y,float z );</pre>
+<pre class=cs>public static int bb.CameraProject(int camera,float x,float y,float z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbprojectedx.html>bbProjectedX</a> <a href=bbprojectedy.html>bbProjectedY</a> <a href=bbprojectedz.html>bbProjectedZ</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbInput$</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbInput$ ( [prompt$=&quot;&gt;&quot;] )</h1>
+<table class="doc" id="bbinput" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>prompt$</td><td class=argvalue>optional text to be printed before keyboard input proceeds</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbinput.html>bbInput</a> command accepts and prints keyboard entry from the user
+until a Return key is received at which time the Input command returns
+a string result.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API const char *bbInput( const char *prompt );</pre>
+<pre class=cs>public static String bb.Input(String prompt)
+public static String bb.Input()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbprint.html>bbPrint</a> <a href=bblocate.html>bbLocate</a>
+</p>
+</td></tr>
+</table>
+</body></html>

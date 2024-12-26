@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbTileImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTileImage image[,x,y[,frame=0]]</h1>
+<table class="doc" id="bbtileimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel offset</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel offset</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame number</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbtileimage.html>bbTileImage</a> command tiles the entire viewport 
+of the current graphics buffer with the specified
+image.
+</p><p>
+The optional pixel offsets effectively scroll the
+tilemap drawn in the direction specified.
+</p><p>
+See <a href=bbdrawimage.html>bbDrawImage</a> for more drawing images details.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTileImage( BBImage i,int x,int y,int frame );</pre>
+<pre class=cs>public static int bb.TileImage(int image,int x,int y,int frame)
+public static int bb.TileImage(int image,int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbtileblock.html>bbTileBlock</a> <a href=bbdrawimage.html>bbDrawImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

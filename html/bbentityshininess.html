@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbEntityShininess</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityShininess entity,shininess#</h1>
+<table class="doc" id="bbentityshininess" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>shininess#</td><td class=argvalue>shininess of entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the shininess (specularity index) of an entity.
+</p><p>
+The shininess# value should be a floating point number in the 
+range 0.0-1.0. The default shininess setting is 0.0. 
+</p><p>
+Shininess is the extra brightness that appears on a surface
+when it is oriented to reflect light directly towards the 
+camera.
+</p><p>
+A low <b>shininess</b> produces a dull non reflective surface while
+a high <b>shininess</b> approaching 1.0 will make a surface appear
+polished and shiny.
+</p><p>
+Use the <a href=bbbrushshininess.html>bbBrushShininess</a> and <a href=bbpaintsurface.html>bbPaintSurface</a> commands for
+affecting shininess on a surface by surface basis.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityShininess( BBModel m,float shininess );</pre>
+<pre class=cs>public static int bb.EntityShininess(int entity,float shininess)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbbrushshininess.html>bbBrushShininess</a>
+</p>
+</td></tr>
+</table>
+</body></html>

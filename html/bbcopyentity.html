@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbCopyEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCopyEntity ( entity[,parent] )</h1>
+<table class="doc" id="bbcopyentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>Entity to duplicate</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>Entity that will act as parent to the copy.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a duplicate or clone of the specified entity.
+</p><p>
+Surfaces of mesh based entities are not duplicated but
+shared with the clone returned by <a href=bbcopyentity.html>bbCopyEntity</a>. Use 
+the <a href=bbcopymesh.html>bbCopyMesh</a> command to duplicate a mesh
+entity with unique surfaces.
+</p><p>
+The optional <b>parent</b> parameter attaches the new clone
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p><p class="hint">
+CopyEntity is fater than repeatedly calling LoadEntity
+and will save on memory.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBEntity bbCopyEntity( BBEntity e,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CopyEntity(int entity,int parent)
+public static int bb.CopyEntity(int entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityparent.html>bbEntityParent</a> <a href=bbcopymesh.html>bbCopyMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

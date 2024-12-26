@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbJoyX</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbJoyX# ( [port] )</h1>
+<table class="doc" id="bbjoyx" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>port</td><td class=argvalue>number of joystick port to check (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a value between -1.0 and 1.0 representing the direction
+of the joystick in the horizontal axis.
+</p><p>
+A value near 0.0 represents the joystick at rest position.
+</p><p>
+Due to the nature of analog joysticks <a href=bbjoyx.html>bbJoyX</a> and the other
+axis reading commands are unlikely to ever return an exact 
+value of 0.0 and so a tolerance factor may need to be applied
+if a rest position is required.
+</p><p>
+The <a href=bbjoyxdir.html>bbJoyXDir</a> command should be used instead of <a href=bbjoyx.html>bbJoyX</a> 
+when only the digital state of the stick is required
+(be it left, centered or right).
+</p><p>
+The optional port identifier provides access to a
+particular game controller, joystick or gamepad connected
+to the system and positively identified by <a href=bbjoytype.html>bbJoyType</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbJoyX( int port=0 );</pre>
+<pre class=cs>public static float bb.JoyX(int port)
+public static float bb.JoyX()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbjoyxdir.html>bbJoyXDir</a> <a href=bbjoyy.html>bbJoyY</a> <a href=bbjoyz.html>bbJoyZ</a> <a href=bbjoyhat.html>bbJoyHat</a>
+</p>
+</td></tr>
+</table>
+</body></html>

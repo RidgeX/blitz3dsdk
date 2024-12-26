@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>PureBasic</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>PureBasic</h1>
+<p>
+<a target=_blank href="http://www.purebasic.com/">
+<img src="images/logopb.gif">
+</a>
+</p><p>
+PureBasic is a programming language based on established BASIC rules
+from Fantaisie Software.
+</p><p>
+To use the Blitz3DSDK include file place the blitz3dsdk.pbi file found in the Blitz3D SDK 'include' directory
+into the same folder as your PB project, and add this line at the start of your PB programs:
+</p><pre>	IncludeFile &quot;blitz3dsdk.pbi&quot;
+</pre><p>
+The Blitz3DSDK samples folder also contains a number of examples
+demonstrating the use of the Blitz3DSDK including the following:
+</p><pre>
+IncludeFile &quot;blitz3dsdk.pbi&quot;
+
+bbBeginBlitz3D ()
+
+bbSetBlitz3DTitle (&quot;PB Cube - use cursors to move, ESC to exit&quot;, &quot;Are you sure?&quot;)
+
+bbGraphics3D (640, 480, 0, 2)
+
+cam = bbCreateCamera ()
+cube = bbCreateCube ()
+light = bbCreateLight ()
+
+bbMoveEntity (cube, 0, 0, 5)
+bbMoveEntity (light, -10, 5, -1)
+bbPointEntity (light, cube)
+
+Repeat
+
+    If bbKeyDown (#KEY_LEFT)
+        bbTurnEntity (cube, 0, -0.5, 0)
+    EndIf
+
+    If bbKeyDown (#KEY_RIGHT)
+        bbTurnEntity (cube, 0, 0.5, 0)
+    EndIf
+
+    If bbKeyDown (#KEY_UP)
+        bbTurnEntity (cube, 1, 0, 0, 0)
+    EndIf
+
+    If bbKeyDown (#KEY_DOWN)
+        bbTurnEntity (cube, -1, 0, 0, 0)
+    EndIf
+    
+    bbRenderWorld ()
+    bbFlip ()
+    
+Until bbKeyHit (#KEY_ESCAPE)
+
+bbEndBlitz3D ()
+
+End
+</pre>
+<DL>
+</DL>
+</body></html>

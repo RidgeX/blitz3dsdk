@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbLoadBrush</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadBrush ( texture_file$[,flags=1][,u_scale#=1][,v_scale#=1] )</h1>
+<table class="doc" id="bbloadbrush" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture_file$</td><td class=argvalue>filename of texture</td></tr>
+<tr><td class=argname>flags</td><td class=argvalue>optional texture flags</td></tr>
+<tr><td class=argname>u_scale</td><td class=argvalue>optional texture horizontal scale</td></tr>
+<tr><td class=argname>v_scale</td><td class=argvalue>optional texture vertical scale</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a brush and loads and assigns a single texture to it with the
+specified texture properties.
+</p><p>
+See the <a href=bbcreatetexture.html>bbCreateTexture</a> command for a discussion of the various texture
+flags and their effects and the <a href=bbscaletexture.html>bbScaleTexture</a> command for more information
+on texture scales.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBBrush bbLoadBrush( const char *file,int flags=1,float u_scale=1.0,float v_scale=1.0 );</pre>
+<pre class=cs>public static int bb.LoadBrush(String texture_file,int flags,float u_scale,float v_scale)
+public static int bb.LoadBrush(String texture_file,int flags,float u_scale)
+public static int bb.LoadBrush(String texture_file,int flags)
+public static int bb.LoadBrush(String texture_file)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatebrush.html>bbCreateBrush</a> <a href=bbcreatetexture.html>bbCreateTexture</a>
+</p>
+</td></tr>
+</table>
+</body></html>

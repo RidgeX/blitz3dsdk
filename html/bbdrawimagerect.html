@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbDrawImageRect</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDrawImageRect image,x,y,image_x,image_y,width,height,[frame=0]</h1>
+<table class="doc" id="bbdrawimagerect" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>image_x</td><td class=argvalue>horizontal pixel location in image</td></tr>
+<tr><td class=argname>image_y</td><td class=argvalue>vertical pixel location in image</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width of rectangle to Draw</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of rectangle to Draw</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame number</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbdrawimagerect.html>bbDrawImageRect</a> command draws a part of an Image on
+to the current graphics buffer at location <b>x</b>, <b>y.</b> 
+</p><p>
+The region of the image used is defined by the rectangle
+at location <b>image_x</b>,<b>image_y</b> of size <b>width</b>,<b>height.</b>
+</p><p>
+See <a href=bbdrawimage.html>bbDrawImage</a> for more details about drawing with images.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbDrawImageRect( BBImage i,int x,int y,int r_x,int r_y,int r_w,int r_h,int frame );</pre>
+<pre class=cs>public static int bb.DrawImageRect(int image,int x,int y,int image_x,int image_y,int width,int height,int frame)
+public static int bb.DrawImageRect(int image,int x,int y,int image_x,int image_y,int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawimage.html>bbDrawImage</a> <a href=bbdrawblockrect.html>bbDrawBlockRect</a> <a href=bbtileimage.html>bbTileImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

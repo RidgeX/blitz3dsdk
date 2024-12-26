@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Graphics</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>Graphics</h1>
+<DL>
+<DT><a href="bbgraphics.html">bbGraphics</a><DD>The <a href=bbgraphics.html>bbGraphics</a> command resizes the graphics display to the 
+specified size in pixels and with the specified display 
+properties including the color depth and fullscreen options.<DT><a href="bbflip.html">bbFlip</a><DD>The <a href=bbflip.html>bbFlip</a> command switches the FrontBuffer() and BackBuffer() 
+of the current <a href=bbgraphics.html>bbGraphics</a> display.<DT><a href="bbbackbuffer.html">bbBackBuffer</a><DD>The <a href=bbbackbuffer.html>bbBackBuffer</a> function returns a buffer that corresponds
+to the hidden area that will be flipped to the display when
+the <a href=bbflip.html>bbFlip</a> command is called.<DT><a href="bbfrontbuffer.html">bbFrontBuffer</a><DD>The <a href=bbfrontbuffer.html>bbFrontBuffer</a> function returns a buffer that corresponds
+to that viewable on the display.<DT><a href="bbgraphicswidth.html">bbGraphicsWidth</a><DD>The <a href=bbgraphicswidth.html>bbGraphicsWidth</a> command returns the current width of the
+display in pixels.<DT><a href="bbgraphicsheight.html">bbGraphicsHeight</a><DD>The <a href=bbgraphicsheight.html>bbGraphicsHeight</a> command returns the current height of the
+display in pixels.<DT><a href="bbgraphicsdepth.html">bbGraphicsDepth</a><DD>The <a href=bbgraphicsdepth.html>bbGraphicsDepth</a> command returns the current color depth of the
+display.<DT><a href="bbendgraphics.html">bbEndGraphics</a><DD>Returns the Graphics mode to the original 400x300 fixed window.<DT><a href="bbvwait.html">bbVWait</a><DD><a href=bbvwait.html>bbVWait</a> will cause the program to halt execution until the
+video display has completed its refresh and reached it's
+Vertical Blank cycle (the time during which the video
+beam returns to the top of the display to begin its next
+refresh).<DT><a href="bbscanline.html">bbScanLine</a><DD>The <a href=bbscanline.html>bbScanLine</a> function returns the actual scanline being
+refreshed by the video hardware or 0 if in vertical blank
+or unsupported by the hardware.<DT><a href="bbtotalvidmem.html">bbTotalVidMem</a><DD>Returns the total amount of graphics memory present on the current graphics
+device.<DT><a href="bbavailvidmem.html">bbAvailVidMem</a><DD>Returns the available amount of graphics memory on the current graphics
+device.<DT><a href="bbsetgamma.html">bbSetGamma</a><DD>SetGamma allows you to modify the gamma tables.<DT><a href="bbupdategamma.html">bbUpdateGamma</a><DD>UpdateGamma should be used after a series of <a href=bbsetgamma.html>bbSetGamma</a> commands in order to 
+effect actual changes.<DT><a href="bbgammared.html">bbGammaRed</a><DD>Returns the adjusted output value of the red channel given the 
+specified input <b>value</b> by referencing the current gamma correction
+tables.<DT><a href="bbgammagreen.html">bbGammaGreen</a><DD>Returns the adjusted output value of the green channel given the 
+specified input <b>value</b> by referencing the current gamma correction
+tables.<DT><a href="bbgammablue.html">bbGammaBlue</a><DD>Returns the adjusted output value of the blue channel given the 
+specified input <b>value</b> by referencing the current gamma correction
+tables.</DL>
+</body></html>

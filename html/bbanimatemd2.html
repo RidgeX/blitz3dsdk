@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbAnimateMD2</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAnimateMD2 md2[,mode][,speed#=1.0][,first_frame=1][,last_frame][,transition#]</h1>
+<table class="doc" id="bbanimatemd2" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>md2</td><td class=argvalue>md2 handle</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>mode of animation</td></tr>
+<tr><td class=argname>speed#</td><td class=argvalue>speed of animation. Defaults to  1.</td></tr>
+<tr><td class=argname>first_frame</td><td class=argvalue>first frame of animation. Defaults to 1.</td></tr>
+<tr><td class=argname>last_frame#</td><td class=argvalue>last frame of animation. Defaults to last frame of  all md2 animations.</td></tr>
+<tr><td class=argname>transition#</td><td class=argvalue>smoothness of transition between last frame shown of  previous animation and first frame of next animation. Defaults to 0.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Animates an md2 entity.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>ANIM_STOP</td><td class=data>0</td><td class=data>Stop animation</td></tr>
+<tr><td class=data>ANIM_LOOP</td><td class=data>1</td><td class=data>Loop animation (default)</td></tr>
+<tr><td class=data>ANIM_PINGPONG</td><td class=data>2</td><td class=data>PingPong animation</td></tr>
+<tr><td class=data>ANIM_ONCE</td><td class=data>3</td><td class=data>OneShot animation</td></tr>
+</table><p>
+The MD2 will actually move from one frame to the next when UpdateWorld is called. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbAnimateMD2( BBMD2Model m,int mode=1,float speed=1.0,int first=0,int last=9999,float trans=0.0 );</pre>
+<pre class=cs>public static int bb.AnimateMD2(int md2,int mode,float speed,int first_frame,int last_frame,float transition)
+public static int bb.AnimateMD2(int md2,int mode,float speed,int first_frame,int last_frame)
+public static int bb.AnimateMD2(int md2,int mode,float speed,int first_frame)
+public static int bb.AnimateMD2(int md2,int mode,float speed)
+public static int bb.AnimateMD2(int md2,int mode)
+public static int bb.AnimateMD2(int md2)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbmd2animating.html>bbMD2Animating</a>
+</p>
+</td></tr>
+</table>
+</body></html>

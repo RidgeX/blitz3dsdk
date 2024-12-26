@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbMoveEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMoveEntity entity,x#,y#,z#</h1>
+<table class="doc" id="bbmoveentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>name of entity to be moved</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x amount that entity will be moved by</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y amount that entity will be moved by</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z amount that entity will be moved by</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Moves an entity relative to its current position and orientation.
+</p><p>
+Typically the x,y,z values for a 'Z facing model' are:
+</p><table class="data">
+<tr><th class=data>Axis</th><th class=data>Direction</th></tr>
+<tr><td class=data>X</td><td class=data>Right Left</td></tr>
+<tr><td class=data>Y</td><td class=data>Up Down</td></tr>
+<tr><td class=data>Z</td><td class=data>Forward Backwards </td></tr>
+</table><p>
+For movement that ignores the entities orientation see the
+<a href=bbtranslateentity.html>bbTranslateEntity</a> command.
+</p><p>
+To position an entity at an absolute location in parent
+or world space see the <a href=bbpositionentity.html>bbPositionEntity</a> command.
+</p><p>
+See the <a href=bbupdateworld.html>bbUpdateWorld</a> command for details regarding
+the effect of any collisions that may occur due to
+the requested repositioning.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbMoveEntity( BBEntity e,float x,float y,float z );</pre>
+<pre class=cs>public static int bb.MoveEntity(int entity,float x,float y,float z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityx.html>bbEntityX</a> <a href=bbtranslateentity.html>bbTranslateEntity</a> <a href=bbpositionentity.html>bbPositionEntity</a> <a href=bbupdateworld.html>bbUpdateWorld</a>
+</p>
+</td></tr>
+</table>
+</body></html>

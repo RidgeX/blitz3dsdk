@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbCameraPick</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraPick ( camera,viewport_x#,viewport_y# )</h1>
+<table class="doc" id="bbcamerapick" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>viewport_x#</td><td class=argvalue>2D viewport coordinate</td></tr>
+<tr><td class=argname>viewport_y#</td><td class=argvalue>2D viewport coordinate</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the nearest pickable entity occupying the specified 
+viewport coordinates or 0 if none.
+</p><p>
+Use the <a href=bbentitypickmode.html>bbEntityPickMode</a> command to make an entity
+pickable.
+</p><p>
+The <a href=bbcamerapick.html>bbCameraPick</a> function is a useful way for detecting
+the entity being drawn at the specified screen location
+in particular when that location is the point at
+<a href=bbmousex.html>bbMouseX</a>,<a href=bbmousey.html>bbMouseY</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBEntity bbCameraPick( BBCamera c,float x,float y );</pre>
+<pre class=cs>public static int bb.CameraPick(int camera,float viewport_x,float viewport_y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitypick.html>bbEntityPick</a> <a href=bblinepick.html>bbLinePick</a> <a href=bbcamerapick.html>bbCameraPick</a> <a href=bbentitypickmode.html>bbEntityPickMode</a> <a href=bbentityinview.html>bbEntityInView</a>
+</p>
+</td></tr>
+</table>
+</body></html>

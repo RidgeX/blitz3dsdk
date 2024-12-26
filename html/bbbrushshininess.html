@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbBrushShininess</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBrushShininess brush,shininess#</h1>
+<table class="doc" id="bbbrushshininess" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+<tr><td class=argname>shininess#</td><td class=argvalue>shininess of brush</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the shininess (specularity) of a brush.
+</p><p>
+The shininess# value should be  in the range 0-1. The default shininess 
+setting is 0. 
+</p><p>
+Shininess is how much brighter certain areas of an object will appear to
+be when a light is shone directly at them. 
+</p><p>
+Setting a shininess value of 1 for a medium to high poly sphere, combined
+with the creation of a light shining in the direction of it, will give it
+the appearance of a shiny snooker ball.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBrushShininess( BBBrush b,float n );</pre>
+<pre class=cs>public static int bb.BrushShininess(int brush,float shininess)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityshininess.html>bbEntityShininess</a>
+</p>
+</td></tr>
+</table>
+</body></html>

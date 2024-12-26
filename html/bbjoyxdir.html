@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbJoyXDir</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbJoyXDir ( [port] )</h1>
+<table class="doc" id="bbjoyxdir" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>port</td><td class=argvalue>number of joystick port to check (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns an integer value of -1, 0 or 1 representing the
+horizontal direction of the joystick be it left, centered
+or right.
+</p><table class="data">
+<tr><th class=data>Value</th><th class=data>Direction</th></tr>
+<tr><td class=data>-1</td><td class=data>left</td></tr>
+<tr><td class=data>0</td><td class=data>centered</td></tr>
+<tr><td class=data>1</td><td class=data>right</td></tr>
+</table>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbJoyXDir( int port=0 );</pre>
+<pre class=cs>public static int bb.JoyXDir(int port)
+public static int bb.JoyXDir()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbjoyx.html>bbJoyX</a> <a href=bbjoyudir.html>bbJoyUDir</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbHandleImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbHandleImage image,x,y</h1>
+<table class="doc" id="bbhandleimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel offset</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel offset</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets an image's drawing handle to the specified pixel
+offset.
+</p><p>
+An image's handle is an offset added to the pixel
+coordinate specified in a <a href=bbdrawimage.html>bbDrawImage</a> command.
+</p><p>
+Images typically have their handle set to 0,0 which means
+drawing commands draw the image with its top left pixel
+at the drawing location specified.
+</p><p>
+The <a href=bbautomidhandle.html>bbAutoMidHandle</a> command changes this behavior so that
+all subsequent Images are loaded or created with their
+handle set to the center of the Image.
+</p><p>
+The <a href=bbhandleimage.html>bbHandleImage</a> command is used to position the handle
+to any given pixel offset after it has been created.
+</p><p>
+Also See:
+MidHandle;AutoMidHandle;DrawImage;RotateImage
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbHandleImage( BBImage i,int x,int y );</pre>
+<pre class=cs>public static int bb.HandleImage(int image,int x,int y)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

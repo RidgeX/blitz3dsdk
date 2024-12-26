@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbFlipMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFlipMesh mesh</h1>
+<table class="doc" id="bbflipmesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>mesh handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Flips all the triangles in a mesh.
+</p><p>
+<a href=bbflipmesh.html>bbFlipMesh</a> reverses the order of vertices for each triangle effectively
+making it face the opposite direction.
+</p><p>
+Triangles that all face the wrong way is a common error when loading
+external meshes and the <a href=bbflipmesh.html>bbFlipMesh</a> command is a useful correction
+if an alternative <a href=bbloadermatrix.html>bbLoaderMatrix</a> solution can not be found.
+</p><p>
+<a href=bbflipmesh.html>bbFlipMesh</a> is also useful for turning primitives created by <a href=bbcreatesphere.html>bbCreateSphere</a>,
+<a href=bbcreatecylinder.html>bbCreateCylinder</a> and <a href=bbcreatecone.html>bbCreateCone</a> inside out.
+</p><p>
+See the <a href=bbentityfx.html>bbEntityFX</a> command for treating the triangles of a mesh as double
+sided instead.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFlipMesh( BBModel m );</pre>
+<pre class=cs>public static int bb.FlipMesh(int mesh)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadermatrix.html>bbLoaderMatrix</a> <a href=bbentityfx.html>bbEntityFX</a> <a href=bbbrushfx.html>bbBrushFX</a>
+</p>
+</td></tr>
+</table>
+</body></html>

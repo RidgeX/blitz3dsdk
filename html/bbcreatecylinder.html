@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbCreateCylinder</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateCylinder ( [segments=8][,solid=True][,parent] )</h1>
+<table class="doc" id="bbcreatecylinder" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>segments</td><td class=argvalue>cylinder detail. Defaults to 8.</td></tr>
+<tr><td class=argname>solid</td><td class=argvalue>True
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of cylinder</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a mesh entity the shape of a cylinder with optional ends.
+</p><p>
+The cylinder will  be centred at 0,0,0 and will have a radius of 1. 
+</p><p>
+The segments value must be in the range 3-100 inclusive and results
+in cylinders with the following triangle counts:
+</p><table class="data">
+<tr><th class=data>Value</th><th class=data>Triangles</th><th class=data>Comment</th></tr>
+<tr><td class=data>3</td><td class=data>8</td><td class=data>A prism</td></tr>
+<tr><td class=data>8</td><td class=data>28</td><td class=data>Bare minimum amount of polygons for a cylinder</td></tr>
+<tr><td class=data>16</td><td class=data>60</td><td class=data>Smooth cylinder at medium-far distances</td></tr>
+<tr><td class=data>32</td><td class=data>124</td><td class=data>Smooth cylinder at close distances </td></tr>
+</table><p>
+The optional <b>parent</b> parameter attaches the new cylinder
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbCreateCylinder( int segs=8,int solid=1,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateCylinder(int segments,int solid,int parent)
+public static int bb.CreateCylinder(int segments,int solid)
+public static int bb.CreateCylinder(int segments)
+public static int bb.CreateCylinder()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbscalemesh.html>bbScaleMesh</a> <a href=bbcreatecube.html>bbCreateCube</a> <a href=bbcreatesphere.html>bbCreateSphere</a> <a href=bbcreatecone.html>bbCreateCone</a>
+</p>
+</td></tr>
+</table>
+</body></html>

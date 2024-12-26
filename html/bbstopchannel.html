@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbStopChannel</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbStopChannel channel</h1>
+<table class="doc" id="bbstopchannel" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>channel</td><td class=argvalue>valid playback channel</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Stop any audio being output on a currently playing channel.
+</p><p>
+The <a href=bbplaysound.html>bbPlaySound</a>, <a href=bbplaymusic.html>bbPlayMusic</a> and <a href=bbplaycdtrack.html>bbPlayCDTrack</a> functions all return
+a channel handle that can be used with <a href=bbstopchannel.html>bbStopChannel</a> to cancel the
+resulting sound playback.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbStopChannel( BBChannel channel );</pre>
+<pre class=cs>public static int bb.StopChannel(int channel)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbplaysound.html>bbPlaySound</a> <a href=bbplaymusic.html>bbPlayMusic</a> <a href=bbplaycdtrack.html>bbPlayCDTrack</a> <a href=bbpausechannel.html>bbPauseChannel</a>
+</p>
+</td></tr>
+</table>
+</body></html>

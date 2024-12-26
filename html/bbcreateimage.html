@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbCreateImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateImage ( width,height[,frames=1] )</h1>
+<table class="doc" id="bbcreateimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>width</td><td class=argvalue>width in pixels of the new image</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height in pixels of the new image</td></tr>
+<tr><td class=argname>frames</td><td class=argvalue>optional number of frames</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbcreateimage.html>bbCreateImage</a> function returns a new image with the
+specified dimensions in pixels containing an optional
+number of animation frames.
+</p><p>
+Images need not be loaded from files but can instead be
+created and modified by the program. Once an image
+is created with <a href=bbcreateimage.html>bbCreateImage</a> it can be used as the destination
+of a <a href=bbgrabimage.html>bbGrabImage</a> command or its pixel buffer can be
+accessed directly with the <a href=bbimagebuffer.html>bbImageBuffer</a> command.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBImage bbCreateImage( int w,int h,int n );</pre>
+<pre class=cs>public static int bb.CreateImage(int width,int height,int frames)
+public static int bb.CreateImage(int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbimagebuffer.html>bbImageBuffer</a> <a href=bbfreeimage.html>bbFreeImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

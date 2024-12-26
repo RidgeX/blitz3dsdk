@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbReadPixel</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbReadPixel ( x,y[,buffer] )</h1>
+<table class="doc" id="bbreadpixel" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>buffer</td><td class=argvalue>valid graphics buffer</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbreadpixel.html>bbReadPixel</a> function determines the color of a pixel at the
+specified location of the specified graphics buffer.
+</p><p>
+The return value is an integer with the red, green and blue
+values packed int the low 24 binary bits and a transparency
+value in the high 8 bits.
+</p><p>
+If the x,y coordinate falls outside the bounds of the buffer
+a value of BLACK or in the case of an image buffer, the images
+mask color is returned.
+</p><p>
+If no graphics buffer is specified <a href=bbreadpixel.html>bbReadPixel</a> uses the current
+graphics buffer, see <a href=bbsetbuffer.html>bbSetBuffer</a> for more details.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbReadPixel( int x,int y,BBCanvas buff );</pre>
+<pre class=cs>public static int bb.ReadPixel(int x,int y,int buffer)
+public static int bb.ReadPixel(int x,int y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbwritepixel.html>bbWritePixel</a> <a href=bbcopypixel.html>bbCopyPixel</a> <a href=bbgetcolor.html>bbGetColor</a> <a href=bbreadpixelfast.html>bbReadPixelFast</a>
+</p>
+</td></tr>
+</table>
+</body></html>

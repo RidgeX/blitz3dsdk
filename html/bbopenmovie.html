@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbOpenMovie</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbOpenMovie ( moviefile$ )</h1>
+<table class="doc" id="bbopenmovie" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>moviefile$</td><td class=argvalue>filename of a movie file</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Locates and starts a movie file playing.
+</p><p>
+Returns a valid movie handle if the function is successful
+or 0 if the command fails for any reason.
+</p><p>
+Use the <a href=bbdrawmovie.html>bbDrawMovie</a> command to see the movie playing.
+</p><p>
+Movie files will typically have the AVI, MPEG and MPG
+file extensions.
+</p><p>
+Blitz3D applications may need to specify DirectX8 
+requirements or the installation of a particular 
+version of Window's media  player software if they 
+are to support movie files using codecs other than 
+MPEG1, CinePak, MotionJPEG and the like.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBMovie bbOpenMovie( const char *s );</pre>
+<pre class=cs>public static int bb.OpenMovie(String moviefile)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawmovie.html>bbDrawMovie</a> <a href=bbclosemovie.html>bbCloseMovie</a> <a href=bbmovieplaying.html>bbMoviePlaying</a> <a href=bbmoviewidth.html>bbMovieWidth</a> <a href=bbmovieheight.html>bbMovieHeight</a>
+</p>
+</td></tr>
+</table>
+</body></html>

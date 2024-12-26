@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbChannelVolume</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbChannelVolume channel,volume#</h1>
+<table class="doc" id="bbchannelvolume" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>channel</td><td class=argvalue>valid playback channel</td></tr>
+<tr><td class=argname>volume#</td><td class=argvalue>volume level</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Modifies the amplitude of the specified audio channel.
+</p><p>
+A floating point of less than 1.0 will reduce volume
+while a value of larger than 1.0 will increase the volume
+of the specified channel.
+</p><p>
+Increasing a channel volume above 1.0 should not be 
+attempted if distortion and clamping of the audio output 
+is to be avoided.
+</p><p>
+To make a channel silent use <a href=bbstopchannel.html>bbStopChannel</a> or <a href=bbpausechannel.html>bbPauseChannel</a>
+as an alternative to a volume setting of 0.0.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbChannelVolume( BBChannel channel,float volume );</pre>
+<pre class=cs>public static int bb.ChannelVolume(int channel,float volume)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbsoundvolume.html>bbSoundVolume</a>
+</p>
+</td></tr>
+</table>
+</body></html>

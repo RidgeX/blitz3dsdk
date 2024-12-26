@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbEntityType</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityType entity,collision_type[,recursive]</h1>
+<table class="doc" id="bbentitytype" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>collision_type</td><td class=argvalue>collision type of entity. Must be in the range 0-999.</td></tr>
+<tr><td class=argname>recursive</td><td class=argvalue>true to apply collision type to entity's children. Defaults to false.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the collision type for an entity.
+</p><p>
+A collision_type value of 0 indicates that no collision checking will 
+occur with that entity.
+</p><p>
+A collision value of 1-999 enables collision checking for the specified 
+entity and optionally all its children.
+</p><p>
+The <a href=bbupdateworld.html>bbUpdateWorld</a> command uses the currently active <a href=bbcollisions.html>bbCollisions</a> rules
+to perform various collision responses for the overlapping of entities
+that have a corresponding <a href=bbentitytype.html>bbEntityType</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityType( BBObject o,int type,int recurs=0 );</pre>
+<pre class=cs>public static int bb.EntityType(int entity,int collision_type,int recursive)
+public static int bb.EntityType(int entity,int collision_type)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcollisions.html>bbCollisions</a> <a href=bbgetentitytype.html>bbGetEntityType</a> <a href=bbentitybox.html>bbEntityBox</a> <a href=bbentityradius.html>bbEntityRadius</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbBrushBlend</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBrushBlend brush,blend</h1>
+<table class="doc" id="bbbrushblend" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+<tr><td class=argname>blend</td><td class=argvalue>blend mode</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the blending mode for a brush.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>BLEND_NONE</td><td class=data>0</td><td class=data>inherit surface blend mode</td></tr>
+<tr><td class=data>BLEND_ALPHA</td><td class=data>1</td><td class=data>averages colors based on transparancy (default)</td></tr>
+<tr><td class=data>BLEND_MULT</td><td class=data>2</td><td class=data>multiplies colors together</td></tr>
+<tr><td class=data>BLEND_ADD</td><td class=data>3</td><td class=data>adds colors together</td></tr>
+</table>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBrushBlend( BBBrush b,int blend );</pre>
+<pre class=cs>public static int bb.BrushBlend(int brush,int blend)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityblend.html>bbEntityBlend</a>
+</p>
+</td></tr>
+</table>
+</body></html>

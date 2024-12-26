@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbVertexNormal</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVertexNormal surface,index,nx#,ny#,nz#</h1>
+<table class="doc" id="bbvertexnormal" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of vertex</td></tr>
+<tr><td class=argname>nx#</td><td class=argvalue>normal x of vertex</td></tr>
+<tr><td class=argname>ny#</td><td class=argvalue>normal y of vertex</td></tr>
+<tr><td class=argname>nz#</td><td class=argvalue>normal z of vertex</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the normal of an existing vertex.
+</p><p>
+The index value should be in the range 0..CountVertices()-1.
+</p><p>
+Depending on the suface properties and the type of active 
+lights in the world vertex normals can play a big part in 
+rendering correctly shaded surfaces.
+</p><p>
+A vertex normal should point directly away from any
+triangle faces the vertex has been used to construct.
+</p><p>
+See the <a href=bbupdatenormals.html>bbUpdateNormals</a> command to automatically
+calculate the surface normals of all vertices in a mesh.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbVertexNormal( BBSurface s,int n,float x,float y,float z );</pre>
+<pre class=cs>public static int bb.VertexNormal(int surface,int index,float nx,float ny,float nz)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbupdatenormals.html>bbUpdateNormals</a> <a href=bbaddvertex.html>bbAddVertex</a> <a href=bbaddtriangle.html>bbAddTriangle</a> <a href=bbentityfx.html>bbEntityFX</a> <a href=bbentityshininess.html>bbEntityShininess</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbGetKey</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetKey (  )</h1>
+<table class="doc" id="bbgetkey" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns an ascii code corresponding to the key last typed by the
+user or 0 if all keyboard events have been reported.
+</p><p>
+As Blitz uses an internal queue for tracking key presses it is
+sometimes useful to call <a href=bbgetkey.html>bbGetKey</a> multiple times to empty the
+queue. Use the <a href=bbflushkeys.html>bbFlushKeys</a> command to completely empty the internal 
+key queue.
+</p><p>
+The <a href=bbgetkey.html>bbGetKey</a> function is useful for situations when the user is
+expected to type some text.
+</p><p>
+The <a href=bbkeydown.html>bbKeyDown</a> function is more appropriate when the player is 
+expected to hold down certain key combinations in a more 
+action oriented game environment.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGetKey();</pre>
+<pre class=cs>public static int bb.GetKey()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbkeydown.html>bbKeyDown</a> <a href=bbwaitkey.html>bbWaitKey</a> <a href=bbflushkeys.html>bbFlushKeys</a>
+</p>
+</td></tr>
+</table>
+</body></html>

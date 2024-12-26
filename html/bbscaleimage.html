@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbScaleImage</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbScaleImage ( image,xscale#,yscale# )</h1>
+<table class="doc" id="bbscaleimage" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>xscale#</td><td class=argvalue>horizontal scale factor</td></tr>
+<tr><td class=argname>yscale#</td><td class=argvalue>vertical scale factor</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbscaleimage.html>bbScaleImage</a> function returns a copy of an image 
+scaled in each axis by the specified factors.
+</p><p>
+A negative scale factor also causes the resulting image to be
+flipped in that axis, i.e. ScaleImage image,1,-1 will return
+a copy of image flipped vertically. Other common scale
+factors are 2,2 which produce a double sized image and
+0.5,0.5 which will produce an image half the size of the
+original.
+</p><p>
+The quality of the transformed result can be controlled
+with the <a href=bbtformfilter.html>bbTFormFilter</a> command.
+</p><p>
+See the <a href=bbresizeimage.html>bbResizeImage</a> command for a similar command that
+uses a target image size to calculate scale factors.
+</p><p class="hint">
+This command is not particularly fast and hence like loading
+it is recomended images are scaled before a game level 
+commences.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbScaleImage( BBImage i,float w,float h );</pre>
+<pre class=cs>public static int bb.ScaleImage(int image,float xscale,float yscale)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbresizeimage.html>bbResizeImage</a> <a href=bbrotateimage.html>bbRotateImage</a> <a href=bbtformfilter.html>bbTFormFilter</a> <a href=bbtformimage.html>bbTFormImage</a>
+</p>
+</td></tr>
+</table>
+</body></html>

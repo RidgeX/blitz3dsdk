@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbExtractAnimSeq</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbExtractAnimSeq ( entity,first_frame,last_frame[,anim_seq] )</h1>
+<table class="doc" id="bbextractanimseq" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>first_frame</td><td class=argvalue>first frame of anim sequence to extract</td></tr>
+<tr><td class=argname>last_frame</td><td class=argvalue>last frame of anim sequence to extract</td></tr>
+<tr><td class=argname>anim_seq</td><td class=argvalue>anim sequence to extract from. This is usually 0, and  as such defaults to 0.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+This command allows you to convert an animation with an MD2-style series  of
+anim sequences into a pure Blitz anim sequence, and play it back as such
+using Animate.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbExtractAnimSeq( BBObject o,int first,int last,int seq );</pre>
+<pre class=cs>public static int bb.ExtractAnimSeq(int entity,int first_frame,int last_frame,int anim_seq)
+public static int bb.ExtractAnimSeq(int entity,int first_frame,int last_frame)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

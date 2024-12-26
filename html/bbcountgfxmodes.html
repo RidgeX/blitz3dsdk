@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbCountGfxModes</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCountGfxModes (  )</h1>
+<table class="doc" id="bbcountgfxmodes" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbcountgfxmodes.html>bbCountGfxModes</a> function returns the number of graphics modes
+supported by the current graphics driver.
+</p><p>
+Use the <a href=bbgfxmodewidth.html>bbGfxModeWidth</a>, <a href=bbgfxmodeheight.html>bbGfxModeHeight</a> and <a href=bbgfxmodedepth.html>bbGfxModeDepth</a> to obtain
+information about each mode for use with the <a href=bbgraphics.html>bbGraphics</a> command.
+</p><p>
+Legal graphics modes for these functions are numbered from 1 up 
+to and including the value returned by <a href=bbcountgfxmodes.html>bbCountGfxModes</a>.
+</p><p class="hint">
+Use <a href=bbcountgfxmodes3d.html>bbCountGfxModes3D</a>() instead if <a href=bbgraphics3d.html>bbGraphics3D</a> use is required as older
+hardware may support 3D acceleration on only a subset of its video modes.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbCountGfxModes();</pre>
+<pre class=cs>public static int bb.CountGfxModes()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgfxmodewidth.html>bbGfxModeWidth</a> <a href=bbgfxmodeheight.html>bbGfxModeHeight</a> <a href=bbgfxmodedepth.html>bbGfxModeDepth</a> <a href=bbgraphics.html>bbGraphics</a> <a href=bbsetgfxdriver.html>bbSetGfxDriver</a> <a href=bbcountgfxmodes3d.html>bbCountGfxModes3D</a>
+</p>
+</td></tr>
+</table>
+</body></html>

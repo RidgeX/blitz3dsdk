@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbCopyPixelFast</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCopyPixelFast src_x,src_y,src_buffer,dest_x,dest_y[,dest_buffer]</h1>
+<table class="doc" id="bbcopypixelfast" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>src_x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>src_y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>src_buffer</td><td class=argvalue>valid graphics buffer to read from</td></tr>
+<tr><td class=argname>dest_x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>dest_y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>dest_buffer</td><td class=argvalue>valid graphics buffer to write to</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bbcopypixelfast.html>bbCopyPixelFast</a> is similar in function to <a href=bbcopypixel.html>bbCopyPixel</a> but the buffer
+must be locked with the <a href=bblockbuffer.html>bbLockBuffer</a> command and no bounds checking 
+is performed in the interests of speed.
+</p><p>
+Warning: like <a href=bbreadpixelfast.html>bbReadPixelFast</a> extreme care must be taken to ensure
+the pixel position specified falls inside the specified buffers
+area to avoid crashing the computer.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCopyPixelFast( int src_x,int src_y,BBCanvas src,int dest_x,int dest_y,BBCanvas buff );</pre>
+<pre class=cs>public static int bb.CopyPixelFast(int src_x,int src_y,int src_buffer,int dest_x,int dest_y,int dest_buffer)
+public static int bb.CopyPixelFast(int src_x,int src_y,int src_buffer,int dest_x,int dest_y)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcopypixel.html>bbCopyPixel</a> <a href=bbreadpixelfast.html>bbReadPixelFast</a> <a href=bbwritepixelfast.html>bbWritePixelFast</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbGetSurfaceBrush</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGetSurfaceBrush ( surface )</h1>
+<table class="doc" id="bbgetsurfacebrush" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns a new brush with the same properties as is currently
+applied to the specified surface.
+</p><p>
+See the <a href=bbgetentitybrush.html>bbGetEntityBrush</a> command for capturing entitities default 
+surface properties.
+</p><p>
+Use the <a href=bbfreebrush.html>bbFreeBrush</a> command when the newly created brush is no
+longer needed.
+</p><p>
+See the <a href=bbgetbrushtexture.html>bbGetBrushTexture</a> and <a href=bbtexturename.html>bbTextureName</a> functions for
+retrieving details of the brushes texture properties.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBBrush bbGetSurfaceBrush( BBSurface s );</pre>
+<pre class=cs>public static int bb.GetSurfaceBrush(int surface)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgetentitybrush.html>bbGetEntityBrush</a> <a href=bbfreebrush.html>bbFreeBrush</a> <a href=bbgetsurface.html>bbGetSurface</a> <a href=bbgetbrushtexture.html>bbGetBrushTexture</a> <a href=bbtexturename.html>bbTextureName</a>
+</p>
+</td></tr>
+</table>
+</body></html>

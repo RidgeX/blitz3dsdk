@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbFlip</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFlip [synch=True]</h1>
+<table class="doc" id="bbflip" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>synch</td><td class=argvalue>True
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbflip.html>bbFlip</a> command switches the FrontBuffer() and BackBuffer() 
+of the current <a href=bbgraphics.html>bbGraphics</a> display.
+</p><p>
+See the <a href=bbbackbuffer.html>bbBackBuffer</a> command for a description on setting a 
+standard <a href=bbgraphics.html>bbGraphics</a> display up for double buffered drawing.
+</p><p>
+The ability to draw graphics to a hidden buffer and then
+transfer the completed drawing to the display is called 
+double buffering.
+</p><p>
+The <a href=bbflip.html>bbFlip</a> command is used at the end of each drawing cycle 
+to display the results onto the display in a flicker free 
+manner.
+</p><p>
+The optional <b>synch</b> value may be set to False to override
+the default True setting. Unsynchronized flipping should
+only ever be used monitoring rendering performance as
+it results in an ugly screen tearing.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFlip( int vwait=1 );</pre>
+<pre class=cs>public static int bb.Flip(int synch)
+public static int bb.Flip()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbbackbuffer.html>bbBackBuffer</a> <a href=bbfrontbuffer.html>bbFrontBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

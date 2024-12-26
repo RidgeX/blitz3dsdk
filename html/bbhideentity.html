@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbHideEntity</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbHideEntity entity</h1>
+<table class="doc" id="bbhideentity" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Hides an entity, so that it is no longer visible, and is no longer
+involved  in collisions.
+</p><p>
+The main purpose of hide entity is to allow
+you to create entities  at the beginning of a program, hide them, then copy
+them and show as necessary  in the main game. This is more efficient than
+creating entities mid-game. 
+</p><p>
+If you wish to hide an entity so that it
+is no longer visible but still involved  in collisions, then use EntityAlpha
+0 instead.  This will make an entity completely transparent. 
+</p><p>
+HideEntity
+affects the specified entity and all of its child entities, if  any exist.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbHideEntity( BBEntity e );</pre>
+<pre class=cs>public static int bb.HideEntity(int entity)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

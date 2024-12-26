@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>bbCameraClsMode</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraClsMode camera,cls_color,cls_zbuffer</h1>
+<table class="doc" id="bbcameraclsmode" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>cls_color</td><td class=argvalue>False
+<tr><td class=argname>cls_zbuffer</td><td class=argvalue>False
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets camera clear mode.
+</p><p>
+By default each camera contributing a view to the
+<a href=bbrenderworld.html>bbRenderWorld</a> command will clear both the color and
+depth buffers before rendering every entity in view.
+A False argument for either the cls_color or 
+cls_zbuffer parameters modifies the specified
+camera's behavior in this respect.
+</p><p>
+Overlay cameras often disable the automatic clearing
+of the color buffer so that the scene rendered already
+by the main camera appears behind the overlay viewport.
+</p><p>
+The advanced technique of multiple pass rendering
+where layers such as shadows and haze are rendered
+using multiple calls to <a href=bbrenderworld.html>bbRenderWorld</a> before a single
+<a href=bbflip.html>bbFlip</a> often require cameras where both color
+and depth buffer clearing is disabled.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraClsMode( BBCamera c,int cls_color,int cls_zbuffer );</pre>
+<pre class=cs>public static int bb.CameraClsMode(int camera,int cls_color,int cls_zbuffer)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbrenderworld.html>bbRenderWorld</a> <a href=bbcameraclscolor.html>bbCameraClsColor</a>
+</p>
+</td></tr>
+</table>
+</body></html>

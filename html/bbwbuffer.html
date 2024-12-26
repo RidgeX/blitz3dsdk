@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbWBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbWBuffer enable</h1>
+<table class="doc" id="bbwbuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>enable</td><td class=argvalue>True
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Enables or disables w-buffering.
+</p><p>
+Often, 16 bit color depths on common graphics cards will result
+in less accurate 16 bit depth buffers being used by the 3D
+hardware.
+</p><p>
+W buffering is an alternative to Z buffering that is useful
+for increasing depth sorting accuracy with such displays
+where the accuracy of sorting distant pixels is reduced
+in favour of closer pixels.
+</p><p>
+See the <a href=bbcamerarange.html>bbCameraRange</a> command for more information
+on contolling depth buffer performance
+</p><p>
+Defaults to True for 16 bit color mode.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbWBuffer( int enable );</pre>
+<pre class=cs>public static int bb.WBuffer(int enable)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcamerarange.html>bbCameraRange</a>
+</p>
+</td></tr>
+</table>
+</body></html>

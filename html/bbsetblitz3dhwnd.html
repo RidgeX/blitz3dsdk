@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbSetBlitz3DHWND</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetBlitz3DHWND ( hwndparent )</h1>
+<table class="doc" id="bbsetblitz3dhwnd" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Specifies a parent window for the Blitz3DSDK to use with
+the windowed modes of the <a href=bbgraphics3d.html>bbGraphics3D</a> command.
+</p><p>
+<a href=bbsetblitz3dhwnd.html>bbSetBlitz3DHWND</a> must be called before <a href=bbbeginblitz3d.html>bbBeginBlitz3D</a>.
+</p><p>
+Call <a href=bbgraphics3d.html>bbGraphics3D</a> using the <b>GFX_WINDOWED</b> mode and
+the maximum size of the parent window and use the
+<a href=bbviewport.html>bbViewport</a> and <a href=bbcameraviewport.html>bbCameraViewport</a> commands to configure the 3D display
+to the  parent window's current size.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetBlitz3DHWND(int hwndparent);</pre>
+<pre class=cs>public static int bb.SetBlitz3DHWND(int hwndparent)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

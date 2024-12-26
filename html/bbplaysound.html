@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbPlaySound</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPlaySound ( sound )</h1>
+<table class="doc" id="bbplaysound" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sound</td><td class=argvalue>valid sound handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the channel allocated for playback.
+</p><p>
+<a href=bbplaysound.html>bbPlaySound</a> plays a sound previously loaded using the <a href=bbloadsound.html>bbLoadSound</a> command.
+</p><p>
+The channel handle returned can subsequently be used to control
+the playback of the sound sample specified.
+</p><p>
+The initial volume and pitch of the sound may be modified before
+playback using the <a href=bbsoundvolume.html>bbSoundVolume</a> and <a href=bbsoundpitch.html>bbSoundPitch</a> commands.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBChannel bbPlaySound( BBSound sound );</pre>
+<pre class=cs>public static int bb.PlaySound(int sound)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbchannelplaying.html>bbChannelPlaying</a> <a href=bbstopchannel.html>bbStopChannel</a> <a href=bbpausechannel.html>bbPauseChannel</a> <a href=bbresumechannel.html>bbResumeChannel</a> <a href=bbchannelpitch.html>bbChannelPitch</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbWrite</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbWrite value$</h1>
+<table class="doc" id="bbwrite" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>value</td><td class=argvalue>the text to be output (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbwrite.html>bbWrite</a> command is similar to the <a href=bbprint.html>bbPrint</a> command but the cursor
+is not moved to a new line at the completion of the command.
+</p><p>
+Instead, the cursor is moved to the end of the output text.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbWrite( const char *str );</pre>
+<pre class=cs>public static int bb.Write(String value)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbprint.html>bbPrint</a> <a href=bblocate.html>bbLocate</a>
+</p>
+</td></tr>
+</table>
+</body></html>

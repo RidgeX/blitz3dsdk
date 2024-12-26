@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbGfxDriver3D</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGfxDriver3D ( driver )</h1>
+<table class="doc" id="bbgfxdriver3d" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>driver</td><td class=argvalue>display driver number to check, from 1 to CountGfxDrivers ()</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns True if the specified graphics driver is 3D-capable.
+</p><p>
+The graphics driver usually corresponds to the number of monitors
+connected to the user's system.
+</p><p>
+If GfxDriver3D returns False the specifed driver will be unable
+to support any 3D modes and should not be selected with the
+<a href=bbsetgfxdriver.html>bbSetGfxDriver</a> command.
+</p><p>
+See <a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a> for more information on multiple monitor systems.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbGfxDriver3D( int n );</pre>
+<pre class=cs>public static int bb.GfxDriver3D(int driver)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcountgfxdrivers.html>bbCountGfxDrivers</a> <a href=bbsetgfxdriver.html>bbSetGfxDriver</a> <a href=bbgfxdrivercaps3d.html>bbGfxDriverCaps3D</a>
+</p>
+</td></tr>
+</table>
+</body></html>

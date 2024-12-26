@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbLoadTexture</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadTexture ( file$[,flags=1] )</h1>
+<table class="doc" id="bbloadtexture" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>file$</td><td class=argvalue>filename of image file to be used as texture</td></tr>
+<tr><td class=argname>flags</td><td class=argvalue>optional texture flags</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Load a texture from an image file and returns the texture's handle.
+</p><p>
+Supported file formats include BMP, PNG, TGA, JPG and DDS.
+</p><p>
+Only PNG, TGA and specific DDS formats support an alpha channel 
+which provides per pixel transparency information.
+</p><p>
+See <a href=bbcreatetexture.html>bbCreateTexture</a> for more detailed descriptions of the texture flags and
+the <a href=bbtexturefilter.html>bbTextureFilter</a> command for an alternative method of setting the texture
+flags of a loaded texture based on the texture file's name.
+</p><p class="hint">
+Since Blitz3D version 1.97 <a href=bbloadtexture.html>bbLoadTexture</a> also supports the loading of DDS
+textures. This texture format uses the DXTC compression algorithm which
+allows the textures to remain compressed on the video card which can
+reduce the video RAM requirements of a program. The buffers of DXTC 
+compressed textures are not available meaning locking, drawing, reading
+or writing to them will fail.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBTexture bbLoadTexture( const char *file,int flags=1 );</pre>
+<pre class=cs>public static int bb.LoadTexture(String file,int flags)
+public static int bb.LoadTexture(String file)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadanimtexture.html>bbLoadAnimTexture</a> <a href=bbcreatetexture.html>bbCreateTexture</a> <a href=bbtexturefilter.html>bbTextureFilter</a> <a href=bbfreetexture.html>bbFreeTexture</a>
+</p>
+</td></tr>
+</table>
+</body></html>

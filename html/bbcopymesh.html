@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbCopyMesh</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCopyMesh ( mesh[,parent] )</h1>
+<table class="doc" id="bbcopymesh" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh</td><td class=argvalue>handle of mesh to be copied</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>handle of entity to be made parent of mesh</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a copy of a mesh entity and returns the newly-created mesh's
+handle.
+</p><p>
+The optional <b>parent</b> parameter attaches the new copy 
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for more 
+details on the effects of entity parenting. 
+</p><p>
+The difference between <a href=bbcopymesh.html>bbCopyMesh</a> and <a href=bbcopyentity.html>bbCopyEntity</a> is that 
+<a href=bbcopymesh.html>bbCopyMesh</a> makes a copy of all the surfaces whereas 
+the result of a <a href=bbcopyentity.html>bbCopyEntity</a> shares any surfaces with its
+template.
+</p><p>
+A mesh copy can also be created using a combination of the
+<a href=bbcreatemesh.html>bbCreateMesh</a> and <a href=bbaddmesh.html>bbAddMesh</a> commands.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBModel bbCopyMesh( BBModel m,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CopyMesh(int mesh,int parent)
+public static int bb.CopyMesh(int mesh)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcopyentity.html>bbCopyEntity</a> <a href=bbcreatemesh.html>bbCreateMesh</a> <a href=bbaddmesh.html>bbAddMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

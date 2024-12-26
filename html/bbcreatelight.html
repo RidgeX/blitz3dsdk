@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>bbCreateLight</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateLight ( [light_type][,parent] )</h1>
+<table class="doc" id="bbcreatelight" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>light_type</td><td class=argvalue>type of light</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of light</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a light emitting entity.
+</p><p>
+By creating a light with the <a href=bbcreatelight.html>bbCreateLight</a> function
+surfaces in range of the light have additional
+light added to their color based on the angle the
+surface is to the light and the diffuse and specular
+properties of the surface.
+</p><p>
+The optional <b>light_type</b> parameter allows you to specify
+from one of the following light types:
+</p><table class="data">
+<tr><th class=data>Name</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>LIGHT_DIRECTIONAL</td><td class=data>1</td><td class=data>Specific directional with infinite range and no position.</td></tr>
+<tr><td class=data>LIGHT_POINT</td><td class=data>2</td><td class=data>Specific range and position.</td></tr>
+<tr><td class=data>LIGHT_SPOT</td><td class=data>3</td><td class=data>Specific range position and angle.</td></tr>
+</table><p>
+Point lights radiate light evenly from a single point
+while spot lights create a cone of light emitting
+from a single point aligned to the light entitys' 
+current orientation.
+</p><p>
+A directional light is useful for emulating light
+sources like the sun where it is so distant and has
+such a large range it is simpler to reference only 
+the angle of its shine.
+</p><p>
+The optional <b>parent</b> parameter attaches the new light
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p><p>
+Typically an outdoor daytime scene will require a single 
+directional light entity set to an appropriate angle and 
+brightness, see <a href=bbrotateentity.html>bbRotateEntity</a> and <a href=bbcreatelight.html>bbCreateLight</a> for more
+information. Adjustments to <a href=bbambientlight.html>bbAmbientLight</a> are helpful 
+for replicating the effect the entire sky is having on 
+the amount of light in the world.
+</p><p>
+For nighttime and indoor scenes, a combination of point
+and spot light entities can be controlled in each room
+for dramatic shading and mood. 
+</p><p>
+See <a href=bbbrushshininess.html>bbBrushShininess</a> and <a href=bbentityshininess.html>bbEntityShininess</a> for more 
+information about the use of specular lighting.
+</p><p class="hint">
+Due to hardware limitations no single location
+in the world should be in the range and hence
+affected by more than a total of 8 lights.
+</p><p>
+Unlike point and spot lights, directional lights 
+have infinite range and so their position is ignored
+and are always included in the lighting 
+calculations during <a href=bbrenderworld.html>bbRenderWorld</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBLight bbCreateLight( int type=0,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateLight(int light_type,int parent)
+public static int bb.CreateLight(int light_type)
+public static int bb.CreateLight()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bblightrange.html>bbLightRange</a> <a href=bblightcolor.html>bbLightColor</a> <a href=bblightconeangles.html>bbLightConeAngles</a> <a href=bbambientlight.html>bbAmbientLight</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbClearSurface</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbClearSurface surface,[clear_verts,clear_triangles]</h1>
+<table class="doc" id="bbclearsurface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>clear_verts</td><td class=argvalue>True
+<tr><td class=argname>clear_triangles</td><td class=argvalue>True
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Removes all vertices and / or triangles from a surface.
+</p><p>
+The two optional parameters <b>clear_verts</b> and <b>clear_triangles</b> default
+to True
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbClearSurface( BBSurface s,int verts,int tris );</pre>
+<pre class=cs>public static int bb.ClearSurface(int surface,int clear_verts,int clear_triangles)
+public static int bb.ClearSurface(int surface,int clear_verts)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbaddvertex.html>bbAddVertex</a> <a href=bbaddtriangle.html>bbAddTriangle</a>
+</p>
+</td></tr>
+</table>
+</body></html>

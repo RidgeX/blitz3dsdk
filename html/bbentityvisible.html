@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>bbEntityVisible</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityVisible ( src_entity,dest_entity )</h1>
+<table class="doc" id="bbentityvisible" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>src_entity</td><td class=argvalue>source entity handle</td></tr>
+<tr><td class=argname>dest_entity</td><td class=argvalue>destination entity handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns True
+</p><p>
+This command casts a ray (an imaginary line) from src_entity to 
+dest_entity. If the ray hits an obscurer entity the result is False
+otherwise the function returns True
+</p><p>
+See the <a href=bbentitypickmode.html>bbEntityPickMode</a> for setting an entity as an obscurer.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbEntityVisible( BBObject src,BBObject dest );</pre>
+<pre class=cs>public static int bb.EntityVisible(int src_entity,int dest_entity)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitypickmode.html>bbEntityPickMode</a>
+</p>
+</td></tr>
+</table>
+</body></html>

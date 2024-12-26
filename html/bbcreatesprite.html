@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>bbCreateSprite</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreateSprite ( [parent] )</h1>
+<table class="doc" id="bbcreatesprite" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>parent</td><td class=argvalue>optional <b>parent</b> entity of sprite</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a sprite entity and returns its handle.
+</p><p>
+Sprites are 2D rectangles that can be oriented automatically
+towards the current rendering camera.
+</p><p>
+Sprites are created at position (0,0,0) and extend from 
+(-1,-1,0) to (+1,+1,0) billboard style.
+</p><p>
+Unlike other entities sprites are created with a default <a href=bbentityfx.html>bbEntityFX</a> 
+flag of 1 (FullBright).
+</p><p>
+The orientation used to render a sprite unlike other entities
+is goverened by a combination of the sprite entities own position
+and orientation, the rendering camera's orientation and the 
+<a href=bbspriteviewmode.html>bbSpriteViewMode</a>.
+</p><p>
+The default viewmode of a sprite means it is always turned
+to face the camera. See the <a href=bbspriteviewmode.html>bbSpriteViewMode</a> command for more
+information.
+</p><p>
+The optional <b>parent</b> parameter attaches the new Sprite entity to a 
+specified parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for more 
+information on entity hierachy.
+</p><p>
+Unlike many Blitz3D primitives Sprites are not mesh based
+and must not have mesh based commands used on them. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBSprite bbCreateSprite( BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreateSprite(int parent)
+public static int bb.CreateSprite()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsprite.html>bbLoadSprite</a> <a href=bbrotatesprite.html>bbRotateSprite</a> <a href=bbscalesprite.html>bbScaleSprite</a> <a href=bbhandlesprite.html>bbHandleSprite</a> <a href=bbspriteviewmode.html>bbSpriteViewMode</a> <a href=bbpositionentity.html>bbPositionEntity</a> <a href=bbmoveentity.html>bbMoveEntity</a> <a href=bbtranslateentity.html>bbTranslateEntity</a> <a href=bbentityalpha.html>bbEntityAlpha</a> <a href=bbfreeentity.html>bbFreeEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

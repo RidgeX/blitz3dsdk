@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>bbGraphics</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbGraphics width,height[,depth=0][,mode=0]</h1>
+<table class="doc" id="bbgraphics" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>width</td><td class=argvalue>width of display in pixels</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of display in pixels</td></tr>
+<tr><td class=argname>depth</td><td class=argvalue>color depth in bits, 0 = default</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>video mode flags, 0 = default</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbgraphics.html>bbGraphics</a> command resizes the graphics display to the 
+specified size in pixels and with the specified display 
+properties including the color depth and fullscreen options.
+</p><p>
+When a Blitz program begins a default 400x300 pixel 
+graphics window is created.
+</p><p>
+The depth parameter is optional, the default value of 0
+specifies that Blitz3D select the most appropriate color
+depth.
+</p><p>
+The mode parameter may be any of the following values:
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>GFX_DEFAULT</td><td class=data>0</td><td class=data>FixedWindowed in Debug mode and FullScreen in Release</td></tr>
+<tr><td class=data>GFX_FULLSCREEN</td><td class=data>1</td><td class=data>Own entire screen for optimal performance</td></tr>
+<tr><td class=data>GFX_WINDOWED</td><td class=data>2</td><td class=data>A fixed size window placed on the desktop</td></tr>
+<tr><td class=data>GFX_WINDOWEDSCALED</td><td class=data>3</td><td class=data>Graphics scaled according to current size of Window</td></tr>
+</table><p>
+Before using <a href=bbgraphics.html>bbGraphics</a> to configure a fullscreen display,
+the specified resolution should be verified as available
+on the current graphics driver.
+</p><p>
+The <a href=bbgfxmodeexists.html>bbGfxModeExists</a> function will return False
+resolution is not available. Calling <a href=bbgraphics.html>bbGraphics</a> with an unsupported
+resolution will cause the program to fail with an &quot;Unable to Set 
+Graphics Mode&quot; error message.
+</p><p class="hint">
+The <a href=bbgraphics.html>bbGraphics</a> command causes all images to be destroyed meaning
+all images should be (re)loaded after any use of the <a href=bbgraphics.html>bbGraphics</a> command.
+</p><p>
+See the Blitz3D command <a href=bbgraphics3d.html>bbGraphics3D</a> for configuring the display
+for use with 3D graphics.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbGraphics( int w,int h,int d,int mode );</pre>
+<pre class=cs>public static int bb.Graphics(int width,int height,int depth,int mode)
+public static int bb.Graphics(int width,int height,int depth)
+public static int bb.Graphics(int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgfxmodeexists.html>bbGfxModeExists</a> <a href=bbgraphics3d.html>bbGraphics3D</a> <a href=bbfrontbuffer.html>bbFrontBuffer</a> <a href=bbbackbuffer.html>bbBackBuffer</a> <a href=bbflip.html>bbFlip</a> <a href=bbendgraphics.html>bbEndGraphics</a>
+</p>
+</td></tr>
+</table>
+</body></html>

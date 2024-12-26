@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bbRect</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbRect x,y,width,height[,solid=True]</h1>
+<table class="doc" id="bbrect" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x</td><td class=argvalue>horizontl pixel position</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel position</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width in pixels</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height in pixels</td></tr>
+<tr><td class=argname>solid</td><td class=argvalue>False draws an outline only</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbrect.html>bbRect</a> command draws a rectangle.
+</p><p>
+It uses the current drawing color to draw a solid rectangle or
+outlined if a False setting is specified for the <b>solid</b> parameter.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbRect( int x,int y,int w,int h,int solid=1 );</pre>
+<pre class=cs>public static int bb.Rect(int x,int y,int width,int height,int solid)
+public static int bb.Rect(int x,int y,int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbplot.html>bbPlot</a> <a href=bbline.html>bbLine</a> <a href=bbcolor.html>bbColor</a>
+</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>bbEntityFX</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityFX entity,fx</h1>
+<table class="doc" id="bbentityfx" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>fx</td><td class=argvalue>fx flags</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets miscellaneous effects for an entity.
+</p><table class="data">
+<tr><th class=data>Flag</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>FX_NONE</td><td class=data>0</td><td class=data>Nothing (default)</td></tr>
+<tr><td class=data>FX_FULLBRIGHT</td><td class=data>1</td><td class=data>FullBright</td></tr>
+<tr><td class=data>FX_VERTEXCOLOR</td><td class=data>2</td><td class=data>EnableVertexColors</td></tr>
+<tr><td class=data>FX_FLATSHADED</td><td class=data>4</td><td class=data>FlatShaded</td></tr>
+<tr><td class=data>FX_NOFOG</td><td class=data>8</td><td class=data>DisableFog</td></tr>
+<tr><td class=data>FX_DOUBLESIDED</td><td class=data>16</td><td class=data>DoubleSided</td></tr>
+<tr><td class=data>FX_VERTEXALPHA</td><td class=data>32</td><td class=data>EnableVertexAlpha</td></tr>
+</table><p>
+Flags can be added to combine two or more effects.
+</p><p>
+For example, specifying a flag of 3 (1+2) will result in both
+FullBright and EnableVertexColor effects to be enabled for all
+the surfaces of the specified entity.
+</p><p>
+See <a href=bbbrushfx.html>bbBrushFX</a> and <a href=bbpaintsurface.html>bbPaintSurface</a> for details on controlling 
+FX on a surface by surface basis.
+</p><p>
+FullBright - disables standard diffuse and specular lighting
+caclulations during rendering so surface appears at 100%
+brightness.
+</p><p>
+EnableVertexColors - vertex color information is used
+instead of surface colors when using vertex lighting 
+techniques.
+</p><p>
+FlatShaded - uses lighting information from first vertex of
+each triangle instead of interpolating between all three as
+per default smooth shading.
+</p><p>
+DisableFog - disables fogging calulations.
+</p><p>
+DoubleSided- disables the back face culling method making
+both front facing and back facing sides of a surfaces 
+visible.
+</p><p>
+EnableVertexAlpha - ensures the surface is treated as transparent
+by the Blitz3D rendering pipeline.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityFX( BBModel m,int fx );</pre>
+<pre class=cs>public static int bb.EntityFX(int entity,int fx)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbbrushfx.html>bbBrushFX</a> <a href=bbvertexcolor.html>bbVertexColor</a>
+</p>
+</td></tr>
+</table>
+</body></html>

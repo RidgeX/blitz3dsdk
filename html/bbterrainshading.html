@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>bbTerrainShading</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTerrainShading terrain,enable</h1>
+<table class="doc" id="bbterrainshading" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>terrain</td><td class=argvalue>terrain handle</td></tr>
+<tr><td class=argname>enable</td><td class=argvalue>True to enable terrain shading, False to to disable it. The default  mode is False.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Enables or disables terrain shading.
+</p><p>
+Shaded terrains are a little slower  than non-shaded terrains, and in
+some instances can increase the visibility  of LOD 'pop-in'. However, the
+option is there to have shaded terrains if you  wish to do so. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTerrainShading( BBTerrain t,int enable );</pre>
+<pre class=cs>public static int bb.TerrainShading(int terrain,int enable)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

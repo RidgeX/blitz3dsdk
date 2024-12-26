@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>bbLoadAnimTexture</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadAnimTexture ( file$,flags,frame_width,frame_height,first_frame,frame_count )</h1>
+<table class="doc" id="bbloadanimtexture" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>file$</td><td class=argvalue>name of image file with animation frames laid out in left-right, top-to-bottom order</td></tr>
+<tr><td class=argname>flags</td><td class=argvalue>optional texture flags</td></tr>
+<tr><td class=argname>frame_width</td><td class=argvalue>width of each animation frame in pixels</td></tr>
+<tr><td class=argname>frame_height</td><td class=argvalue>height of each animation frame in pixels</td></tr>
+<tr><td class=argname>first_frame</td><td class=argvalue>the first frame to be loaded, where 0 is the top left frame in the imagefile</td></tr>
+<tr><td class=argname>frame_count</td><td class=argvalue>the number of frames to load</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Loads an animated texture from an image file and returns the 
+texture's handle.
+</p><p>
+Supported file formats include BMP, PNG, TGA, JPG and DDS.
+</p><p>
+Only PNG, TGA and specific formats of DDS support an alpha channel 
+which provides per pixel transparency information.
+</p><p>
+See <a href=bbcreatetexture.html>bbCreateTexture</a> for more detailed descriptions of the texture flags and
+the <a href=bbtexturefilter.html>bbTextureFilter</a> command for an alternative method of setting the texture
+flags of a loaded texture based on the texture file's name.
+</p><p>
+The frame_width, frame_height, first_frame and frame_count
+parameters determine how Blitz will separate the image file into individual
+animation frames.
+</p><p>
+The frames must be drawn in similar sized rectangles
+arranged from left to right, top to bottom on the
+image source.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBTexture bbLoadAnimTexture( const char *file,int flags,int w,int h,int first,int cnt );</pre>
+<pre class=cs>public static int bb.LoadAnimTexture(String file,int flags,int frame_width,int frame_height,int first_frame,int frame_count)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadtexture.html>bbLoadTexture</a> <a href=bbcreatetexture.html>bbCreateTexture</a> <a href=bbtexturefilter.html>bbTextureFilter</a> <a href=bbfreetexture.html>bbFreeTexture</a>
+</p>
+</td></tr>
+</table>
+</body></html>

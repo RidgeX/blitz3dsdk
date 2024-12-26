@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbCameraProjMode</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCameraProjMode camera,mode</h1>
+<table class="doc" id="bbcameraprojmode" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>camera</td><td class=argvalue>camera handle</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>projection mode</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the camera projection mode.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>PROJ_NONE</td><td class=data>0</td><td class=data>No projection - disables camera (faster than HideEntity)</td></tr>
+<tr><td class=data>PROJ_PERSPECTIVE</td><td class=data>1</td><td class=data>Perspective projection (default)</td></tr>
+<tr><td class=data>PROJ_ORTHO</td><td class=data>2</td><td class=data>Orthographic projection</td></tr>
+</table><p>
+Standard perspective projection uses a zoom variable to make
+objects further away from the camera appear smaller.
+</p><p>
+In contrast, orthographic projection involves a camera with
+infinite zoom where the disatance from camera does not affect
+the size an object is viewed. Orthographic projection is 
+also known as isometric projection.
+</p><p>
+The <a href=bbcamerazoom.html>bbCameraZoom</a> of an orthorgaphic camera instead affects
+the scale of graphics rendered with orthographic projection.
+</p><p class="hint">
+Unfortunately Blitz3D <a href=bbterrains.html>bbTerrains</a> are not compatible with
+orthographic projection due to the real time level of 
+detail algorithm used.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCameraProjMode( BBCamera c,int mode );</pre>
+<pre class=cs>public static int bb.CameraProjMode(int camera,int mode)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

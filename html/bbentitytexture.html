@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>bbEntityTexture</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityTexture entity,texture[,frame][,index]</h1>
+<table class="doc" id="bbentitytexture" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>texture</td><td class=argvalue>texture handle</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>frame of texture. Defaults to 0.</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index number of texture. Should be in the range to 0-7. Defaults  to 0.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Applies a texture to an entity.
+</p><p>
+The optional <b>frame</b> parameter specifies  which texture
+animation frame should be used as the texture. 
+</p><p>
+The <b>index</b> parameter specifies an optional texturing channel
+when using multitexturing. See the <a href=bbtextureblend.html>bbTextureBlend</a> command for
+more details on mixing multiple textures on the same surface.
+</p><p>
+Texturing requires the use of a valid texture returned by
+the <a href=bbcreatetexture.html>bbCreateTexture</a> or <a href=bbloadtexture.html>bbLoadTexture</a> functions and a mesh based
+entity with texturing coordinates assigned to its vertices.
+</p><p class="hint">
+Primitives created with <a href=bbcreatecube.html>bbCreateCube</a>, <a href=bbcreateplane.html>bbCreatePlane</a>, 
+<a href=bbcreatesphere.html>bbCreateSphere</a> etc. contain texturing information known
+as UV coordinates. Howeever model files and surfaces 
+created programatically may be missing this information
+and will consequently fail to display textures correctly
+on their surfaces.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityTexture( BBModel m,BBTexture t,int frame=0,int index=0 );</pre>
+<pre class=cs>public static int bb.EntityTexture(int entity,int texture,int frame,int index)
+public static int bb.EntityTexture(int entity,int texture,int frame)
+public static int bb.EntityTexture(int entity,int texture)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadtexture.html>bbLoadTexture</a> <a href=bbbrushtexture.html>bbBrushTexture</a> <a href=bbvertextexcoords.html>bbVertexTexCoords</a>
+</p>
+</td></tr>
+</table>
+</body></html>

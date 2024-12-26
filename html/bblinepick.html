@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbLinePick</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLinePick ( x#,y#,z#,dx#,dy#,dz#[,radius#] )</h1>
+<table class="doc" id="bblinepick" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>x#</td><td class=argvalue>x coordinate of start of line pick</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y coordinate of start of line pick</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z coordinate of start of line pick</td></tr>
+<tr><td class=argname>dx#</td><td class=argvalue>distance x of line pick</td></tr>
+<tr><td class=argname>dy#</td><td class=argvalue>distance y of line pick</td></tr>
+<tr><td class=argname>dz#</td><td class=argvalue>distance z of line pick</td></tr>
+<tr><td class=argname>radius</td><td class=argvalue>radius of line pick</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the first pickable entity along the line defined
+by the end coordinates (x,y,z) and (x+dx,y+dy,z+dz).
+</p><p>
+Use the <a href=bbentitypickmode.html>bbEntityPickMode</a> command to make an entity
+pickable.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBEntity bbLinePick( float x,float y,float z,float dx,float dy,float dz,float radius );</pre>
+<pre class=cs>public static int bb.LinePick(float x,float y,float z,float dx,float dy,float dz,float radius)
+public static int bb.LinePick(float x,float y,float z,float dx,float dy,float dz)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitypick.html>bbEntityPick</a> <a href=bblinepick.html>bbLinePick</a> <a href=bbcamerapick.html>bbCameraPick</a> <a href=bbentitypickmode.html>bbEntityPickMode</a>
+</p>
+</td></tr>
+</table>
+</body></html>

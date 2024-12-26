@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>bbTextureBlend</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTextureBlend texture,blend</h1>
+<table class="doc" id="bbtextureblend" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture</td><td class=argvalue>texture handle.</td></tr>
+<tr><td class=argname>blend</td><td class=argvalue>blend mode of texture.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the blending mode for a texture.
+</p><p>
+The texture blend mode determines how the texture will blend with the 
+texture or polygon surface 'below' it.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>TX_BLEND_NONE</td><td class=data>0</td><td class=data>Do not blend</td></tr>
+<tr><td class=data>TX_BLEND_ALPHA</td><td class=data>1</td><td class=data>No blend or Alpha (alpha when texture loaded with alpha flag - not recommended  for multitexturing - see below)</td></tr>
+<tr><td class=data>TX_BLEND_MULT</td><td class=data>2</td><td class=data>Multiply (default)</td></tr>
+<tr><td class=data>TX_BLEND_ADD</td><td class=data>3</td><td class=data>Add</td></tr>
+<tr><td class=data>TX_BLEND_DOT3</td><td class=data>4</td><td class=data>Dot3</td></tr>
+<tr><td class=data>TX_BLEND_MULT2</td><td class=data>5</td><td class=data>Multiply x 2</td></tr>
+</table><p>
+Each of the blend modes are identical to their <a href=bbentityblend.html>bbEntityBlend</a> counterparts.
+</p><p>
+Texture blending in Blitz3D begins with the highest order
+texture (the one with the highest index) and blends with 
+the next indexed texture:
+</p><p>
+Texture 2 will blend with texture 1.
+</p><p>
+Texture 1 will blend with texture 0.
+</p><p>
+Texture 0 will blend with the polygons of the entity it is applied to.
+</p><p>
+And so on...
+</p><p>
+See the <a href=bbbrushtexture.html>bbBrushTexture</a> and <a href=bbentitytexture.html>bbEntityTexture</a> commands for setting
+the index number of a texture.
+</p><p class="hint">
+In the case of multitexturing (more than one texture applied to an entity),
+it is not recommended you blend textures that have been loaded with the
+alpha flag, as this can cause unpredictable results on a variety of different
+graphics cards. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTextureBlend( BBTexture t,int blend );</pre>
+<pre class=cs>public static int bb.TextureBlend(int texture,int blend)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityblend.html>bbEntityBlend</a> <a href=bbentitytexture.html>bbEntityTexture</a> <a href=bbbrushblend.html>bbBrushBlend</a> <a href=bbbrushtexture.html>bbBrushTexture</a>
+</p>
+</td></tr>
+</table>
+</body></html>

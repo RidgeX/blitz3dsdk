@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbSaveBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSaveBuffer ( buffer,filename$ )</h1>
+<table class="doc" id="bbsavebuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>buffer</td><td class=argvalue>a valid graphics buffer</td></tr>
+<tr><td class=argname>filename$</td><td class=argvalue>a legal filename</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbsavebuffer.html>bbSaveBuffer</a> function is similar to the <a href=bbsaveimage.html>bbSaveImage</a> function
+in that it creates a .bmp image file with the specified <b>filename.</b>
+</p><p>
+Unlike <a href=bbsaveimage.html>bbSaveImage</a>, <a href=bbsavebuffer.html>bbSaveBuffer</a> uses the pixels from the specified
+graphics buffer and so is useful for making screenshots.
+</p><p class="hint">
+The .bmp suffix should be included at the end of the filename if the 
+image file created by <a href=bbsavebuffer.html>bbSaveBuffer</a> is to be recognized as a valid image 
+by the system and other applications. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbSaveBuffer( BBCanvas surf,const char *str );</pre>
+<pre class=cs>public static int bb.SaveBuffer(int buffer,String filename)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbsaveimage.html>bbSaveImage</a> <a href=bbsetbuffer.html>bbSetBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>

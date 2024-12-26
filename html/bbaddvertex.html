@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>bbAddVertex</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbAddVertex ( surface,x#,y#,z#[,u#][,v#][,w#=1] )</h1>
+<table class="doc" id="bbaddvertex" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>x#</td><td class=argvalue>x coordinate of vertex</td></tr>
+<tr><td class=argname>y#</td><td class=argvalue>y coordinate of vertex</td></tr>
+<tr><td class=argname>z#</td><td class=argvalue>z coordinate of vertex</td></tr>
+<tr><td class=argname>u#</td><td class=argvalue>u texture coordinate of vertex</td></tr>
+<tr><td class=argname>v#</td><td class=argvalue>v texture coordinate of vertex</td></tr>
+<tr><td class=argname>w#</td><td class=argvalue>w texture coordinate of vertex</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the index of a new vertex added to the specified surface.
+</p><p>
+The <b>x</b>, <b>y</b> and <b>z</b> parameters are the geometric coordinates of the new 
+vertex, and <b>u</b>, <b>v</b>, and <b>w</b> are texture mapping coordinates.
+</p><p>
+By creating three vertices on a specific surface, their three index values can 
+then be used with <a href=bbaddtriangle.html>bbAddTriangle</a> to create a simple triangle mesh.
+</p><p>
+The same vertices can be used as the corner of multiple triangles which is
+useful when creating surfaces with smooth edges.
+</p><p>
+Multiple vertices in the same position are often required when the
+two sides of a sharp edge have different surface normals or there is
+a seem in the texture coordinates. Such situations require unique 
+vertices per face such as the cube created with <a href=bbcreatecube.html>bbCreateCube</a> which 
+has 24 vertices not 8 in its single surface.
+</p><p>
+See the <a href=bbvertextexcoords.html>bbVertexTexCoords</a> command for more details on the optional u,v,w
+texture coordinates. The <b>u</b>, <b>v</b> and <b>w</b> parameters, if specified, effect 
+both texture coordinate sets (0 and 1).
+</p><p>
+When adding a vertex its default color is 255,255,255,255.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbAddVertex( BBSurface s,float x,float y,float z,float tu=0.0f,float tv=0.0f,float tw=0.0f );</pre>
+<pre class=cs>public static int bb.AddVertex(int surface,float x,float y,float z,float u,float v,float w)
+public static int bb.AddVertex(int surface,float x,float y,float z,float u,float v)
+public static int bb.AddVertex(int surface,float x,float y,float z,float u)
+public static int bb.AddVertex(int surface,float x,float y,float z)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbaddtriangle.html>bbAddTriangle</a> <a href=bbvertexcoords.html>bbVertexCoords</a> <a href=bbvertexcolor.html>bbVertexColor</a> <a href=bbvertexnormal.html>bbVertexNormal</a> <a href=bbvertextexcoords.html>bbVertexTexCoords</a>
+</p>
+</td></tr>
+</table>
+</body></html>

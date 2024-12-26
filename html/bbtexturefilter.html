@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>bbTextureFilter</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbTextureFilter match_text$,flags</h1>
+<table class="doc" id="bbtexturefilter" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>match_text$</td><td class=argvalue>text that, if found in texture filename, will activate certain filters</td></tr>
+<tr><td class=argname>flags</td><td class=argvalue>filter texture flags</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Adds a texture filter.
+</p><p>
+Any texture files subsequently loaded with <a href=bbloadtexture.html>bbLoadTexture</a>, <a href=bbloadanimtexture.html>bbLoadAnimTexture</a> or
+as the result of <a href=bbloadmesh.html>bbLoadMesh</a> or <a href=bbloadanimmesh.html>bbLoadAnimMesh</a> that contain the text match_text$
+in their filename will inherit the specified flags.
+</p><table class="data">
+<tr><th class=data>Flag</th><th class=data>Value</th><th class=data>Description </th></tr>
+<tr><td class=data>TX_COLOR</td><td class=data>1</td><td class=data>Color (default)</td></tr>
+<tr><td class=data>TX_ALPHA</td><td class=data>2</td><td class=data>Alpha</td></tr>
+<tr><td class=data>TX_MASKED</td><td class=data>4</td><td class=data>Masked</td></tr>
+<tr><td class=data>TX_MIP</td><td class=data>8</td><td class=data>Mipmapped</td></tr>
+<tr><td class=data>TX_CLAMPU</td><td class=data>16</td><td class=data>Clamp U</td></tr>
+<tr><td class=data>TX_CLAMPV</td><td class=data>32</td><td class=data>Clamp V</td></tr>
+<tr><td class=data>TX_SPHERE</td><td class=data>64</td><td class=data>Spherical reflection map</td></tr>
+<tr><td class=data>TX_CUBIC</td><td class=data>128</td><td class=data>Cubic environment map</td></tr>
+<tr><td class=data>TX_VRAM</td><td class=data>256</td><td class=data>Store texture in vram</td></tr>
+<tr><td class=data>TX_HIGHCOLOR</td><td class=data>512</td><td class=data>Force the use of high color textures</td></tr>
+</table><p>
+See <a href=bbcreatetexture.html>bbCreateTexture</a> for more information on texture flags.
+</p><p>
+By default, the following texture filter is used: 
+</p><p>
+TextureFilter &quot;&quot;,1+8 
+</p><p>
+This means that all loaded textures will have color and be mipmapped by default.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbTextureFilter( const char *t,int flags );</pre>
+<pre class=cs>public static int bb.TextureFilter(String match_text,int flags)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcleartexturefilters.html>bbClearTextureFilters</a> <a href=bbloadtexture.html>bbLoadTexture</a> <a href=bbloadanimtexture.html>bbLoadAnimTexture</a> <a href=bbloadmesh.html>bbLoadMesh</a> <a href=bbloadanimmesh.html>bbLoadAnimMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

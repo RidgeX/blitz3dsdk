@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>bbSetGamma</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetGamma red,green,blue,dest_red,dest_green,dest_blue</h1>
+<table class="doc" id="bbsetgamma" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>red</td><td class=argvalue>red input value</td></tr>
+<tr><td class=argname>green</td><td class=argvalue>green input value</td></tr>
+<tr><td class=argname>blue</td><td class=argvalue>blue input value</td></tr>
+<tr><td class=argname>dest_red</td><td class=argvalue>red output value</td></tr>
+<tr><td class=argname>dest_green</td><td class=argvalue>green output value</td></tr>
+<tr><td class=argname>dest_blue</td><td class=argvalue>blue output value</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+SetGamma allows you to modify the gamma tables.
+</p><p>
+Gamma can ONLY be used in fullscreen mode.
+</p><p>
+Gamma is performed on a per channel basis, with each red, green and blue
+channel using a translation table of 256 entries to modify the resultant
+color output. The <a href=bbsetgamma.html>bbSetGamma</a> command allows you to modify the specified
+entry with the specified value for each of the 3 channels.
+</p><p>
+Suitable translation tables can be configured to influence
+any or all of the 3 primary color components allowing the
+displayed channel (red, green or blue) to be amplified, 
+muted or even inverted.
+</p><p>
+After performing one or more <a href=bbsetgamma.html>bbSetGamma</a> commands, call <a href=bbupdategamma.html>bbUpdateGamma</a> in 
+order for the changes to become effective.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetGamma( int r,int g,int b,float dr,float dg,float db );</pre>
+<pre class=cs>public static int bb.SetGamma(int red,int green,int blue,int dest_red,int dest_green,int dest_blue)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbupdategamma.html>bbUpdateGamma</a> <a href=bbgammared.html>bbGammaRed</a> <a href=bbgammablue.html>bbGammaBlue</a> <a href=bbgammagreen.html>bbGammaGreen</a>
+</p>
+</td></tr>
+</table>
+</body></html>

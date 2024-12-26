@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbFindChild</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFindChild ( entity,child_name$ )</h1>
+<table class="doc" id="bbfindchild" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>child_name$</td><td class=argvalue>child name to find within entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Searches all the children and descendants of those children for an entity
+with a name matching child_name$.
+</p><p>
+Returns the handle of the first entity with a matching name or 0 if none
+found.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBEntity bbFindChild( BBEntity e,const char *t );</pre>
+<pre class=cs>public static int bb.FindChild(int entity,String child_name)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityname.html>bbEntityName</a> <a href=bbnameentity.html>bbNameEntity</a> <a href=bbgetchild.html>bbGetChild</a>
+</p>
+</td></tr>
+</table>
+</body></html>

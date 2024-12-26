@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>bbSetCubeMode</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetCubeMode texture,mode</h1>
+<table class="doc" id="bbsetcubemode" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>texture</td><td class=argvalue>a valid texture handle</td></tr>
+<tr><td class=argname>mode</td><td class=argvalue>the rendering mode of the cubemap texture:</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Set the rendering mode of a cubemap texture.
+</p><table class="data">
+<tr><th class=data>Mode</th><th class=data>Value</th><th class=data>Description</th></tr>
+<tr><td class=data>CUBEMODE_SPECULAR</td><td class=data>1</td><td class=data>Specular (default) </td></tr>
+<tr><td class=data>CUBEMODE_DIFFUSE</td><td class=data>2</td><td class=data>Diffuse</td></tr>
+<tr><td class=data>CUBEMODE_3</td><td class=data>Refraction</td></tr>
+</table><p>
+The available rendering modes are as follows:
+</p><p>
+Specular (default) - use this to give your cubemapped 
+objects a shiny effect.
+</p><p>
+Diffuse - use this to give your cubemapped objects a 
+non-shiny, realistic lighting effect.
+</p><p>
+Refraction - Good for 'cloaking device' style effects.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetCubeMode( BBTexture t,int mode );</pre>
+<pre class=cs>public static int bb.SetCubeMode(int texture,int mode)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatetexture.html>bbCreateTexture</a> <a href=bbloadtexture.html>bbLoadTexture</a> <a href=bbsetcubeface.html>bbSetCubeFace</a>
+</p>
+</td></tr>
+</table>
+</body></html>

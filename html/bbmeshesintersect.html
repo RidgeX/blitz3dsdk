@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>bbMeshesIntersect</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbMeshesIntersect ( mesh_a,mesh_b )</h1>
+<table class="doc" id="bbmeshesintersect" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>mesh_a</td><td class=argvalue>mesh_a handle</td></tr>
+<tr><td class=argname>mesh_b</td><td class=argvalue>mesh_b handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns true if the specified meshes are currently
+intersecting.
+</p><p>
+This  is a fairly slow routine - use with discretion...
+</p><p>
+This command is  currently the only  polygon-&gt;polygon collision checking
+routine available in Blitz3D.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbMeshesIntersect( BBModel a,BBModel b );</pre>
+<pre class=cs>public static int bb.MeshesIntersect(int mesh_a,int mesh_b)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

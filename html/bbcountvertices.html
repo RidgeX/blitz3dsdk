@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>bbCountVertices</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCountVertices ( surface )</h1>
+<table class="doc" id="bbcountvertices" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the number of vertices in a surface.
+</p><p>
+Use the result of <a href=bbcountvertices.html>bbCountVertices</a> command to make sure your
+program only modifies vertices that exist. Vertex modifier
+commands such as <a href=bbvertexcoords.html>bbVertexCoords</a>, <a href=bbvertexcolor.html>bbVertexColor</a>, <a href=bbvertexnormal.html>bbVertexNormal</a>
+and <a href=bbvertextexcoords.html>bbVertexTexCoords</a> all use a vertex index parameter that should
+be in the range of 0..CountVertices()-1.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbCountVertices( BBSurface s );</pre>
+<pre class=cs>public static int bb.CountVertices(int surface)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbgetsurface.html>bbGetSurface</a> <a href=bbfindsurface.html>bbFindSurface</a> <a href=bbaddvertex.html>bbAddVertex</a> <a href=bbvertexcoords.html>bbVertexCoords</a> <a href=bbvertexcolor.html>bbVertexColor</a> <a href=bbvertexnormal.html>bbVertexNormal</a> <a href=bbvertextexcoords.html>bbVertexTexCoords</a>
+</p>
+</td></tr>
+</table>
+</body></html>

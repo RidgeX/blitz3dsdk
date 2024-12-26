@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>bbVertexW#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVertexW# ( surface,index )</h1>
+<table class="doc" id="bbvertexw" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of vertex</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the texture w coordinate of a vertex.
+</p><p>
+The coord_set defaults to 0 but may optionally be 1
+to specify the value returned refer to the vertex's 
+secondary texture coordinate set.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbVertexW( BBSurface s,int n,int t );</pre>
+<pre class=cs>public static float bb.VertexW(int surface,int index)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

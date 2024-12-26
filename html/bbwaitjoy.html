@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbWaitJoy</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbWaitJoy ( [port] )</h1>
+<table class="doc" id="bbwaitjoy" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>port</td><td class=argvalue>optional joystick port to pause for</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Waits for any joystick button to be pressed and
+returns the button identifier.
+</p><p>
+<a href=bbwaitjoy.html>bbWaitJoy</a> causes the program to pause until any button of the
+specified joystick is pressed.
+</p><p>
+If there is no gaming device connected or the optional
+port identifier is not a valid device <a href=bbwaitjoy.html>bbWaitJoy</a>
+will not pause but return 0 immediately.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbWaitJoy( int port=0 );</pre>
+<pre class=cs>public static int bb.WaitJoy(int port)
+public static int bb.WaitJoy()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbjoytype.html>bbJoyType</a>
+</p>
+</td></tr>
+</table>
+</body></html>

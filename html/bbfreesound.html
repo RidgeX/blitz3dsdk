@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbFreeSound</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbFreeSound sound</h1>
+<table class="doc" id="bbfreesound" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>sound</td><td class=argvalue>valid sound handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbfreesound.html>bbFreeSound</a> command releases the resources used by
+a sound created by a previous call to <a href=bbloadsound.html>bbLoadSound</a>.
+</p><p>
+Usually a program will load all its sound files at startup
+and let Blitz3D automatically free the resources when the
+program ends.
+</p><p>
+The <a href=bbfreesound.html>bbFreeSound</a> command however provides a way of managing
+system resources when large sound files are no longer needed
+by a running program.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbFreeSound( BBSound sound );</pre>
+<pre class=cs>public static int bb.FreeSound(int sound)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadsound.html>bbLoadSound</a>
+</p>
+</td></tr>
+</table>
+</body></html>

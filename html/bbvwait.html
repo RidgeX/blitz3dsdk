@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbVWait</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbVWait [frames=1]</h1>
+<table class="doc" id="bbvwait" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>frames</td><td class=argvalue>optional number of frames to wait. Default is 1</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+<a href=bbvwait.html>bbVWait</a> will cause the program to halt execution until the
+video display has completed its refresh and reached it's
+Vertical Blank cycle (the time during which the video
+beam returns to the top of the display to begin its next
+refresh).
+</p><p>
+The <a href=bbvwait.html>bbVWait</a> command provides an alternative method to using
+the synchronized version of the <a href=bbflip.html>bbFlip</a> command (default)
+which is useful on vintage computer hardware that does
+not provide a properly synchonized Flip response.
+</p><p>
+Synching a game's display using the VWait command will also
+cause the program to exhibit excess CPU usage and should
+be made optional if utilized at all.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbVWait( int n );</pre>
+<pre class=cs>public static int bb.VWait(int frames)
+public static int bb.VWait()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbflip.html>bbFlip</a> <a href=bbscanline.html>bbScanLine</a>
+</p>
+</td></tr>
+</table>
+</body></html>

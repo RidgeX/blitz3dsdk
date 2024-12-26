@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbEntityCollided</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityCollided ( entity,src_type )</h1>
+<table class="doc" id="bbentitycollided" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>src_type</td><td class=argvalue>type of entity</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the handle of the entity of the specified type 
+that collided with the specified entity.
+</p><p>
+Usually the <a href=bbcountcollisions.html>bbCountCollisions</a> function is used after an
+<a href=bbupdateworld.html>bbUpdateWorld</a> with each collision being processed individually
+with the collision specific <a href=bbcollisionx.html>bbCollisionX</a>, <a href=bbcollisiony.html>bbCollisionY</a>, <a href=bbcollisionz.html>bbCollisionZ</a>,
+<a href=bbcollisionnx.html>bbCollisionNX</a>, <a href=bbcollisionny.html>bbCollisionNY</a>, <a href=bbcollisionnz.html>bbCollisionNZ</a>, <a href=bbcountcollisions.html>bbCountCollisions</a>,
+<a href=bbentitycollided.html>bbEntityCollided</a>, <a href=bbcollisiontime.html>bbCollisionTime</a>, <a href=bbcollisionentity.html>bbCollisionEntity</a>, <a href=bbcollisionsurface.html>bbCollisionSurface</a>
+and <a href=bbcollisiontriangle.html>bbCollisionTriangle</a> functions.
+</p><p>
+<a href=bbentitycollided.html>bbEntityCollided</a> provides a simple alternative in situations
+where a simple True or False collision result is required
+in regards to the specified entity type.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBObject bbEntityCollided( BBObject o,int type );</pre>
+<pre class=cs>public static int bb.EntityCollided(int entity,int src_type)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcountcollisions.html>bbCountCollisions</a> <a href=bb.html>bb</a>
+</p>
+</td></tr>
+</table>
+</body></html>

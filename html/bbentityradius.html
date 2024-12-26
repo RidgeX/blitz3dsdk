@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbEntityRadius</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityRadius entity,x_radius#[,y_radius#]</h1>
+<table class="doc" id="bbentityradius" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>x_radius#</td><td class=argvalue>x radius of entity's collision ellipsoid</td></tr>
+<tr><td class=argname>y_radius#</td><td class=argvalue>y radius of entity's collision ellipsoid</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the radius of an entity's collision sphere or if a 
+<b>y_radius</b> is specified the dimenstions of a collision
+ellipsoid.
+</p><p>
+An entity radius should be set for all entities
+involved in ellipsoidal collisions.
+</p><p>
+All entity types used as source entities in the 
+<a href=bbcollisions.html>bbCollisions</a> table (as collisions are always 
+ellipsoid-to-something), and any destination entity
+types specified in method 1 type <a href=bbcollisions.html>bbCollisions</a>
+entries (ellipsoid-to-ellipsoid collisions)
+require an <a href=bbentityradius.html>bbEntityRadius</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityRadius( BBObject o,float x_radius,float y_radius=0.0 );</pre>
+<pre class=cs>public static int bb.EntityRadius(int entity,float x_radius,float y_radius)
+public static int bb.EntityRadius(int entity,float x_radius)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitybox.html>bbEntityBox</a> <a href=bbcollisions.html>bbCollisions</a> <a href=bbentitytype.html>bbEntityType</a>
+</p>
+</td></tr>
+</table>
+</body></html>

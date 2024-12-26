@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbDrawBlockRect</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbDrawBlockRect image,x,y,image_x,image_y,width,height,[frame=0]</h1>
+<table class="doc" id="bbdrawblockrect" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>x</td><td class=argvalue>horizontal pixel location</td></tr>
+<tr><td class=argname>y</td><td class=argvalue>vertical pixel location</td></tr>
+<tr><td class=argname>image_x</td><td class=argvalue>horizontal pixel location in image</td></tr>
+<tr><td class=argname>image_y</td><td class=argvalue>vertical pixel location in image</td></tr>
+<tr><td class=argname>width</td><td class=argvalue>width of rectangle to Draw</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of rectangle to Draw</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional frame number</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbdrawblockrect.html>bbDrawBlockRect</a> command is similar to <a href=bbdrawimagerect.html>bbDrawImageRect</a>
+but ignores any masking and transparency in the source
+image.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbDrawBlockRect( BBImage i,int x,int y,int r_x,int r_y,int r_w,int r_h,int frame );</pre>
+<pre class=cs>public static int bb.DrawBlockRect(int image,int x,int y,int image_x,int image_y,int width,int height,int frame)
+public static int bb.DrawBlockRect(int image,int x,int y,int image_x,int image_y,int width,int height)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbdrawimagerect.html>bbDrawImageRect</a>
+</p>
+</td></tr>
+</table>
+</body></html>

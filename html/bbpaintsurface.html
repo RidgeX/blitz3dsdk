@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbPaintSurface</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbPaintSurface surface,brush</h1>
+<table class="doc" id="bbpaintsurface" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>surface</td><td class=argvalue>surface handle</td></tr>
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Paints a surface with a brush.
+</p><p>
+This has the effect of instantly altering  the visible appearance of that 
+particular surface, i.e. section of mesh, assuming  the brush's properties 
+are different to what was applied to the surface before. 
+</p><p>
+See the <a href=bbpaintentity.html>bbPaintEntity</a> command for more information about how
+entity properties are combined with surface properties in the
+Blitz3D rendering pipeline.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbPaintSurface( BBSurface s,BBBrush b );</pre>
+<pre class=cs>public static int bb.PaintSurface(int surface,int brush)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbpaintentity.html>bbPaintEntity</a> <a href=bbpaintmesh.html>bbPaintMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

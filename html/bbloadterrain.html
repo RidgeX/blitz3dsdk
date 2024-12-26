@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>bbLoadTerrain</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadTerrain ( file$[,parent] )</h1>
+<table class="doc" id="bbloadterrain" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>file$</td><td class=argvalue>filename of image file to be used as height map</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of terrain</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Loads a terrain from an image file and returns the terrain's handle.
+</p><p>
+The image's red channel is used to determine heights. Terrain is 
+initially the same width and depth as the image, and 1 unit high. 
+</p><p>
+Tips on generating nice terrain -
+</p><p>
+* Smooth or blur the height map
+</p><p>
+* Reduce the y scale of the terrain
+</p><p>
+* Increase the x/z scale of the terrain
+</p><p>
+* Reduce the camera range 
+</p><p>
+When texturing an entity, a texture with a scale of 1,1,1
+(default) will  be the same size as one of the terrain's grid squares. A
+texture that is scaled  to the same size as the size of the bitmap used
+to load it or the no. of grid  square used to create it, will be the same
+size as the terrain. 
+</p><p>
+A heightmaps dimensions (width and height) must be the same and must be a 
+power of 2, e.g. 32, 64, 128, 256, 512, 1024. 
+</p><p>
+The optional <b>parent</b> parameter attaches the new terrain
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBTerrain bbLoadTerrain( const char *file,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.LoadTerrain(String file,int parent)
+public static int bb.LoadTerrain(String file)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreateterrain.html>bbCreateTerrain</a>
+</p>
+</td></tr>
+</table>
+</body></html>

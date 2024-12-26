@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>bbEntityOrder</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbEntityOrder entity,order</h1>
+<table class="doc" id="bbentityorder" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>order</td><td class=argvalue>order that entity will be drawn in</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets the drawing order for
+an entity.
+</p><p>
+An order value of 0 will mean the  entity is drawn normally.
+A value greater than 0 will mean that entity is drawn  first, behind everything
+else. A value less than 0 will mean the entity is drawn  last, in front
+of everything else. 
+</p><p>
+Setting an entities order to non-0 also disables
+z-buffering for the entity,  so should be only used for simple, convex entities
+like skyboxes, sprites etc. 
+</p><p>
+EntityOrder affects the specified entity
+but none of its child entities,  if any exist. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbEntityOrder( BBObject o,int n );</pre>
+<pre class=cs>public static int bb.EntityOrder(int entity,int order)
+</pre>
+</td></tr>
+
+</table>
+</body></html>

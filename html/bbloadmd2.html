@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bbLoadMD2</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadMD2 ( md2_file$[,parent] )</h1>
+<table class="doc" id="bbloadmd2" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>md2_file$</td><td class=argvalue>filename of md2</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of md2</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Loads an MD2 entity and returns its handle.
+</p><p>
+The MD2 model format uses a highly efficient vertex animation
+technology that is not compatible with the standard Blitz3D
+animation system but instead requires use of the specific MD2 
+animation commands.
+</p><p>
+The optional <b>parent</b> parameter attaches the new MD2 entity to a 
+specified parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for more 
+information on entity hierachy.
+</p><p class="hint">
+An MD2 texture has to be loaded and applied separately, otherwise the md2 
+will appear untextured. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBMD2Model bbLoadMD2( const char *file,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.LoadMD2(String md2_file,int parent)
+public static int bb.LoadMD2(String md2_file)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbanimatemd2.html>bbAnimateMD2</a> <a href=bbmd2animtime.html>bbMD2AnimTime</a> <a href=bbmd2animlength.html>bbMD2AnimLength</a> <a href=bbmd2animtime.html>bbMD2AnimTime</a> <a href=bbmd2animating.html>bbMD2Animating</a>
+</p>
+</td></tr>
+</table>
+</body></html>

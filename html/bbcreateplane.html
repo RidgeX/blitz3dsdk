@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>bbCreatePlane</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreatePlane ( [divisions=1][,parent] )</h1>
+<table class="doc" id="bbcreateplane" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>divisions</td><td class=argvalue>sub divisions of plane in the range 1-16. The default value is 1.</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of plane</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a geometric plane, a flat surface with zero height that extends 
+infinitely in the x and z axis.
+</p><p>
+The optional <b>divisions</b> parameter determines how many sub divisions of 
+polygons the viewable area of the plane will be rendered with which
+is important when their are point and spot lights contributing to the
+lighting of a plane's surface.
+</p><p>
+Due to its inifinite nature a plane is not a mesh based entity
+so unlike <a href=bbcreatecube.html>bbCreateCube</a>, <a href=bbcreatesphere.html>bbCreateSphere</a>, <a href=bbcreatecylinder.html>bbCreateCylinder</a> and
+<a href=bbcreatecone.html>bbCreateCone</a>, mesh based commands must not be used on planes.
+</p><p>
+The optional <b>parent</b> parameter attaches the new plane
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBPlaneModel bbCreatePlane( int segs=1,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreatePlane(int divisions,int parent)
+public static int bb.CreatePlane(int divisions)
+public static int bb.CreatePlane()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcreatemirror.html>bbCreateMirror</a>
+</p>
+</td></tr>
+</table>
+</body></html>

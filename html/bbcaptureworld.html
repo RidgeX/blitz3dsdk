@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>bbCaptureWorld</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCaptureWorld </h1>
+<table class="doc" id="bbcaptureworld" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a snapshot of the world including the position,
+rotation, scale and alpha of all entities in the world.
+</p><p>
+The <a href=bbrenderworld.html>bbRenderWorld</a> command is capable of rendering frames 
+between the world as captured by <a href=bbcaptureworld.html>bbCaptureWorld</a> and
+the world in its current state by using the optional
+<a href=bbrenderworld.html>bbRenderWorld</a> <b>tween</b> parameter.
+</p><p>
+Often a game is designed to update its controls and
+physics at a low frequency such as 10 times per second
+in order to reduce network and processor requirements.
+</p><p>
+Calling <a href=bbcaptureworld.html>bbCaptureWorld</a> after such a game update allows 
+the display loop to fill the gaps between game updates
+with a smooth transition of frames rendered at various 
+periods between the time of the last <a href=bbcaptureworld.html>bbCaptureWorld</a> and 
+the time of the most recent <a href=bbupdateworld.html>bbUpdateWorld</a>.
+</p><p class="hint">
+The position of individual vertices are not captured
+by the CaptureWorld command and so VertexCoords
+based animation must be tweened manually.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbCaptureWorld();</pre>
+<pre class=cs>public static int bb.CaptureWorld()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbrenderworld.html>bbRenderWorld</a> <a href=bbcaptureentity.html>bbCaptureEntity</a>
+</p>
+</td></tr>
+</table>
+</body></html>

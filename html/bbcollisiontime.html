@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>bbCollisionTime#</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCollisionTime# ( entity,index )</h1>
+<table class="doc" id="bbcollisiontime" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>index of collision</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Returns the time at which the specified collision occured. A time of 0.0 means
+the collision ocurred at the beginning of the update period, a time of 1.0 means
+the collision ocurred at the end of the period. If the collision ocurred half way
+between the entities old position and its new a time of 0.5 will be returned.
+</p><p>
+Index should be in the range 1...CountCollisions( entity ) inclusive representing 
+which collision from the most previous UpdateWorld.
+</p><p>
+See the <a href=bbupdateworld.html>bbUpdateWorld</a> command for more information on working with Blitz3D
+collisions.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API float bbCollisionTime( BBObject o,int index );</pre>
+<pre class=cs>public static float bb.CollisionTime(int entity,int index)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbcollisionx.html>bbCollisionX</a> <a href=bbcollisiony.html>bbCollisionY</a> <a href=bbcollisionz.html>bbCollisionZ</a> <a href=bbcollisionnx.html>bbCollisionNX</a> <a href=bbcollisionny.html>bbCollisionNY</a> <a href=bbcollisionnz.html>bbCollisionNZ</a> <a href=bbcountcollisions.html>bbCountCollisions</a> <a href=bbentitycollided.html>bbEntityCollided</a> <a href=bbcollisiontime.html>bbCollisionTime</a> <a href=bbcollisionentity.html>bbCollisionEntity</a> <a href=bbcollisionsurface.html>bbCollisionSurface</a> <a href=bbcollisiontriangle.html>bbCollisionTriangle</a>
+</p>
+</td></tr>
+</table>
+</body></html>

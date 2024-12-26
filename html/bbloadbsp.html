@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>bbLoadBSP</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadBSP ( file$[,gamma_adjust#][,parent] )</h1>
+<table class="doc" id="bbloadbsp" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>file$</td><td class=argvalue>filename of BSP model</td></tr>
+<tr><td class=argname>gamma_adjust#</td><td class=argvalue>intensity of BSP lightmaps. Values should be in the  range 0-1. Defaults to 0.</td></tr>
+<tr><td class=argname>parent</td><td class=argvalue>parent entity of BSP</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Loads a BSP model and returns its handle.
+</p><p>
+A BSP model is a standard Blitz3D entity. Use the standard entity commands to
+scale, rotate and position the BSP, and the standard collision commands to 
+setup collisions with the BSP.
+</p><p>
+BSP models are not lit by either <a href=bbambientlight.html>bbAmbientLight</a> or any directional
+lights. This allows you to setup lighting for in-game models without affecting 
+the BSP's internal lighting. BSP models ARE lit by point or spot lights.
+See the <a href=bbbspambientlight.html>bbBSPAmbientLight</a> and <a href=bbbsplighting.html>bbBSPLighting</a> commands for more control
+over the lighting of BSP entities.
+</p><p>
+BSP's cannot be painted, textured, colored, faded etc. in Blitz3D.
+</p><p>
+Textures for the BSP model must be in the same directory as the BSP
+file itself. 
+</p><p>
+Shaders are *not* supported!
+</p><p>
+The optional <b>parent</b> parameter attaches the new Sprite entity to a 
+specified parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for more 
+information on entity hierachy.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBQ3BSPModel bbLoadBSP( const char *file,float gam,BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.LoadBSP(String file,float gamma_adjust,int parent)
+public static int bb.LoadBSP(String file,float gamma_adjust)
+public static int bb.LoadBSP(String file)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbbspambientlight.html>bbBSPAmbientLight</a> <a href=bbbsplighting.html>bbBSPLighting</a>
+</p>
+</td></tr>
+</table>
+</body></html>

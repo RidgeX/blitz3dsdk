@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbBrushTexture</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBrushTexture brush,texture[,frame][,index]</h1>
+<table class="doc" id="bbbrushtexture" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>brush</td><td class=argvalue>brush handle</td></tr>
+<tr><td class=argname>texture</td><td class=argvalue>texture handle</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>texture frame. Defaults to 0.</td></tr>
+<tr><td class=argname>index</td><td class=argvalue>brush texture layer. Defaults to 0.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Assigns a texture to a brush.
+</p><p>
+The optional <b>frame</b> parameter specifies which  animation
+frame, if any exist, should be assigned to the brush. 
+</p><p>
+The optional <b>index</b> parameter specifies the texture layer 
+that the texture should  be assigned to.
+</p><p>
+Brushes have up to eight texture layers, 0-7 inclusive.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBrushTexture( BBBrush b,BBTexture t,int frame,int index );</pre>
+<pre class=cs>public static int bb.BrushTexture(int brush,int texture,int frame,int index)
+public static int bb.BrushTexture(int brush,int texture,int frame)
+public static int bb.BrushTexture(int brush,int texture)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentitytexture.html>bbEntityTexture</a>
+</p>
+</td></tr>
+</table>
+</body></html>

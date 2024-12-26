@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>bbSimple</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSimple Example</h1>
+<table class="doc" id="bbsimple" cellspacing="3" width="100%"><tbody><p>
+The following is a simple BlitzMax application featuring a rotating cube using the
+Blitz3DSDK module.
+</p><pre>Import blitz3d.blitz3dsdkStrictbbBeginBlitz3DbbGraphics3D 800,600,0,2Local cube=bbCreateCube()Local light=bbCreateLight()Local camera=bbCreateCamera()bbPositionEntity camera,0,0,-4While Not bbKeyHit(1)	bbTurnEntity cube,1,2,3	bbRenderWorld	bbFlip 1Wend</pre>
+</table>
+</body></html>

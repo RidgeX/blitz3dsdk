@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>bbSetAnimKey</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbSetAnimKey entity,frame[,pos_key=True][,rot_key=True][,scale_key=True]</h1>
+<table class="doc" id="bbsetanimkey" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>entity</td><td class=argvalue>entity handle</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>frame of animation to be used as anim key</td></tr>
+<tr><td class=argname>pos_key</td><td class=argvalue>true to include entity position information when setting  key. Defaults to true.</td></tr>
+<tr><td class=argname>rot_key</td><td class=argvalue>true to include entity rotation information when setting  key. Defaults to true.</td></tr>
+<tr><td class=argname>scale_key</td><td class=argvalue>true to include entity scale information when setting  key. Defaults to true.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Sets an animation key for the specified entity at the specified frame.
+</p><p>
+The entity must have a valid animation sequence to work with.
+</p><p>
+This is most useful when you've got a character, or a complete set of 
+complicated moves to perform, and you want to perform them en-masse.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbSetAnimKey( BBObject o,int frame,int pos_key=1,int rot_key=1,int scl_key=1 );</pre>
+<pre class=cs>public static int bb.SetAnimKey(int entity,int frame,int pos_key,int rot_key,int scale_key)
+public static int bb.SetAnimKey(int entity,int frame,int pos_key,int rot_key)
+public static int bb.SetAnimKey(int entity,int frame,int pos_key)
+public static int bb.SetAnimKey(int entity,int frame)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbaddanimseq.html>bbAddAnimSeq</a>
+</p>
+</td></tr>
+</table>
+</body></html>

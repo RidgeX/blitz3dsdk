@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>bbImagesCollide</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbImagesCollide ( image1,x1,y1,frame1,image2,x2,y2,frame2 )</h1>
+<table class="doc" id="bbimagescollide" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image1</td><td class=argvalue>first image to test</td></tr>
+<tr><td class=argname>x1</td><td class=argvalue>image1's x location</td></tr>
+<tr><td class=argname>y1</td><td class=argvalue>image1's y location</td></tr>
+<tr><td class=argname>frame1</td><td class=argvalue>image1's frame to test (optional)</td></tr>
+<tr><td class=argname>image2</td><td class=argvalue>second image to test</td></tr>
+<tr><td class=argname>x2</td><td class=argvalue>image2's x location</td></tr>
+<tr><td class=argname>y2</td><td class=argvalue>image2's y location</td></tr>
+<tr><td class=argname>frame2</td><td class=argvalue>image2's frame to test (optional)</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Unlike <a href=bbimagesoverlap.html>bbImagesOverlap</a>, <a href=bbimagescollide.html>bbImagesCollide</a> does respect transparent
+pixels in the source images and will only return True if actual
+solid pixels would overlap if the images were drawn in the
+specified locations.
+</p><p>
+As <a href=bbimagescollide.html>bbImagesCollide</a> tests actual pixels from the two images it 
+is slower but more exact than the <a href=bbimagesoverlap.html>bbImagesOverlap</a> function.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API int bbImagesCollide( BBImage i1,int x1,int y1,int f1,BBImage i2,int x2,int y2,int f2 );</pre>
+<pre class=cs>public static int bb.ImagesCollide(int image1,int x1,int y1,int frame1,int image2,int x2,int y2,int frame2)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbimagesoverlap.html>bbImagesOverlap</a> <a href=bbrectsoverlap.html>bbRectsOverlap</a>
+</p>
+</td></tr>
+</table>
+</body></html>

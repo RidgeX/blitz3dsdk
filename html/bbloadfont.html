@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bbLoadFont</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbLoadFont ( fontname$[,height=12][,bold=False][,italic=False][,underlined=False] )</h1>
+<table class="doc" id="bbloadfont" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>fontname$</td><td class=argvalue>name of font to be loaded, e.g. &quot;arial&quot;</td></tr>
+<tr><td class=argname>height</td><td class=argvalue>height of font in points (default is 12)</td></tr>
+<tr><td class=argname>bold</td><td class=argvalue>True to load bold version of font</td></tr>
+<tr><td class=argname>italic</td><td class=argvalue>True to load italic version of font</td></tr>
+<tr><td class=argname>underlined</td><td class=argvalue>True to load underlined version of font</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbloadfont.html>bbLoadFont</a> function loads a font and returns a font handle which can
+subsequently used with commands such as <a href=bbsetfont.html>bbSetFont</a> and <a href=bbfreefont.html>bbFreeFont</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBFont bbLoadFont( const char *name,int height,int bold,int italic,int underline );</pre>
+<pre class=cs>public static int bb.LoadFont(String fontname,int height,int bold,int italic,int underlined)
+public static int bb.LoadFont(String fontname,int height,int bold,int italic)
+public static int bb.LoadFont(String fontname,int height,int bold)
+public static int bb.LoadFont(String fontname,int height)
+public static int bb.LoadFont(String fontname)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbsetfont.html>bbSetFont</a>
+</p>
+</td></tr>
+</table>
+</body></html>

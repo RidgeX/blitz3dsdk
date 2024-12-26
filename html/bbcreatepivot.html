@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>bbCreatePivot</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbCreatePivot ( [parent] )</h1>
+<table class="doc" id="bbcreatepivot" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>parent</td><td class=argvalue>optional <b>parent</b> entity of new pivot</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Creates a pivot entity.
+</p><p>
+Pivots have position, scale and orientation but no geometry 
+and so are always invisible themselves.
+</p><p>
+Pivots make useful parent entities where they can be used
+to control the visibility, position and orientation of 
+their children.
+</p><p>
+Pivots are also used for the bones when loading animated
+b3d files with the <a href=bbloadanimmesh.html>bbLoadAnimMesh</a> command.
+</p><p>
+The optional <b>parent</b> parameter attaches the new pivot
+to a parent entity. See the <a href=bbentityparent.html>bbEntityParent</a> command for 
+more details on the effects of entity parenting. 
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBPivot bbCreatePivot( BBEntity p=0 );</pre>
+<pre class=cs>public static int bb.CreatePivot(int parent)
+public static int bb.CreatePivot()
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbentityparent.html>bbEntityParent</a> <a href=bbloadanimmesh.html>bbLoadAnimMesh</a>
+</p>
+</td></tr>
+</table>
+</body></html>

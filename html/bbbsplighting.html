@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>bbBSPLighting</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbBSPLighting bsp,use_lightmaps</h1>
+<table class="doc" id="bbbsplighting" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>bsp</td><td class=argvalue>BSP handle</td></tr>
+<tr><td class=argname>use_lightmaps</td><td class=argvalue>True to use lightmaps, False for vertex lighting. The default  mode is True.</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+Controls whether BSP models are illuminated using lightmaps, or by 
+vertex lighting.
+</p><p>
+Vertex lighting will be faster on some graphics cards, but may not look 
+as good.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API void bbBSPLighting( BBQ3BSPModel t,int lmap );</pre>
+<pre class=cs>public static int bb.BSPLighting(int bsp,int use_lightmaps)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbloadbsp.html>bbLoadBSP</a> <a href=bbbspambientlight.html>bbBSPAmbientLight</a>
+</p>
+</td></tr>
+</table>
+</body></html>

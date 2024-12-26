@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bbImageBuffer</title>
+<link rel="stylesheet" href="bbdoc.css" type="text/css">
+</head>
+<body>
+<h1>bbImageBuffer ( image[,frame=0] )</h1>
+<table class="doc" id="bbimagebuffer" cellspacing="3" width="100%"><tbody><tr><td class="docleft">Arguments</td><td class="docright"><table class="arg">
+<tr><td class=argname>image</td><td class=argvalue>a valid image handle</td></tr>
+<tr><td class=argname>frame</td><td class=argvalue>optional animation frame</td></tr>
+</table></td></tr><tr><td class="docleft">Description</td><td class="docright">
+<p>
+The <a href=bbimagebuffer.html>bbImageBuffer</a> function returns a graphics buffer that
+can be used with such commands as <a href=bbsetbuffer.html>bbSetBuffer</a> and <a href=bblockbuffer.html>bbLockBuffer</a>.
+</p>
+</td></tr>
+<tr><td class="docleft">Interfaces</td><td class="docright"><pre class=c>BBSDK_API BBCanvas bbImageBuffer( BBImage i,int n );</pre>
+<pre class=cs>public static int bb.ImageBuffer(int image,int frame)
+public static int bb.ImageBuffer(int image)
+</pre>
+</td></tr>
+<tr><td class="docleft">See Also</td><td class="docright"><p>
+<a href=bbsetbuffer.html>bbSetBuffer</a> <a href=bblockbuffer.html>bbLockBuffer</a>
+</p>
+</td></tr>
+</table>
+</body></html>
